@@ -284,12 +284,12 @@ function dailyStartIndex() {
   const seed = dateKey()
     .split("")
     .reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return (seed + state.englishOffset * 3) % englishLessons.length;
+  return (seed + state.englishOffset * 2) % englishLessons.length;
 }
 
 function dailyLessons() {
   const start = dailyStartIndex();
-  return [0, 1, 2].map((offset) => englishLessons[(start + offset) % englishLessons.length]);
+  return [0, 1].map((offset) => englishLessons[(start + offset) % englishLessons.length]);
 }
 
 function getFavoriteEnglishIds() {
@@ -412,7 +412,7 @@ function renderEnglishCards() {
   const isReviewEmpty = state.englishView === "review" && !englishLessons.some((lesson) => favoriteIds.has(lesson.id));
 
   els.englishCards.innerHTML = `
-    ${isReviewEmpty ? `<p class="empty-note">目前還沒有收藏句子，先顯示今日 3 句。按收藏就能加入複習。</p>` : ""}
+    ${isReviewEmpty ? `<p class="empty-note">目前還沒有收藏句子，先顯示今日 2 句。按收藏就能加入複習。</p>` : ""}
     ${lessons.map((lesson, index) => {
       const savedAnswer = localStorage.getItem(englishAnswerKey(lesson.id)) || "";
       const isFavorite = favoriteIds.has(lesson.id);

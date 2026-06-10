@@ -11,6 +11,7 @@ const els = {
 };
 
 const englishLessons = window.englishLessons || [];
+const DAILY_LESSON_COUNT = 3;
 
 const practiceAnswers = {
   "recommend-model-2": "I recommend using a random forest because it has a lower validation RMSE and can capture nonlinear relationships.",
@@ -62,7 +63,57 @@ const practiceAnswers = {
   "hyperparameter-tuning": "The cutoff threshold should be selected using validation data rather than the test data.",
   "cutoff-business": "The optimal staffing threshold should reflect the relative costs of understaffing and overstaffing.",
   "confusion-matrix": "The lift chart shows how the actual response rate changes within high-score groups.",
-  "sensitivity-meaning": "Specificity measures the model's ability to identify truly negative cases."
+  "sensitivity-meaning": "Specificity measures the model's ability to identify truly negative cases.",
+  "glm-offset": "An offset should be included because policyholders may have different exposure periods.",
+  "exposure": "Claim frequency should be adjusted for exposure so that policies with different durations can be compared fairly.",
+  "poisson-mean": "In a Poisson model, the expected claim count is modeled as a function of the predictors.",
+  "deviance": "A lower deviance suggests a better fit, but it should be evaluated together with validation performance.",
+  "residual-outliers": "Large residuals may indicate observations that the model does not explain well.",
+  "influential-observations": "Influential observations should be reviewed because they may have a large effect on the fitted model.",
+  "correlation": "A strong correlation between predictors may make the model less stable and harder to interpret.",
+  "eda-skewness": "The distribution of claim size is right-skewed, so a transformation may be appropriate.",
+  "log-transform": "A log transformation can reduce skewness and make the relationship easier to model.",
+  "train-validation-test": "The validation set should be used to tune the model, while the test set should be saved for final evaluation.",
+  "stratified-split": "A stratified split helps preserve the response rate in each data partition.",
+  "missing-indicator": "Adding a missingness indicator may be useful if missing values contain predictive information.",
+  "one-hot": "One-hot encoding represents each category with a separate indicator variable.",
+  "high-cardinality": "High-cardinality variables may increase model complexity and create unstable estimates.",
+  "target-leakage-date": "Variables created after the prediction date should be excluded to avoid target leakage.",
+  "class-weight": "Class weights can help the model pay more attention to the minority class.",
+  "precision": "Precision measures the proportion of predicted positive cases that are actually positive.",
+  "lift-gains": "A lift chart can show whether the model ranks high-risk cases near the top.",
+  "roc-curve": "The ROC curve summarizes the trade-off between sensitivity and specificity across thresholds.",
+  "threshold-recommendation": "The recommended threshold should reflect the business cost of each type of error.",
+  "profit-matrix": "A profit matrix can translate model predictions into expected business value.",
+  "partial-dependence": "A partial dependence plot shows the average predicted effect of a predictor after averaging over other variables.",
+  "ice-plot": "An ICE plot can reveal whether the effect of a predictor differs across individual observations.",
+  "variable-importance-limit": "Variable importance ranks predictors, but it does not show the direction of the effect.",
+  "permutation-importance": "Permutation importance measures how much model performance decreases when a predictor is randomly shuffled.",
+  "model-stability": "Model stability should be checked because a model that performs well on one split may not generalize.",
+  "ensemble-benefit": "An ensemble can improve predictive performance by combining multiple weaker models.",
+  "gbm-learning-rate": "A smaller learning rate usually requires more trees but may improve generalization.",
+  "max-depth": "Limiting tree depth can reduce overfitting by restricting model complexity.",
+  "min-node-size": "Increasing the minimum node size can make the tree less sensitive to noise.",
+  "cp-pruning": "Pruning removes splits that add little predictive value, which can improve generalization.",
+  "linear-assumption": "A linear model assumes a constant marginal effect, which may not fit this relationship.",
+  "interaction-detection": "An interaction should be considered if the effect of one predictor changes across levels of another predictor.",
+  "extrapolation": "Predictions outside the range of the training data should be interpreted cautiously.",
+  "confidence-interval": "A wider confidence interval indicates greater uncertainty around the estimated effect.",
+  "prediction-interval": "A prediction interval is wider than a confidence interval because it includes individual outcome variability.",
+  "holdout-performance": "Holdout performance provides a more objective estimate of how the model may perform on new data.",
+  "unseen-levels": "New factor levels in the scoring data must be handled before the model is deployed.",
+  "imbalanced-resampling": "Resampling can help address class imbalance, but it should be applied only within the training data.",
+  "sampling-bias": "Sampling bias may occur if the training data do not represent the population where the model will be used.",
+  "documentation": "The final report should document the modeling choices so that the analysis can be reviewed.",
+  "reproducibility": "Setting a random seed helps make the modeling results reproducible.",
+  "executive-recommendation": "The recommendation should focus on the business decision, not only the statistical metric.",
+  "limitations-section": "The limitations section should explain where the model may be unreliable.",
+  "next-steps": "The next step is to validate the model with additional data before using it in production.",
+  "data-quality": "Poor data quality can limit model usefulness even if the algorithm is sophisticated.",
+  "ethical-bias": "The model should be checked for potential bias before it is used to support decisions.",
+  "monitoring": "Model performance should be monitored after deployment to detect deterioration over time.",
+  "retraining": "The model may need to be retrained if the underlying claim patterns change.",
+  "final-caveat": "The model should support business judgment rather than replace it."
 };
 
 function dateKey(date = new Date()) {
@@ -76,12 +127,12 @@ function dailyStartIndex() {
   const seed = dateKey()
     .split("")
     .reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return (seed + state.englishOffset * 2) % englishLessons.length;
+  return (seed + state.englishOffset * DAILY_LESSON_COUNT) % englishLessons.length;
 }
 
 function dailyLessons() {
   const start = dailyStartIndex();
-  return [0, 1].map((offset) => englishLessons[(start + offset) % englishLessons.length]);
+  return Array.from({ length: DAILY_LESSON_COUNT }, (_, offset) => englishLessons[(start + offset) % englishLessons.length]);
 }
 
 function getFavoriteEnglishIds() {
@@ -209,7 +260,7 @@ function renderEnglishCards() {
   const isReviewEmpty = state.englishView === "review" && !englishLessons.some((lesson) => favoriteIds.has(lesson.id));
 
   els.englishCards.innerHTML = `
-    ${isReviewEmpty ? `<p class="empty-note">目前還沒有收藏句子，先顯示今日 2 句。按收藏就能加入複習。</p>` : ""}
+    ${isReviewEmpty ? `<p class="empty-note">目前還沒有收藏句子，先顯示今日 ${DAILY_LESSON_COUNT} 句。按收藏就能加入複習。</p>` : ""}
     ${lessons.map((lesson, index) => {
       const savedAnswer = localStorage.getItem(englishAnswerKey(lesson.id)) || "";
       const isFavorite = favoriteIds.has(lesson.id);

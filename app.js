@@ -213,27 +213,115 @@ function englishTrap(lesson) {
   return "先用英文句型想，不要照中文詞序直翻；每句保留一個清楚主幹，再加補充資訊。";
 }
 
+function renderSenseBody(body) {
+  const lines = Array.isArray(body) ? body : [body];
+  return lines.map((line) => `<p>${escapeHtml(line)}</p>`).join("");
+}
+
+function patternAnalysis(lesson) {
+  const main = mainClause(lesson.sentence);
+  const lower = main.toLowerCase();
+
+  if (/\bshould be\b|\bmust be\b|\bcan be\b|\bmay be\b|\bis modeled\b|\bis affected\b|\bis preferred\b|\bis used\b|\bbe handled\b|\bbe monitored\b|\bbe retrained\b/.test(lower)) {
+    return [
+      `本句主幹：${main}`,
+      "五大句型關係：這是被動語態。主動還原後通常是 S + Vt + O，例如 someone should use the test data；被動後把原本的 O 放到主詞位置。",
+      "判斷重點：真正有時態的動詞片語是 should be / is / can be + Vp.p.，後面的 to V 或介系詞片語只是補充目的或條件。"
+    ];
+  }
+
+  if (/\ballows?\b.*\bto\b|\bmake[s]?\b.*\b(unstable|difficult|easier|sensitive|reproducible)\b|\bhelp[s]?\b.*\b(to|make)\b/.test(lower)) {
+    return [
+      `本句主幹：${main}`,
+      "五大句型關係：主要接近 S + Vt + O + OC。主詞先做動作，後面受詞再接補語或 to V，補充受詞產生什麼狀態或能力。",
+      "判斷重點：不要把後面的 to V 當成第二個主要動詞；它是在補充受詞，不是另開一個完整句子。"
+    ];
+  }
+
+  if (/\b(is|are|am|was|were|become|became|appears? to be|seems? to be|is subject to)\b/.test(lower)) {
+    return [
+      `本句主幹：${main}`,
+      "五大句型關係：主要接近 S + Vi + SC。be / become / appear 這類動詞不是把動作丟給受詞，而是連接主詞和主詞補語。",
+      "判斷重點：後面的形容詞、名詞片語或介系詞片語是在補充主詞狀態，不是一般受詞。"
+    ];
+  }
+
+  if (/\b(differs?|increases?|decreases?|occurs?|changes?|generalize[s]?)\b/.test(lower) && !/\b(that|how|whether)\b/.test(lower)) {
+    return [
+      `本句主幹：${main}`,
+      "五大句型關係：主要接近 S + Vi。動詞本身已經完整，後面的介系詞片語或副詞是在補充範圍、方向或條件。",
+      "判斷重點：時間、地點、範圍常常是副詞功能，不要誤認成受詞。"
+    ];
+  }
+
+  return [
+    `本句主幹：${main}`,
+    "五大句型關係：主要接近 S + Vt + O。主詞做出動作，後面接一個受詞；受詞可能是一個名詞片語，也可能是 that / how / whether 帶出的名詞子句。",
+    "判斷重點：先抓真正有時態的動詞，再看它後面接的是受詞、補語，還是介系詞片語。"
+  ];
+}
+
+function relatedGrammarNotes(lesson) {
+  const sentence = lesson.sentence;
+  const notes = [
+    "Ch2 五大句型：先判斷本句主要動詞是及物還是不及物，再決定後面是受詞、補語，還是副詞性補充。"
+  ];
+
+  if (/^(Removing|Adding|Lowering|Holding|Creating|Treating|Setting|Limiting|Increasing)\b/i.test(sentence)) {
+    notes.push("Ch4 to V 與 Ving：本句用 Ving 片語當主詞，整個動作被包成一顆名詞來使用。");
+  }
+
+  if (/\b(to|for|by|before|after|without|with)\s+\w+ing\b/i.test(sentence)) {
+    notes.push("Ch4 to V 與 Ving：介係詞後面要接名詞或 Ving，所以 by / before / after 後面的 Ving 不是主要動詞。");
+  }
+
+  if (/\bto\s+[a-z]+\b/i.test(sentence)) {
+    notes.push("Ch4 to V 與 Ving：to V 通常表示目的、未來方向或抽象動作，不是句子的主要有時態動詞。");
+  }
+
+  if (/\b(that|whether|how|what|where)\b/i.test(sentence)) {
+    notes.push("Ch6 名詞子句：that / whether / how / what 可以把一整句話包成名詞，放在動詞後面當受詞或補語。");
+  }
+
+  if (/\b(which|who|whose|whom)\b/i.test(sentence) || /\bthat\s+(do|does|is|are|would|the model|earlier models)\b/i.test(sentence)) {
+    notes.push("Ch5 形容詞子句：which / that / who 這類結構常用來修飾前面的名詞或整件事，要看子句裡缺的是主格、受格還是所有格。");
+  }
+
+  if (/\b(because|although|if|when|while|so that|so|but|rather than)\b/i.test(sentence)) {
+    notes.push("Ch7 連接詞與轉折語：because / although / if / while 會把一部分降級成背景；but / so 連接平行或因果關係。");
+  }
+
+  if (/\b\w+ed\b|\bknown\b|\bused\b|\bselected\b|\bhandled\b|\bmonitored\b|\bretrained\b|\bcreated\b|\bpredicted\b|\bobserved\b/i.test(sentence)) {
+    notes.push("Ch8 分詞構句：Vp.p. 常帶有被動或完成感；判斷時要從被修飾名詞的角度看它是主動還是被動。");
+  }
+
+  return notes.slice(0, 4);
+}
+
 function renderSenseAnalysis(lesson) {
   const sections = [
     {
-      title: "句子骨架",
-      body: `先抓主幹：${mainClause(lesson.sentence)}。這句的模板是：${lesson.template}`
+      title: "五大句型判斷",
+      body: patternAnalysis(lesson)
     },
     {
-      title: "語序",
-      body: grammarRole(lesson)
+      title: "相關重點",
+      body: relatedGrammarNotes(lesson)
     },
     {
-      title: "語境",
-      body: lesson.analysis.join(" ")
+      title: "本句解析",
+      body: [
+        `句型模板：${lesson.template}`,
+        grammarRole(lesson),
+        lesson.analysis.join(" ")
+      ]
     },
     {
-      title: "中式英文地雷",
-      body: englishTrap(lesson)
-    },
-    {
-      title: "PA 套用",
-      body: "照「結論 → 理由/證據 → 限制或商業意義」輸出。先讓評分者看到你的判斷，再用數據或模型語言支撐。"
+      title: "寫作提醒",
+      body: [
+        englishTrap(lesson),
+        "原則：先用五大句型抓骨架，再用名詞子句、形容詞子句、副詞子句加資訊；必要時再用 to V、Ving 或 Vp.p. 壓縮句子。"
+      ]
     }
   ];
 
@@ -242,7 +330,7 @@ function renderSenseAnalysis(lesson) {
       ${sections.map((section) => `
         <div class="sense-item">
           <strong>${escapeHtml(section.title)}</strong>
-          <p>${escapeHtml(section.body)}</p>
+          ${renderSenseBody(section.body)}
         </div>
       `).join("")}
     </div>

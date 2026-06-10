@@ -255,6 +255,10 @@ textarea:focus {
   line-height: 1.55;
 }
 
+.sense-item p + p {
+  margin-top: 8px;
+}
+
 .empty-note {
   padding: 12px;
   border: 1px dashed var(--line);

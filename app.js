@@ -12,6 +12,59 @@ const els = {
 
 const englishLessons = window.englishLessons || [];
 
+const practiceAnswers = {
+  "recommend-model-2": "I recommend using a random forest because it has a lower validation RMSE and can capture nonlinear relationships.",
+  "although-tradeoff": "Although lasso uses fewer variables, it may be less suitable as the final model because it has a lower test AUC.",
+  "appears-overfit": "The model appears to be more stable because its performance on the training data and test data is similar.",
+  "holding-constant": "Holding other variables constant, an increase in age is associated with a higher predicted claim amount.",
+  "not-appropriate": "A linear model is not appropriate for this problem because the relationship may be nonlinear and there may be important interactions.",
+  "chart-indicates": "The chart indicates that Month and Prior Claims are the two most important variables in this model.",
+  "however-risk": "However, increasing the cutoff also reduces sensitivity, which means more high-risk customers may be missed.",
+  "further-analysis": "Before deploying this model, further analysis should be performed to assess its performance across different years.",
+  "data-cleaning": "Removing high-income customers may introduce bias because income may be related to the purchase probability.",
+  "residual-plot": "The Q-Q plot shows that the right tail of the residuals is heavier than the normal distribution.",
+  "simple-model": "The smaller model is preferred because it has a similar AUC and is easier to deploy.",
+  "limitation-pdp": "One limitation of this model is that it may not be easy to explain to nontechnical clients.",
+  "executive-summary": "In summary, the model can help the company forecast demand, but the predictions should be considered together with operational constraints.",
+  "interaction": "Adding an interaction term between Month and Region allows the model to reflect that the seasonal effect differs across regions.",
+  "threshold": "Raising the threshold decreases positive predictions, so it typically decreases sensitivity but increases specificity.",
+  "missing-values": "The proportion of outliers is low, so removing these data points is unlikely to materially affect the model results.",
+  "nonlinear": "The relationship does not appear to be monotonic, so treating DayOfWeek as a categorical variable may be more appropriate than treating it as a numeric variable.",
+  "business-context": "From a business perspective, understaffing is more costly than temporary overstaffing.",
+  "standardize": "Continuous variables should be transformed because a linear model may be affected by highly skewed distributions.",
+  "not-enough": "Training accuracy alone is not sufficient to support selecting the model because it does not show how the model performs on the test data.",
+  "auc-comparison": "Model B has a lower test RMSE, indicating that it performs better at predicting claim amount.",
+  "rmse-interpretation": "A higher accuracy indicates that the model has a higher overall proportion of correct classifications.",
+  "calibration": "If the model is stable, the error on the validation data should be close to the error on the test data.",
+  "class-imbalance": "Because positive cases are rare, accuracy may hide the model's limited ability to detect positive cases.",
+  "data-leakage": "This field should be excluded because it may contain information that would only be known after the claim is closed.",
+  "train-test-split": "The validation data should be used for model selection to avoid making decisions based only on the training data.",
+  "cross-validation": "Repeated sampling can reduce the dependence of the model evaluation on a single sample draw.",
+  "feature-engineering": "Creating a loss ratio variable may be useful because it more directly reflects policy risk.",
+  "categorical-encoding": "Date variables need to be transformed properly so that the model can capture seasonality.",
+  "factor-vs-numeric": "Treating ZIP code as a categorical variable avoids forcing the model to assume that ZIP codes have a numeric order.",
+  "multicollinearity": "Highly correlated variables may make variable importance unstable and difficult to interpret.",
+  "outlier-impact": "Unusually high claim amounts may have a large impact on RMSE, so they should be investigated further.",
+  "imputation-choice": "Using a trimmed mean is more robust than using the mean because it is less affected by extreme losses.",
+  "interpretability-performance": "A deeper tree may improve training performance, but it can reduce model stability.",
+  "business-recommendation": "Based on test AUC and deployment cost, I recommend using logistic regression.",
+  "executive-audience": "For management, this result should be explained in terms of operational impact rather than only reporting the p-value.",
+  "confidence-limitation": "This forecast is subject to uncertainty, so it should not be treated as a guaranteed result.",
+  "p-value": "A larger p-value indicates that the observed result would not be unusual if the null hypothesis were true.",
+  "coefficient-sign": "A negative coefficient means that, all else equal, higher values of this variable correspond to lower predicted values.",
+  "logistic-odds": "In Poisson regression, the coefficient represents a change in the log mean rather than a direct change in the mean.",
+  "tree-split": "A classification tree splits the data sequentially to create subgroups with more similar responses.",
+  "random-forest-variance": "Bagging reduces variance by averaging the predictions from multiple models.",
+  "boosting-bias": "Gradient boosting builds trees sequentially so that later trees correct the errors of earlier models.",
+  "regularization": "Lasso penalizes the absolute values of coefficients to perform variable selection.",
+  "lasso-selection": "Ridge can shrink coefficients, so it can be used to reduce model variance.",
+  "lambda-effect": "A smaller lambda decreases the strength of the penalty, causing the model to be closer to an unregularized model.",
+  "hyperparameter-tuning": "The cutoff threshold should be selected using validation data rather than the test data.",
+  "cutoff-business": "The optimal staffing threshold should reflect the relative costs of understaffing and overstaffing.",
+  "confusion-matrix": "The lift chart shows how the actual response rate changes within high-score groups.",
+  "sensitivity-meaning": "Specificity measures the model's ability to identify truly negative cases."
+};
+
 function dateKey(date = new Date()) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -184,6 +237,8 @@ function renderEnglishCards() {
             ${renderSenseAnalysis(lesson)}
             <h3>換你練</h3>
             <p>${escapeHtml(lesson.prompt)}</p>
+            <h3>換你練參考解答</h3>
+            <p class="practice-answer">${escapeHtml(practiceAnswers[lesson.id] || "這題尚未建立參考解答。")}</p>
           </section>
         </article>
       `;

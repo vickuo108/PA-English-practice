@@ -298,33 +298,66 @@ function relatedGrammarNotes(lesson) {
   return notes.slice(0, 4);
 }
 
-function buildAiPrompt(lesson, userAnswer) {
-  return [
-    "你是 SOA Exam PA 英文寫作教練。請用繁體中文回饋我的英文。",
-    "",
-    "請做 4 件事：",
-    "1. 判斷我的句子是否符合題意。",
-    "2. 用五大句型分析我的主幹，指出真正有時態的動詞。",
-    "3. 依 Ch2-Ch8 的重點提醒我哪裡可修正。",
-    "4. 給我一版更自然、適合 Exam PA 的英文答案。",
-    "",
-    `中文題目：${lesson.chinese}`,
-    `我的英文：${userAnswer}`,
-    `參考答案：${lesson.sentence}`,
-    `句型模板：${lesson.template}`,
-    `換你練題目：${lesson.prompt}`,
-    `換你練參考解答：${practiceAnswers[lesson.id] || "尚未建立"}`
-  ].join("\n");
+function keywords(text) {
+  const stopWords = new Set([
+    "the", "a", "an", "and", "or", "but", "so", "that", "this", "it", "its", "is", "are", "was", "were",
+    "be", "been", "being", "to", "of", "for", "in", "on", "with", "by", "as", "at", "from", "than",
+    "should", "can", "may", "will", "would", "because", "rather"
+  ]);
+  return [...new Set(String(text).toLowerCase().match(/[a-z][a-z-']{2,}/g) || [])]
+    .filter((word) => !stopWords.has(word));
 }
 
-async function copyAiPrompt(prompt) {
-  if (!navigator.clipboard) return false;
-  try {
-    await navigator.clipboard.writeText(prompt);
-    return true;
-  } catch {
-    return false;
-  }
+function renderFeedbackList(items) {
+  return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+}
+
+function renderAiFeedback(lesson, userAnswer) {
+  const normalizedAnswer = userAnswer.trim();
+  const answerWords = keywords(normalizedAnswer);
+  const referenceWords = keywords(lesson.sentence);
+  const matched = referenceWords.filter((word) => answerWords.includes(word));
+  const missing = referenceWords.filter((word) => !answerWords.includes(word)).slice(0, 5);
+  const hasFiniteVerb = /\b(am|is|are|was|were|be|been|being|do|does|did|have|has|had|can|could|may|might|must|should|would|will|recommend|indicate|suggest|show|shows|reduce|reduces|increase|increases|decrease|decreases|support|supports|help|helps|measure|measures|rank|ranks|reflect|reflects|provide|provides|improve|improves|allow|allows|represent|represents|translate|translates|assume|assumes)\b/i.test(normalizedAnswer);
+  const startsCapitalized = /^[A-Z]/.test(normalizedAnswer);
+  const endsCleanly = /[.!?]$/.test(normalizedAnswer);
+
+  const score = Math.min(100, Math.round(
+    35 +
+    Math.min(matched.length, 6) * 7 +
+    (hasFiniteVerb ? 12 : 0) +
+    (startsCapitalized ? 5 : 0) +
+    (endsCleanly ? 6 : 0)
+  ));
+
+  const feedback = [
+    matched.length >= 3
+      ? `你有抓到核心詞：${matched.slice(0, 5).join(", ")}。`
+      : "目前和參考答案的核心詞重疊較少，建議先抓模型、指標、商業含義三個關鍵點。",
+    hasFiniteVerb
+      ? "句子看起來有主要動詞；下一步是確認主詞和動詞是否搭配。"
+      : "我沒有明確看到主要有時態的動詞。先補出 S + V 的主幹，再加理由或限制。",
+    startsCapitalized ? "開頭大小寫 OK。" : "英文句子開頭建議大寫。",
+    endsCleanly ? "句尾標點 OK。" : "建議句尾加句點，讓答案像完整正式句。"
+  ];
+
+  const suggestions = [
+    missing.length ? `可補進這些概念：${missing.join(", ")}。` : "核心概念已相當接近參考答案。",
+    `五大句型提醒：${patternAnalysis(lesson)[1].replace("五大句型關係：", "")}`,
+    `本題可參考句型：${lesson.template}`,
+    `更穩的寫法：${lesson.sentence}`
+  ];
+
+  return `
+    <section class="ai-feedback" data-role="ai-feedback">
+      <h3>頁面內 AI 回饋</h3>
+      <p class="ai-score">完成度 ${score}%</p>
+      <h4>目前觀察</h4>
+      ${renderFeedbackList(feedback)}
+      <h4>修改方向</h4>
+      ${renderFeedbackList(suggestions)}
+    </section>
+  `;
 }
 
 function renderSenseAnalysis(lesson) {
@@ -388,9 +421,9 @@ function renderEnglishCards() {
           <textarea id="english-${escapeHtml(lesson.id)}" data-role="english-answer" spellcheck="true" placeholder="先自己寫一次，不用完美。">${escapeHtml(savedAnswer)}</textarea>
           <div class="button-row">
             <button data-action="show-answer" type="button">顯示參考答案與句型解析</button>
-            <button class="secondary" data-action="ask-ai" type="button">問 AI 修改我的英文</button>
+            <button class="secondary" data-action="ask-ai" type="button">頁面內 AI 回饋</button>
           </div>
-          <p class="ai-note hidden" data-role="ai-note"></p>
+          <div class="ai-panel hidden" data-role="ai-panel"></div>
           <section class="answer-reveal hidden" data-role="answer-reveal">
             <h3>參考答案</h3>
             <p class="model-sentence">${escapeHtml(lesson.sentence)}</p>
@@ -432,7 +465,7 @@ els.englishCards.addEventListener("input", (event) => {
   localStorage.setItem(englishAnswerKey(card.dataset.id), event.target.value);
 });
 
-els.englishCards.addEventListener("click", async (event) => {
+els.englishCards.addEventListener("click", (event) => {
   const button = event.target.closest("button[data-action]");
   if (!button) return;
   const card = button.closest(".english-card");
@@ -445,18 +478,14 @@ els.englishCards.addEventListener("click", async (event) => {
   if (button.dataset.action === "ask-ai") {
     const lesson = englishLessons.find((item) => item.id === card.dataset.id);
     const userAnswer = card.querySelector("[data-role='english-answer']").value.trim();
-    const note = card.querySelector("[data-role='ai-note']");
+    const panel = card.querySelector("[data-role='ai-panel']");
     if (!userAnswer) {
-      note.textContent = "先寫一版英文，再問 AI 修改。";
-      note.classList.remove("hidden");
+      panel.innerHTML = `<section class="ai-feedback"><h3>頁面內 AI 回饋</h3><p>先寫一版英文，我才能幫你檢查主幹、關鍵詞和句型。</p></section>`;
+      panel.classList.remove("hidden");
       return;
     }
-    const prompt = buildAiPrompt(lesson, userAnswer);
-    const copied = await copyAiPrompt(prompt);
-    const url = `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`;
-    window.open(url, "_blank", "noopener");
-    note.textContent = copied ? "已複製提問並開啟 ChatGPT。" : "已開啟 ChatGPT；若沒有帶入內容，請手動貼上這題資訊。";
-    note.classList.remove("hidden");
+    panel.innerHTML = renderAiFeedback(lesson, userAnswer);
+    panel.classList.remove("hidden");
     return;
   }
 

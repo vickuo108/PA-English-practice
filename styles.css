@@ -190,11 +190,48 @@ textarea:focus {
   flex-wrap: wrap;
 }
 
-.ai-note {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 700;
+.ai-panel {
+  margin-top: 12px;
+}
+
+.ai-feedback {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcf8;
+}
+
+.ai-feedback h3 {
+  margin-bottom: 8px;
+}
+
+.ai-feedback h4 {
+  margin: 12px 0 6px;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.ai-feedback ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ai-feedback li {
+  margin: 6px 0;
+  line-height: 1.55;
+}
+
+.ai-feedback p {
+  line-height: 1.55;
+}
+
+.ai-score {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--accent-2);
+  color: var(--accent);
+  font-weight: 800;
 }
 
 .answer-reveal {

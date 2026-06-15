@@ -456,7 +456,7 @@ window.englishLessons = [
     sentence: "An offset should be included because policyholders may have different exposure periods.",
     template: "An offset should be included because ___ may have different ___.",
     analysis: ["should be included 是建模建議。", "because 後面說明 offset 的必要性。", "exposure periods 是 frequency model 常見語境。"],
-    prompt: "應加入 offset，因為保戶可能有不同的暴險期間。"
+    prompt: "在 claim frequency model 中，應加入 exposure offset，因為每張保單的有效月數不同。"
   },
   {
     id: "exposure",
@@ -465,7 +465,7 @@ window.englishLessons = [
     sentence: "Claim frequency should be adjusted for exposure so that policies with different durations can be compared fairly.",
     template: "___ should be adjusted for ___ so that ___ can be compared fairly.",
     analysis: ["should be adjusted for exposure 是頻率模型重點。", "so that 表目的。", "compared fairly 把技術處理轉成商業理由。"],
-    prompt: "Claim frequency 應依 exposure 調整，才能公平比較不同 duration 的保單。"
+    prompt: "Accident counts 應依 vehicle-years 調整，才能公平比較不同 exposure level 的保單。"
   },
   {
     id: "poisson-mean",
@@ -474,7 +474,7 @@ window.englishLessons = [
     sentence: "In a Poisson model, the expected claim count is modeled as a function of the predictors.",
     template: "In ___, ___ is modeled as a function of ___.",
     analysis: ["In a Poisson model 設定模型。", "is modeled as 表示建模方式。", "function of the predictors 是正式模型語言。"],
-    prompt: "在 Poisson model 中，expected claim count 會被建模為 predictors 的函數。"
+    prompt: "在 Poisson regression 中，expected number of service calls 會被建模為 customer characteristics 的函數。"
   },
   {
     id: "deviance",
@@ -483,7 +483,7 @@ window.englishLessons = [
     sentence: "A lower deviance suggests a better fit, but it should be evaluated together with validation performance.",
     template: "A lower ___ suggests ___, but it should be evaluated together with ___.",
     analysis: ["suggests a better fit 語氣比 proves 保守。", "but 補上限制。", "validation performance 避免只看訓練配適。"],
-    prompt: "較低的 deviance 表示配適較好，但仍應與 validation performance 一起評估。"
+    prompt: "較低的 training deviance 表示配適較好，但不應壓過 poor test performance。"
   },
   {
     id: "residual-outliers",
@@ -492,7 +492,7 @@ window.englishLessons = [
     sentence: "Large residuals may indicate observations that the model does not explain well.",
     template: "Large ___ may indicate observations that ___.",
     analysis: ["Large residuals 是診斷重點。", "may indicate 保留推論空間。", "does not explain well 說明模型限制。"],
-    prompt: "大型 residuals 可能表示模型無法良好解釋的觀測值。"
+    prompt: "大型 residuals 可能表示 current predictors 無法良好解釋的 customer segments。"
   },
   {
     id: "influential-observations",
@@ -501,7 +501,7 @@ window.englishLessons = [
     sentence: "Influential observations should be reviewed because they may have a large effect on the fitted model.",
     template: "___ should be reviewed because they may have a large effect on ___.",
     analysis: ["should be reviewed 是正式建議。", "may have a large effect 語氣保守。", "fitted model 指已配適模型。"],
-    prompt: "Influential observations 應被檢查，因為它們可能對 fitted model 有很大影響。"
+    prompt: "Influential observations 應在 deployment 前被檢查，因為它們可能改變 selected pricing factors。"
   },
   {
     id: "correlation",
@@ -510,7 +510,7 @@ window.englishLessons = [
     sentence: "A strong correlation between predictors may make the model less stable and harder to interpret.",
     template: "A strong correlation between ___ may make ___ less stable and harder to ___.",
     analysis: ["A strong correlation between predictors 是主詞。", "may make A B 表示造成狀態。", "harder to interpret 接可解釋性。"],
-    prompt: "Predictors 之間高度相關可能使模型較不穩定且較難解釋。"
+    prompt: "Age 和 driving experience 高度相關，可能使 coefficient estimates 較不穩定。"
   },
   {
     id: "eda-skewness",
@@ -519,7 +519,7 @@ window.englishLessons = [
     sentence: "The distribution of claim size is right-skewed, so a transformation may be appropriate.",
     template: "The distribution of ___ is ___, so ___ may be appropriate.",
     analysis: ["distribution of claim size 是 EDA 主詞。", "right-skewed 描述分布形狀。", "may be appropriate 是保守建議。"],
-    prompt: "Claim size 的分布右偏，因此 transformation 可能是適當的。"
+    prompt: "Annual losses 的分布右偏，因此 log transformation 可能是適當的。"
   },
   {
     id: "log-transform",
@@ -528,7 +528,7 @@ window.englishLessons = [
     sentence: "A log transformation can reduce skewness and make the relationship easier to model.",
     template: "A ___ transformation can reduce ___ and make ___ easier to ___.",
     analysis: ["can reduce skewness 說明方法效果。", "make the relationship easier to model 是第二個好處。", "and 串連兩個理由。"],
-    prompt: "Log transformation 可以降低 skewness，並讓 relationship 更容易建模。"
+    prompt: "Square-root transformation 可以降低 skewness，並讓 claim count relationship 更容易建模。"
   },
   {
     id: "train-validation-test",
@@ -537,7 +537,7 @@ window.englishLessons = [
     sentence: "The validation set should be used to tune the model, while the test set should be saved for final evaluation.",
     template: "The ___ should be used to ___, while the ___ should be saved for ___.",
     analysis: ["should be used to 表示用途。", "while 對比兩種資料集功能。", "final evaluation 強調 test set 不應提前使用。"],
-    prompt: "Validation set 應用於 tune model，而 test set 應保留做 final evaluation。"
+    prompt: "Validation set 應用於選擇 cutoff，而 test set 應保留做 final performance reporting。"
   },
   {
     id: "stratified-split",
@@ -546,7 +546,7 @@ window.englishLessons = [
     sentence: "A stratified split helps preserve the response rate in each data partition.",
     template: "A ___ split helps preserve ___ in each ___.",
     analysis: ["helps preserve 表示方法目的。", "response rate 是分類資料核心比例。", "data partition 指 train/validation/test。"],
-    prompt: "Stratified split 有助於保留每個 data partition 中的 response rate。"
+    prompt: "Stratified split 有助於保留每個 data partition 中的 fraud rate。"
   },
   {
     id: "missing-indicator",
@@ -555,7 +555,7 @@ window.englishLessons = [
     sentence: "Adding a missingness indicator may be useful if missing values contain predictive information.",
     template: "Adding ___ may be useful if ___ contain ___.",
     analysis: ["Adding 是 Ving 當主詞。", "may be useful 語氣適中。", "if 後面接使用條件。"],
-    prompt: "如果 missing values 含有 predictive information，加入 missingness indicator 可能有幫助。"
+    prompt: "如果 missing income values 與 purchase behavior 有關，加入 missingness indicator 可能有幫助。"
   },
   {
     id: "one-hot",
@@ -564,7 +564,7 @@ window.englishLessons = [
     sentence: "One-hot encoding represents each category with a separate indicator variable.",
     template: "___ represents each ___ with a separate ___.",
     analysis: ["represents each category 是方法定義。", "with a separate indicator variable 說明輸出形式。", "句子短，適合解釋資料處理。"],
-    prompt: "One-hot encoding 會用 separate indicator variable 表示每個 category。"
+    prompt: "One-hot encoding 會用 separate indicator variable 表示每個 region。"
   },
   {
     id: "high-cardinality",
@@ -573,7 +573,7 @@ window.englishLessons = [
     sentence: "High-cardinality variables may increase model complexity and create unstable estimates.",
     template: "High-cardinality ___ may increase ___ and create ___.",
     analysis: ["High-cardinality variables 是資料風險。", "may increase 語氣保守。", "unstable estimates 說明建模後果。"],
-    prompt: "High-cardinality variables 可能增加 model complexity 並產生 unstable estimates。"
+    prompt: "High-cardinality ZIP code variables 可能增加 model complexity，並產生 unstable territorial effects。"
   },
   {
     id: "target-leakage-date",
@@ -582,7 +582,7 @@ window.englishLessons = [
     sentence: "Variables created after the prediction date should be excluded to avoid target leakage.",
     template: "Variables created after ___ should be excluded to avoid ___.",
     analysis: ["created after the prediction date 限定問題來源。", "should be excluded 是明確建議。", "to avoid target leakage 表目的。"],
-    prompt: "Prediction date 之後建立的 variables 應被排除，以避免 target leakage。"
+    prompt: "Claim closed 後才更新的 variables 應被排除，以避免 target leakage。"
   },
   {
     id: "class-weight",
@@ -591,7 +591,7 @@ window.englishLessons = [
     sentence: "Class weights can help the model pay more attention to the minority class.",
     template: "___ can help the model pay more attention to ___.",
     analysis: ["can help 表示方法效果。", "pay more attention to 是白話但正式可用。", "minority class 是不平衡分類語境。"],
-    prompt: "Class weights 可以幫助模型更重視 minority class。"
+    prompt: "Class weights 可以幫助模型更重視 rare fraud cases。"
   },
   {
     id: "precision",
@@ -600,7 +600,7 @@ window.englishLessons = [
     sentence: "Precision measures the proportion of predicted positive cases that are actually positive.",
     template: "___ measures the proportion of ___ that are actually ___.",
     analysis: ["measures the proportion 是指標定義。", "predicted positive cases 和 actually positive 對比預測與實際。", "避免把 precision 和 sensitivity 混淆。"],
-    prompt: "Precision 衡量 predicted positive cases 中 actually positive 的比例。"
+    prompt: "Precision 衡量 flagged claims 中 actually suspicious 的比例。"
   },
   {
     id: "lift-gains",
@@ -609,7 +609,7 @@ window.englishLessons = [
     sentence: "A lift chart can show whether the model ranks high-risk cases near the top.",
     template: "A ___ chart can show whether ___ ranks ___ near the top.",
     analysis: ["can show whether 接間接問句。", "ranks high-risk cases near the top 說明模型排序能力。", "適合模型評估段落。"],
-    prompt: "Lift chart 可以顯示模型是否把 high-risk cases 排在前面。"
+    prompt: "Lift chart 可以顯示模型是否把 likely responders 排在 highest-score groups。"
   },
   {
     id: "roc-curve",
@@ -618,7 +618,7 @@ window.englishLessons = [
     sentence: "The ROC curve summarizes the trade-off between sensitivity and specificity across thresholds.",
     template: "The ___ summarizes the trade-off between ___ and ___ across ___.",
     analysis: ["summarizes the trade-off 是圖表功能。", "between sensitivity and specificity 指分類取捨。", "across thresholds 說明不是單一 cutoff。"],
-    prompt: "ROC curve 總結不同 thresholds 下 sensitivity 和 specificity 的取捨。"
+    prompt: "ROC curve 總結不同 thresholds 下 true positive rate 和 false positive rate 的取捨。"
   },
   {
     id: "threshold-recommendation",
@@ -627,7 +627,7 @@ window.englishLessons = [
     sentence: "The recommended threshold should reflect the business cost of each type of error.",
     template: "The recommended ___ should reflect ___ of each type of ___.",
     analysis: ["recommended threshold 是決策重點。", "should reflect 接商業考量。", "each type of error 指 false positive/false negative。"],
-    prompt: "Recommended threshold 應反映每種 error 的 business cost。"
+    prompt: "Recommended fraud threshold 應反映每種 error 的 investigation cost。"
   },
   {
     id: "profit-matrix",
@@ -636,7 +636,7 @@ window.englishLessons = [
     sentence: "A profit matrix can translate model predictions into expected business value.",
     template: "A ___ can translate ___ into ___.",
     analysis: ["can translate A into B 是轉換句型。", "model predictions 是技術輸出。", "expected business value 是商業語言。"],
-    prompt: "Profit matrix 可以把 model predictions 轉換成 expected business value。"
+    prompt: "Profit matrix 可以把 retention predictions 轉換成 expected financial value。"
   },
   {
     id: "partial-dependence",
@@ -645,7 +645,7 @@ window.englishLessons = [
     sentence: "A partial dependence plot shows the average predicted effect of a predictor after averaging over other variables.",
     template: "A ___ plot shows the average predicted effect of ___ after ___.",
     analysis: ["shows the average predicted effect 是 PDP 核心。", "after averaging over other variables 說明控制方式。", "避免把 PDP 解釋為個別觀測效果。"],
-    prompt: "Partial dependence plot 顯示在 averaging over other variables 後，predictor 的 average predicted effect。"
+    prompt: "Partial dependence plot 顯示在 averaging over other variables 後，credit score 的 average predicted effect。"
   },
   {
     id: "ice-plot",
@@ -654,7 +654,7 @@ window.englishLessons = [
     sentence: "An ICE plot can reveal whether the effect of a predictor differs across individual observations.",
     template: "An ___ plot can reveal whether ___ differs across ___.",
     analysis: ["can reveal whether 接間接問句。", "effect of a predictor 是解釋對象。", "individual observations 是 ICE 和 PDP 的差異。"],
-    prompt: "ICE plot 可以揭露 predictor 的 effect 是否在 individual observations 之間不同。"
+    prompt: "ICE plot 可以揭露 age effect 是否在 individual policyholders 之間不同。"
   },
   {
     id: "variable-importance-limit",
@@ -663,7 +663,7 @@ window.englishLessons = [
     sentence: "Variable importance ranks predictors, but it does not show the direction of the effect.",
     template: "___ ranks ___, but it does not show ___.",
     analysis: ["ranks predictors 說明功能。", "but 補限制。", "direction of the effect 是常被誤解的部分。"],
-    prompt: "Variable importance 會排序 predictors，但不顯示 effect 的 direction。"
+    prompt: "Variable importance 會排序 rating factors，但不顯示每個 factor 是增加還是降低 risk。"
   },
   {
     id: "permutation-importance",
@@ -672,7 +672,7 @@ window.englishLessons = [
     sentence: "Permutation importance measures how much model performance decreases when a predictor is randomly shuffled.",
     template: "___ measures how much ___ decreases when ___ is randomly shuffled.",
     analysis: ["measures how much 是程度衡量。", "model performance decreases 是指標變化。", "when a predictor is randomly shuffled 說明方法。"],
-    prompt: "Permutation importance 衡量 predictor 被 randomly shuffled 後，model performance 下降多少。"
+    prompt: "Permutation importance 衡量 prior claims 被 randomly shuffled 後，validation AUC 下降多少。"
   },
   {
     id: "model-stability",
@@ -681,7 +681,7 @@ window.englishLessons = [
     sentence: "Model stability should be checked because a model that performs well on one split may not generalize.",
     template: "___ should be checked because ___ may not ___.",
     analysis: ["should be checked 是檢查建議。", "performs well on one split 是過度依賴單次切分。", "may not generalize 是泛化風險。"],
-    prompt: "Model stability 應被檢查，因為 one split 上表現好的模型不一定能 generalize。"
+    prompt: "Model stability 應被檢查，因為某一個 accident year 表現好的模型不一定能 generalize。"
   },
   {
     id: "ensemble-benefit",
@@ -690,7 +690,7 @@ window.englishLessons = [
     sentence: "An ensemble can improve predictive performance by combining multiple weaker models.",
     template: "An ___ can improve ___ by ___.",
     analysis: ["can improve predictive performance 是效果。", "by combining 表方法。", "multiple weaker models 是 ensemble 來源。"],
-    prompt: "Ensemble 可以透過 combining multiple weaker models 來提升 predictive performance。"
+    prompt: "Ensemble 可以透過 combining several weaker prediction models 來提升 demand forecasts。"
   },
   {
     id: "gbm-learning-rate",
@@ -699,7 +699,7 @@ window.englishLessons = [
     sentence: "A smaller learning rate usually requires more trees but may improve generalization.",
     template: "A smaller ___ usually requires ___ but may improve ___.",
     analysis: ["A smaller learning rate 是比較主詞。", "requires more trees 說明代價。", "may improve generalization 說明可能好處。"],
-    prompt: "較小的 learning rate 通常需要更多 trees，但可能改善 generalization。"
+    prompt: "較小的 learning rate 通常需要更多 boosting iterations，但可能降低 overfitting。"
   },
   {
     id: "max-depth",
@@ -708,7 +708,7 @@ window.englishLessons = [
     sentence: "Limiting tree depth can reduce overfitting by restricting model complexity.",
     template: "Limiting ___ can reduce ___ by restricting ___.",
     analysis: ["Limiting 是 Ving 當主詞。", "can reduce overfitting 是效果。", "by restricting model complexity 說明機制。"],
-    prompt: "限制 tree depth 可以透過 restricting model complexity 來降低 overfitting。"
+    prompt: "限制 tree depth 可以透過避免 very specific customer segments 來降低 overfitting。"
   },
   {
     id: "min-node-size",
@@ -717,7 +717,7 @@ window.englishLessons = [
     sentence: "Increasing the minimum node size can make the tree less sensitive to noise.",
     template: "Increasing ___ can make ___ less sensitive to ___.",
     analysis: ["Increasing 當主詞。", "make the tree less sensitive 是效果。", "to noise 說明穩定性來源。"],
-    prompt: "提高 minimum node size 可以讓 tree 對 noise 較不敏感。"
+    prompt: "提高 minimum node size 可以讓 tree 對 unusually large claims 較不敏感。"
   },
   {
     id: "cp-pruning",
@@ -726,7 +726,7 @@ window.englishLessons = [
     sentence: "Pruning removes splits that add little predictive value, which can improve generalization.",
     template: "___ removes ___ that add little ___, which can improve ___.",
     analysis: ["removes splits 是 pruning 功能。", "that add little predictive value 說明移除條件。", "which can improve generalization 補充結果。"],
-    prompt: "Pruning 會移除幾乎沒有增加 predictive value 的 splits，這可能改善 generalization。"
+    prompt: "Pruning 會移除幾乎沒有增加 validation lift 的 splits，這可能改善 generalization。"
   },
   {
     id: "linear-assumption",
@@ -735,7 +735,7 @@ window.englishLessons = [
     sentence: "A linear model assumes a constant marginal effect, which may not fit this relationship.",
     template: "A ___ assumes ___, which may not fit ___.",
     analysis: ["assumes a constant marginal effect 是線性假設。", "which may not fit 補限制。", "this relationship 指資料中的實際型態。"],
-    prompt: "Linear model 假設 constant marginal effect，而這可能不符合此 relationship。"
+    prompt: "Linear model 假設 mileage 的 marginal effect 固定，而這可能不符合 observed loss pattern。"
   },
   {
     id: "interaction-detection",
@@ -744,7 +744,7 @@ window.englishLessons = [
     sentence: "An interaction should be considered if the effect of one predictor changes across levels of another predictor.",
     template: "An ___ should be considered if ___ changes across levels of ___.",
     analysis: ["should be considered 是建模建議。", "if 後面接判斷條件。", "changes across levels 是 interaction 的核心。"],
-    prompt: "如果 one predictor 的 effect 會隨 another predictor 的 levels 改變，應考慮 interaction。"
+    prompt: "如果 tenure 的 effect 會隨 product type 改變，應考慮 interaction。"
   },
   {
     id: "extrapolation",
@@ -753,7 +753,7 @@ window.englishLessons = [
     sentence: "Predictions outside the range of the training data should be interpreted cautiously.",
     template: "Predictions outside ___ should be interpreted ___.",
     analysis: ["Predictions outside the range 是風險來源。", "should be interpreted cautiously 是正式警語。", "適合限制段落。"],
-    prompt: "Training data 範圍外的 predictions 應謹慎解釋。"
+    prompt: "Very high policy limits 的 predictions 應謹慎解釋，若這些 limits 在 training data 中很少見。"
   },
   {
     id: "confidence-interval",
@@ -762,7 +762,7 @@ window.englishLessons = [
     sentence: "A wider confidence interval indicates greater uncertainty around the estimated effect.",
     template: "A wider ___ indicates greater uncertainty around ___.",
     analysis: ["A wider confidence interval 當主詞。", "indicates greater uncertainty 是解讀。", "estimated effect 是不確定性的對象。"],
-    prompt: "較寬的 confidence interval 表示 estimated effect 有較高 uncertainty。"
+    prompt: "較寬的 confidence interval 表示 discount 的 estimated impact 有較高 uncertainty。"
   },
   {
     id: "prediction-interval",
@@ -771,7 +771,7 @@ window.englishLessons = [
     sentence: "A prediction interval is wider than a confidence interval because it includes individual outcome variability.",
     template: "A ___ is wider than ___ because it includes ___.",
     analysis: ["is wider than 做比較。", "because 說明原因。", "individual outcome variability 是 prediction interval 的額外不確定性。"],
-    prompt: "Prediction interval 比 confidence interval 寬，因為它包含 individual outcome variability。"
+    prompt: "Next month's claim count 的 prediction interval 比 average count 的 confidence interval 寬。"
   },
   {
     id: "holdout-performance",
@@ -780,7 +780,7 @@ window.englishLessons = [
     sentence: "Holdout performance provides a more objective estimate of how the model may perform on new data.",
     template: "___ provides a more objective estimate of how ___ may perform on ___.",
     analysis: ["provides a more objective estimate 是驗證語言。", "how the model may perform 是間接問句。", "new data 指泛化情境。"],
-    prompt: "Holdout performance 提供 model 在 new data 上表現的較客觀估計。"
+    prompt: "Holdout performance 提供 churn model 在 future customers 上表現的較客觀估計。"
   },
   {
     id: "unseen-levels",
@@ -789,7 +789,7 @@ window.englishLessons = [
     sentence: "New factor levels in the scoring data must be handled before the model is deployed.",
     template: "New ___ in ___ must be handled before ___ is deployed.",
     analysis: ["must be handled 是必要條件。", "before the model is deployed 設定時點。", "new factor levels 是部署常見問題。"],
-    prompt: "Scoring data 中新的 factor levels 必須在 model deployed 前處理。"
+    prompt: "Scoring data 中新的 product codes 必須在 model deployed 前處理。"
   },
   {
     id: "imbalanced-resampling",
@@ -798,7 +798,7 @@ window.englishLessons = [
     sentence: "Resampling can help address class imbalance, but it should be applied only within the training data.",
     template: "___ can help address ___, but it should be applied only within ___.",
     analysis: ["can help address 表示方法用途。", "but 補資料洩漏限制。", "only within the training data 是關鍵規則。"],
-    prompt: "Resampling 可以協助處理 class imbalance，但只應用在 training data 內。"
+    prompt: "Oversampling 可以協助處理 rare fraud cases，但只應用在 training data 內。"
   },
   {
     id: "sampling-bias",
@@ -807,7 +807,7 @@ window.englishLessons = [
     sentence: "Sampling bias may occur if the training data do not represent the population where the model will be used.",
     template: "___ may occur if ___ do not represent ___.",
     analysis: ["may occur if 是風險條件句。", "training data do not represent 說明偏誤來源。", "population where the model will be used 接部署情境。"],
-    prompt: "如果 training data 無法代表 model 使用的 population，可能會產生 sampling bias。"
+    prompt: "如果 quote data 無法代表 actually written policies，可能會產生 sampling bias。"
   },
   {
     id: "documentation",
@@ -816,7 +816,7 @@ window.englishLessons = [
     sentence: "The final report should document the modeling choices so that the analysis can be reviewed.",
     template: "The final report should document ___ so that ___ can be reviewed.",
     analysis: ["should document 是報告建議。", "modeling choices 是可審查對象。", "so that 表目的。"],
-    prompt: "Final report 應記錄 modeling choices，使 analysis 可以被 reviewed。"
+    prompt: "Final report 應記錄 feature engineering choices，使 pricing analysis 可以被 reviewed。"
   },
   {
     id: "reproducibility",
@@ -825,7 +825,7 @@ window.englishLessons = [
     sentence: "Setting a random seed helps make the modeling results reproducible.",
     template: "Setting ___ helps make ___ reproducible.",
     analysis: ["Setting 是 Ving 當主詞。", "helps make A B 表示使某事達到狀態。", "reproducible 是考試報告常見品質要求。"],
-    prompt: "設定 random seed 有助於讓 modeling results 可重現。"
+    prompt: "保存 train-test split 有助於讓 model comparison 可重現。"
   },
   {
     id: "executive-recommendation",
@@ -834,7 +834,7 @@ window.englishLessons = [
     sentence: "The recommendation should focus on the business decision, not only the statistical metric.",
     template: "The recommendation should focus on ___, not only ___.",
     analysis: ["should focus on 是報告建議。", "business decision 是高層讀者關心點。", "not only 補充避免過度技術化。"],
-    prompt: "Recommendation 應聚焦 business decision，而不只是 statistical metric。"
+    prompt: "Recommendation 應聚焦 staffing decision，而不只是 model's AUC。"
   },
   {
     id: "limitations-section",
@@ -843,7 +843,7 @@ window.englishLessons = [
     sentence: "The limitations section should explain where the model may be unreliable.",
     template: "The ___ section should explain where ___ may be ___.",
     analysis: ["should explain where 接間接問句。", "may be unreliable 保留語氣。", "limitations section 是報告標準段落。"],
-    prompt: "Limitations section 應說明 model 在哪些地方可能 unreliable。"
+    prompt: "Limitations section 應說明 forecast 在 unusual claim periods 可能 unreliable。"
   },
   {
     id: "next-steps",
@@ -852,7 +852,7 @@ window.englishLessons = [
     sentence: "The next step is to validate the model with additional data before using it in production.",
     template: "The next step is to ___ before ___.",
     analysis: ["The next step is to 是行動建議開頭。", "validate the model with additional data 是具體動作。", "before using it in production 設定時點。"],
-    prompt: "Next step 是在 production 使用前，用 additional data 驗證 model。"
+    prompt: "Next step 是在 production 使用前，用 next quarter of data 驗證 model。"
   },
   {
     id: "data-quality",
@@ -861,7 +861,7 @@ window.englishLessons = [
     sentence: "Poor data quality can limit model usefulness even if the algorithm is sophisticated.",
     template: "Poor ___ can limit ___ even if ___ is sophisticated.",
     analysis: ["Poor data quality 是風險來源。", "can limit model usefulness 說明影響。", "even if 承認演算法優點但回到限制。"],
-    prompt: "即使 algorithm 很 sophisticated，poor data quality 仍會限制 model usefulness。"
+    prompt: "即使 algorithm 很 sophisticated，incomplete claim coding 仍會限制 model usefulness。"
   },
   {
     id: "ethical-bias",
@@ -870,7 +870,7 @@ window.englishLessons = [
     sentence: "The model should be checked for potential bias before it is used to support decisions.",
     template: "The model should be checked for ___ before it is used to ___.",
     analysis: ["should be checked for 是治理檢查。", "potential bias 是風險。", "before it is used to support decisions 設定使用前提。"],
-    prompt: "Model 在用於 support decisions 前，應檢查 potential bias。"
+    prompt: "Model 在用於 support underwriting decisions 前，應檢查 potential geographic bias。"
   },
   {
     id: "monitoring",
@@ -879,7 +879,7 @@ window.englishLessons = [
     sentence: "Model performance should be monitored after deployment to detect deterioration over time.",
     template: "___ should be monitored after ___ to detect ___.",
     analysis: ["should be monitored 是部署後建議。", "after deployment 設定時點。", "deterioration over time 是模型衰退。"],
-    prompt: "Model performance 應在 deployment 後監控，以偵測 deterioration over time。"
+    prompt: "Conversion model performance 應在 deployment 後監控，以偵測 deterioration over time。"
   },
   {
     id: "retraining",
@@ -888,7 +888,7 @@ window.englishLessons = [
     sentence: "The model may need to be retrained if the underlying claim patterns change.",
     template: "The model may need to be ___ if ___ change.",
     analysis: ["may need to be retrained 是部署維護語氣。", "if 接觸發條件。", "underlying claim patterns 指資料生成機制。"],
-    prompt: "如果 underlying claim patterns 改變，model 可能需要 retrained。"
+    prompt: "如果 customer behavior 在 new pricing strategy 後改變，model 可能需要 retrained。"
   },
   {
     id: "final-caveat",
@@ -897,6 +897,6 @@ window.englishLessons = [
     sentence: "The model should support business judgment rather than replace it.",
     template: "The model should ___ rather than ___.",
     analysis: ["should support business judgment 是結論定位。", "rather than replace it 對比錯誤使用方式。", "適合 executive summary 結尾。"],
-    prompt: "Model 應 support business judgment，而不是 replace it。"
+    prompt: "Model 應 guide underwriter's review，而不是 make the final underwriting decision。"
   }
 ];

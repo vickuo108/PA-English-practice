@@ -190,6 +190,13 @@ textarea:focus {
   flex-wrap: wrap;
 }
 
+.ai-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .answer-reveal {
   margin-top: 14px;
   padding-top: 14px;

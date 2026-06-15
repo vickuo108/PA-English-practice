@@ -64,56 +64,56 @@ const practiceAnswers = {
   "cutoff-business": "The optimal staffing threshold should reflect the relative costs of understaffing and overstaffing.",
   "confusion-matrix": "The lift chart shows how the actual response rate changes within high-score groups.",
   "sensitivity-meaning": "Specificity measures the model's ability to identify truly negative cases.",
-  "glm-offset": "An offset should be included because policyholders may have different exposure periods.",
-  "exposure": "Claim frequency should be adjusted for exposure so that policies with different durations can be compared fairly.",
-  "poisson-mean": "In a Poisson model, the expected claim count is modeled as a function of the predictors.",
-  "deviance": "A lower deviance suggests a better fit, but it should be evaluated together with validation performance.",
-  "residual-outliers": "Large residuals may indicate observations that the model does not explain well.",
-  "influential-observations": "Influential observations should be reviewed because they may have a large effect on the fitted model.",
-  "correlation": "A strong correlation between predictors may make the model less stable and harder to interpret.",
-  "eda-skewness": "The distribution of claim size is right-skewed, so a transformation may be appropriate.",
-  "log-transform": "A log transformation can reduce skewness and make the relationship easier to model.",
-  "train-validation-test": "The validation set should be used to tune the model, while the test set should be saved for final evaluation.",
-  "stratified-split": "A stratified split helps preserve the response rate in each data partition.",
-  "missing-indicator": "Adding a missingness indicator may be useful if missing values contain predictive information.",
-  "one-hot": "One-hot encoding represents each category with a separate indicator variable.",
-  "high-cardinality": "High-cardinality variables may increase model complexity and create unstable estimates.",
-  "target-leakage-date": "Variables created after the prediction date should be excluded to avoid target leakage.",
-  "class-weight": "Class weights can help the model pay more attention to the minority class.",
-  "precision": "Precision measures the proportion of predicted positive cases that are actually positive.",
-  "lift-gains": "A lift chart can show whether the model ranks high-risk cases near the top.",
-  "roc-curve": "The ROC curve summarizes the trade-off between sensitivity and specificity across thresholds.",
-  "threshold-recommendation": "The recommended threshold should reflect the business cost of each type of error.",
-  "profit-matrix": "A profit matrix can translate model predictions into expected business value.",
-  "partial-dependence": "A partial dependence plot shows the average predicted effect of a predictor after averaging over other variables.",
-  "ice-plot": "An ICE plot can reveal whether the effect of a predictor differs across individual observations.",
-  "variable-importance-limit": "Variable importance ranks predictors, but it does not show the direction of the effect.",
-  "permutation-importance": "Permutation importance measures how much model performance decreases when a predictor is randomly shuffled.",
-  "model-stability": "Model stability should be checked because a model that performs well on one split may not generalize.",
-  "ensemble-benefit": "An ensemble can improve predictive performance by combining multiple weaker models.",
-  "gbm-learning-rate": "A smaller learning rate usually requires more trees but may improve generalization.",
-  "max-depth": "Limiting tree depth can reduce overfitting by restricting model complexity.",
-  "min-node-size": "Increasing the minimum node size can make the tree less sensitive to noise.",
-  "cp-pruning": "Pruning removes splits that add little predictive value, which can improve generalization.",
-  "linear-assumption": "A linear model assumes a constant marginal effect, which may not fit this relationship.",
-  "interaction-detection": "An interaction should be considered if the effect of one predictor changes across levels of another predictor.",
-  "extrapolation": "Predictions outside the range of the training data should be interpreted cautiously.",
-  "confidence-interval": "A wider confidence interval indicates greater uncertainty around the estimated effect.",
-  "prediction-interval": "A prediction interval is wider than a confidence interval because it includes individual outcome variability.",
-  "holdout-performance": "Holdout performance provides a more objective estimate of how the model may perform on new data.",
-  "unseen-levels": "New factor levels in the scoring data must be handled before the model is deployed.",
-  "imbalanced-resampling": "Resampling can help address class imbalance, but it should be applied only within the training data.",
-  "sampling-bias": "Sampling bias may occur if the training data do not represent the population where the model will be used.",
-  "documentation": "The final report should document the modeling choices so that the analysis can be reviewed.",
-  "reproducibility": "Setting a random seed helps make the modeling results reproducible.",
-  "executive-recommendation": "The recommendation should focus on the business decision, not only the statistical metric.",
-  "limitations-section": "The limitations section should explain where the model may be unreliable.",
-  "next-steps": "The next step is to validate the model with additional data before using it in production.",
-  "data-quality": "Poor data quality can limit model usefulness even if the algorithm is sophisticated.",
-  "ethical-bias": "The model should be checked for potential bias before it is used to support decisions.",
-  "monitoring": "Model performance should be monitored after deployment to detect deterioration over time.",
-  "retraining": "The model may need to be retrained if the underlying claim patterns change.",
-  "final-caveat": "The model should support business judgment rather than replace it."
+  "glm-offset": "In a claim frequency model, an exposure offset should be included because policies may have different numbers of active months.",
+  "exposure": "Accident counts should be adjusted for vehicle-years so that policies with different exposure levels can be compared fairly.",
+  "poisson-mean": "In a Poisson regression, the expected number of service calls is modeled as a function of customer characteristics.",
+  "deviance": "A lower training deviance suggests a better fit, but it should not override poor test performance.",
+  "residual-outliers": "Large residuals may indicate customer segments that the current predictors do not explain well.",
+  "influential-observations": "Influential observations should be reviewed before deployment because they may change the selected pricing factors.",
+  "correlation": "A strong correlation between age and driving experience may make the coefficient estimates less stable.",
+  "eda-skewness": "The distribution of annual losses is right-skewed, so a log transformation may be appropriate.",
+  "log-transform": "A square-root transformation can reduce skewness and make the claim count relationship easier to model.",
+  "train-validation-test": "The validation set should be used to choose the cutoff, while the test set should be saved for final performance reporting.",
+  "stratified-split": "A stratified split helps preserve the fraud rate in each data partition.",
+  "missing-indicator": "Adding a missingness indicator may be useful if missing income values are related to purchase behavior.",
+  "one-hot": "One-hot encoding represents each region with a separate indicator variable.",
+  "high-cardinality": "High-cardinality ZIP code variables may increase model complexity and create unstable territorial effects.",
+  "target-leakage-date": "Variables updated after the claim is closed should be excluded to avoid target leakage.",
+  "class-weight": "Class weights can help the model pay more attention to rare fraud cases.",
+  "precision": "Precision measures the proportion of flagged claims that are actually suspicious.",
+  "lift-gains": "A lift chart can show whether the model places likely responders in the highest-score groups.",
+  "roc-curve": "The ROC curve summarizes the trade-off between true positive rate and false positive rate across thresholds.",
+  "threshold-recommendation": "The recommended fraud threshold should reflect the investigation cost of each type of error.",
+  "profit-matrix": "A profit matrix can translate retention predictions into expected financial value.",
+  "partial-dependence": "A partial dependence plot shows the average predicted effect of credit score after averaging over other variables.",
+  "ice-plot": "An ICE plot can reveal whether the age effect differs across individual policyholders.",
+  "variable-importance-limit": "Variable importance ranks rating factors, but it does not show whether each factor increases or decreases risk.",
+  "permutation-importance": "Permutation importance measures how much validation AUC decreases when prior claims are randomly shuffled.",
+  "model-stability": "Model stability should be checked because a model that works well in one accident year may not generalize.",
+  "ensemble-benefit": "An ensemble can improve demand forecasts by combining several weaker prediction models.",
+  "gbm-learning-rate": "A smaller learning rate usually requires more boosting iterations but may reduce overfitting.",
+  "max-depth": "Limiting tree depth can reduce overfitting by preventing very specific customer segments.",
+  "min-node-size": "Increasing the minimum node size can make the tree less sensitive to unusually large claims.",
+  "cp-pruning": "Pruning removes splits that add little validation lift, which can improve generalization.",
+  "linear-assumption": "A linear model assumes a constant marginal effect of mileage, which may not fit the observed loss pattern.",
+  "interaction-detection": "An interaction should be considered if the effect of tenure changes across product types.",
+  "extrapolation": "Predictions for very high policy limits should be interpreted cautiously if those limits are rare in the training data.",
+  "confidence-interval": "A wider confidence interval indicates greater uncertainty around the estimated impact of the discount.",
+  "prediction-interval": "A prediction interval for next month's claim count is wider than a confidence interval for the average count.",
+  "holdout-performance": "Holdout performance provides a more objective estimate of how the churn model may perform on future customers.",
+  "unseen-levels": "New product codes in the scoring data must be handled before the model is deployed.",
+  "imbalanced-resampling": "Oversampling can help address rare fraud cases, but it should be applied only within the training data.",
+  "sampling-bias": "Sampling bias may occur if the quote data do not represent the policies that will actually be written.",
+  "documentation": "The final report should document the feature engineering choices so that the pricing analysis can be reviewed.",
+  "reproducibility": "Saving the train-test split helps make the model comparison reproducible.",
+  "executive-recommendation": "The recommendation should focus on the staffing decision, not only the model's AUC.",
+  "limitations-section": "The limitations section should explain where the forecast may be unreliable during unusual claim periods.",
+  "next-steps": "The next step is to validate the model with the next quarter of data before using it in production.",
+  "data-quality": "Incomplete claim coding can limit model usefulness even if the algorithm is sophisticated.",
+  "ethical-bias": "The model should be checked for potential geographic bias before it is used to support underwriting decisions.",
+  "monitoring": "Conversion model performance should be monitored after deployment to detect deterioration over time.",
+  "retraining": "The model may need to be retrained if customer behavior changes after a new pricing strategy.",
+  "final-caveat": "The model should guide the underwriter's review rather than make the final underwriting decision."
 };
 
 function dateKey(date = new Date()) {
@@ -298,6 +298,35 @@ function relatedGrammarNotes(lesson) {
   return notes.slice(0, 4);
 }
 
+function buildAiPrompt(lesson, userAnswer) {
+  return [
+    "你是 SOA Exam PA 英文寫作教練。請用繁體中文回饋我的英文。",
+    "",
+    "請做 4 件事：",
+    "1. 判斷我的句子是否符合題意。",
+    "2. 用五大句型分析我的主幹，指出真正有時態的動詞。",
+    "3. 依 Ch2-Ch8 的重點提醒我哪裡可修正。",
+    "4. 給我一版更自然、適合 Exam PA 的英文答案。",
+    "",
+    `中文題目：${lesson.chinese}`,
+    `我的英文：${userAnswer}`,
+    `參考答案：${lesson.sentence}`,
+    `句型模板：${lesson.template}`,
+    `換你練題目：${lesson.prompt}`,
+    `換你練參考解答：${practiceAnswers[lesson.id] || "尚未建立"}`
+  ].join("\n");
+}
+
+async function copyAiPrompt(prompt) {
+  if (!navigator.clipboard) return false;
+  try {
+    await navigator.clipboard.writeText(prompt);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function renderSenseAnalysis(lesson) {
   const sections = [
     {
@@ -314,13 +343,6 @@ function renderSenseAnalysis(lesson) {
         `句型模板：${lesson.template}`,
         grammarRole(lesson),
         lesson.analysis.join(" ")
-      ]
-    },
-    {
-      title: "寫作提醒",
-      body: [
-        englishTrap(lesson),
-        "原則：先用五大句型抓骨架，再用名詞子句、形容詞子句、副詞子句加資訊；必要時再用 to V、Ving 或 Vp.p. 壓縮句子。"
       ]
     }
   ];
@@ -366,7 +388,9 @@ function renderEnglishCards() {
           <textarea id="english-${escapeHtml(lesson.id)}" data-role="english-answer" spellcheck="true" placeholder="先自己寫一次，不用完美。">${escapeHtml(savedAnswer)}</textarea>
           <div class="button-row">
             <button data-action="show-answer" type="button">顯示參考答案與句型解析</button>
+            <button class="secondary" data-action="ask-ai" type="button">問 AI 修改我的英文</button>
           </div>
+          <p class="ai-note hidden" data-role="ai-note"></p>
           <section class="answer-reveal hidden" data-role="answer-reveal">
             <h3>參考答案</h3>
             <p class="model-sentence">${escapeHtml(lesson.sentence)}</p>
@@ -408,13 +432,31 @@ els.englishCards.addEventListener("input", (event) => {
   localStorage.setItem(englishAnswerKey(card.dataset.id), event.target.value);
 });
 
-els.englishCards.addEventListener("click", (event) => {
+els.englishCards.addEventListener("click", async (event) => {
   const button = event.target.closest("button[data-action]");
   if (!button) return;
   const card = button.closest(".english-card");
 
   if (button.dataset.action === "show-answer") {
     card.querySelector("[data-role='answer-reveal']").classList.remove("hidden");
+    return;
+  }
+
+  if (button.dataset.action === "ask-ai") {
+    const lesson = englishLessons.find((item) => item.id === card.dataset.id);
+    const userAnswer = card.querySelector("[data-role='english-answer']").value.trim();
+    const note = card.querySelector("[data-role='ai-note']");
+    if (!userAnswer) {
+      note.textContent = "先寫一版英文，再問 AI 修改。";
+      note.classList.remove("hidden");
+      return;
+    }
+    const prompt = buildAiPrompt(lesson, userAnswer);
+    const copied = await copyAiPrompt(prompt);
+    const url = `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`;
+    window.open(url, "_blank", "noopener");
+    note.textContent = copied ? "已複製提問並開啟 ChatGPT。" : "已開啟 ChatGPT；若沒有帶入內容，請手動貼上這題資訊。";
+    note.classList.remove("hidden");
     return;
   }
 

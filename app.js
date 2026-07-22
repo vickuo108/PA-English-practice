@@ -13,108 +13,6 @@ const els = {
 const englishLessons = window.englishLessons || [];
 const DAILY_LESSON_COUNT = 3;
 
-const practiceAnswers = {
-  "recommend-model-2": "I recommend using a random forest because it has a lower validation RMSE and can capture nonlinear relationships.",
-  "although-tradeoff": "Although lasso uses fewer variables, it may be less suitable as the final model because it has a lower test AUC.",
-  "appears-overfit": "The model appears to be more stable because its performance on the training data and test data is similar.",
-  "holding-constant": "Holding other variables constant, an increase in age is associated with a higher predicted claim amount.",
-  "not-appropriate": "A linear model is not appropriate for this problem because the relationship may be nonlinear and there may be important interactions.",
-  "chart-indicates": "The chart indicates that Month and Prior Claims are the two most important variables in this model.",
-  "however-risk": "However, increasing the cutoff also reduces sensitivity, which means more high-risk customers may be missed.",
-  "further-analysis": "Before deploying this model, further analysis should be performed to assess its performance across different years.",
-  "data-cleaning": "Removing high-income customers may introduce bias because income may be related to the purchase probability.",
-  "residual-plot": "The Q-Q plot shows that the right tail of the residuals is heavier than the normal distribution.",
-  "simple-model": "The smaller model is preferred because it has a similar AUC and is easier to deploy.",
-  "limitation-pdp": "One limitation of this model is that it may not be easy to explain to nontechnical clients.",
-  "executive-summary": "In summary, the model can help the company forecast demand, but the predictions should be considered together with operational constraints.",
-  "interaction": "Adding an interaction term between Month and Region allows the model to reflect that the seasonal effect differs across regions.",
-  "threshold": "Raising the threshold decreases positive predictions, so it typically decreases sensitivity but increases specificity.",
-  "missing-values": "The proportion of outliers is low, so removing these data points is unlikely to materially affect the model results.",
-  "nonlinear": "The relationship does not appear to be monotonic, so treating DayOfWeek as a categorical variable may be more appropriate than treating it as a numeric variable.",
-  "business-context": "From a business perspective, understaffing is more costly than temporary overstaffing.",
-  "standardize": "Continuous variables should be transformed because a linear model may be affected by highly skewed distributions.",
-  "not-enough": "Training accuracy alone is not sufficient to support selecting the model because it does not show how the model performs on the test data.",
-  "auc-comparison": "Model B has a lower test RMSE, indicating that it performs better at predicting claim amount.",
-  "rmse-interpretation": "A higher accuracy indicates that the model has a higher overall proportion of correct classifications.",
-  "calibration": "If the model is stable, the error on the validation data should be close to the error on the test data.",
-  "class-imbalance": "Because positive cases are rare, accuracy may hide the model's limited ability to detect positive cases.",
-  "data-leakage": "This field should be excluded because it may contain information that would only be known after the claim is closed.",
-  "train-test-split": "The validation data should be used for model selection to avoid making decisions based only on the training data.",
-  "cross-validation": "Repeated sampling can reduce the dependence of the model evaluation on a single sample draw.",
-  "feature-engineering": "Creating a loss ratio variable may be useful because it more directly reflects policy risk.",
-  "categorical-encoding": "Date variables need to be transformed properly so that the model can capture seasonality.",
-  "factor-vs-numeric": "Treating ZIP code as a categorical variable avoids forcing the model to assume that ZIP codes have a numeric order.",
-  "multicollinearity": "Highly correlated variables may make variable importance unstable and difficult to interpret.",
-  "outlier-impact": "Unusually high claim amounts may have a large impact on RMSE, so they should be investigated further.",
-  "imputation-choice": "Using a trimmed mean is more robust than using the mean because it is less affected by extreme losses.",
-  "interpretability-performance": "A deeper tree may improve training performance, but it can reduce model stability.",
-  "business-recommendation": "Based on test AUC and deployment cost, I recommend using logistic regression.",
-  "executive-audience": "For management, this result should be explained in terms of operational impact rather than only reporting the p-value.",
-  "confidence-limitation": "This forecast is subject to uncertainty, so it should not be treated as a guaranteed result.",
-  "p-value": "A larger p-value indicates that the observed result would not be unusual if the null hypothesis were true.",
-  "coefficient-sign": "A negative coefficient means that, all else equal, higher values of this variable correspond to lower predicted values.",
-  "logistic-odds": "In Poisson regression, the coefficient represents a change in the log mean rather than a direct change in the mean.",
-  "tree-split": "A classification tree splits the data sequentially to create subgroups with more similar responses.",
-  "random-forest-variance": "Bagging reduces variance by averaging the predictions from multiple models.",
-  "boosting-bias": "Gradient boosting builds trees sequentially so that later trees correct the errors of earlier models.",
-  "regularization": "Lasso penalizes the absolute values of coefficients to perform variable selection.",
-  "lasso-selection": "Ridge can shrink coefficients, so it can be used to reduce model variance.",
-  "lambda-effect": "A smaller lambda decreases the strength of the penalty, causing the model to be closer to an unregularized model.",
-  "hyperparameter-tuning": "The cutoff threshold should be selected using validation data rather than the test data.",
-  "cutoff-business": "The optimal staffing threshold should reflect the relative costs of understaffing and overstaffing.",
-  "confusion-matrix": "The lift chart shows how the actual response rate changes within high-score groups.",
-  "sensitivity-meaning": "Specificity measures the model's ability to identify truly negative cases.",
-  "glm-offset": "In a claim frequency model, an exposure offset should be included because policies may have different numbers of active months.",
-  "exposure": "Accident counts should be adjusted for vehicle-years so that policies with different exposure levels can be compared fairly.",
-  "poisson-mean": "In a Poisson regression, the expected number of service calls is modeled as a function of customer characteristics.",
-  "deviance": "A lower training deviance suggests a better fit, but it should not override poor test performance.",
-  "residual-outliers": "Large residuals may indicate customer segments that the current predictors do not explain well.",
-  "influential-observations": "Influential observations should be reviewed before deployment because they may change the selected pricing factors.",
-  "correlation": "A strong correlation between age and driving experience may make the coefficient estimates less stable.",
-  "eda-skewness": "The distribution of annual losses is right-skewed, so a log transformation may be appropriate.",
-  "log-transform": "A square-root transformation can reduce skewness and make the claim count relationship easier to model.",
-  "train-validation-test": "The validation set should be used to choose the cutoff, while the test set should be saved for final performance reporting.",
-  "stratified-split": "A stratified split helps preserve the fraud rate in each data partition.",
-  "missing-indicator": "Adding a missingness indicator may be useful if missing income values are related to purchase behavior.",
-  "one-hot": "One-hot encoding represents each region with a separate indicator variable.",
-  "high-cardinality": "High-cardinality ZIP code variables may increase model complexity and create unstable territorial effects.",
-  "target-leakage-date": "Variables updated after the claim is closed should be excluded to avoid target leakage.",
-  "class-weight": "Class weights can help the model pay more attention to rare fraud cases.",
-  "precision": "Precision measures the proportion of flagged claims that are actually suspicious.",
-  "lift-gains": "A lift chart can show whether the model places likely responders in the highest-score groups.",
-  "roc-curve": "The ROC curve summarizes the trade-off between true positive rate and false positive rate across thresholds.",
-  "threshold-recommendation": "The recommended fraud threshold should reflect the investigation cost of each type of error.",
-  "profit-matrix": "A profit matrix can translate retention predictions into expected financial value.",
-  "partial-dependence": "A partial dependence plot shows the average predicted effect of credit score after averaging over other variables.",
-  "ice-plot": "An ICE plot can reveal whether the age effect differs across individual policyholders.",
-  "variable-importance-limit": "Variable importance ranks rating factors, but it does not show whether each factor increases or decreases risk.",
-  "permutation-importance": "Permutation importance measures how much validation AUC decreases when prior claims are randomly shuffled.",
-  "model-stability": "Model stability should be checked because a model that works well in one accident year may not generalize.",
-  "ensemble-benefit": "An ensemble can improve demand forecasts by combining several weaker prediction models.",
-  "gbm-learning-rate": "A smaller learning rate usually requires more boosting iterations but may reduce overfitting.",
-  "max-depth": "Limiting tree depth can reduce overfitting by preventing very specific customer segments.",
-  "min-node-size": "Increasing the minimum node size can make the tree less sensitive to unusually large claims.",
-  "cp-pruning": "Pruning removes splits that add little validation lift, which can improve generalization.",
-  "linear-assumption": "A linear model assumes a constant marginal effect of mileage, which may not fit the observed loss pattern.",
-  "interaction-detection": "An interaction should be considered if the effect of tenure changes across product types.",
-  "extrapolation": "Predictions for very high policy limits should be interpreted cautiously if those limits are rare in the training data.",
-  "confidence-interval": "A wider confidence interval indicates greater uncertainty around the estimated impact of the discount.",
-  "prediction-interval": "A prediction interval for next month's claim count is wider than a confidence interval for the average count.",
-  "holdout-performance": "Holdout performance provides a more objective estimate of how the churn model may perform on future customers.",
-  "unseen-levels": "New product codes in the scoring data must be handled before the model is deployed.",
-  "imbalanced-resampling": "Oversampling can help address rare fraud cases, but it should be applied only within the training data.",
-  "sampling-bias": "Sampling bias may occur if the quote data do not represent the policies that will actually be written.",
-  "documentation": "The final report should document the feature engineering choices so that the pricing analysis can be reviewed.",
-  "reproducibility": "Saving the train-test split helps make the model comparison reproducible.",
-  "executive-recommendation": "The recommendation should focus on the staffing decision, not only the model's AUC.",
-  "limitations-section": "The limitations section should explain where the forecast may be unreliable during unusual claim periods.",
-  "next-steps": "The next step is to validate the model with the next quarter of data before using it in production.",
-  "data-quality": "Incomplete claim coding can limit model usefulness even if the algorithm is sophisticated.",
-  "ethical-bias": "The model should be checked for potential geographic bias before it is used to support underwriting decisions.",
-  "monitoring": "Conversion model performance should be monitored after deployment to detect deterioration over time.",
-  "retraining": "The model may need to be retrained if customer behavior changes after a new pricing strategy.",
-  "final-caveat": "The model should guide the underwriter's review rather than make the final underwriting decision."
-};
 
 function dateKey(date = new Date()) {
   const year = date.getFullYear();
@@ -298,64 +196,97 @@ function relatedGrammarNotes(lesson) {
   return notes.slice(0, 4);
 }
 
-function keywords(text) {
-  const stopWords = new Set([
-    "the", "a", "an", "and", "or", "but", "so", "that", "this", "it", "its", "is", "are", "was", "were",
-    "be", "been", "being", "to", "of", "for", "in", "on", "with", "by", "as", "at", "from", "than",
-    "should", "can", "may", "will", "would", "because", "rather"
-  ]);
-  return [...new Set(String(text).toLowerCase().match(/[a-z][a-z-']{2,}/g) || [])]
-    .filter((word) => !stopWords.has(word));
+async function copyUserAnswer(text) {
+  if (!navigator.clipboard) return false;
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
-function renderFeedbackList(items) {
-  return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
-}
-
-function renderAiFeedback(lesson, userAnswer) {
-  const normalizedAnswer = userAnswer.trim();
-  const answerWords = keywords(normalizedAnswer);
-  const referenceWords = keywords(lesson.sentence);
-  const matched = referenceWords.filter((word) => answerWords.includes(word));
-  const missing = referenceWords.filter((word) => !answerWords.includes(word)).slice(0, 5);
-  const hasFiniteVerb = /\b(am|is|are|was|were|be|been|being|do|does|did|have|has|had|can|could|may|might|must|should|would|will|recommend|indicate|suggest|show|shows|reduce|reduces|increase|increases|decrease|decreases|support|supports|help|helps|measure|measures|rank|ranks|reflect|reflects|provide|provides|improve|improves|allow|allows|represent|represents|translate|translates|assume|assumes)\b/i.test(normalizedAnswer);
-  const startsCapitalized = /^[A-Z]/.test(normalizedAnswer);
-  const endsCleanly = /[.!?]$/.test(normalizedAnswer);
-
-  const score = Math.min(100, Math.round(
-    35 +
-    Math.min(matched.length, 6) * 7 +
-    (hasFiniteVerb ? 12 : 0) +
-    (startsCapitalized ? 5 : 0) +
-    (endsCleanly ? 6 : 0)
-  ));
-
-  const feedback = [
-    matched.length >= 3
-      ? `你有抓到核心詞：${matched.slice(0, 5).join(", ")}。`
-      : "目前和參考答案的核心詞重疊較少，建議先抓模型、指標、商業含義三個關鍵點。",
-    hasFiniteVerb
-      ? "句子看起來有主要動詞；下一步是確認主詞和動詞是否搭配。"
-      : "我沒有明確看到主要有時態的動詞。先補出 S + V 的主幹，再加理由或限制。",
-    startsCapitalized ? "開頭大小寫 OK。" : "英文句子開頭建議大寫。",
-    endsCleanly ? "句尾標點 OK。" : "建議句尾加句點，讓答案像完整正式句。"
-  ];
-
-  const suggestions = [
-    missing.length ? `可補進這些概念：${missing.join(", ")}。` : "核心概念已相當接近參考答案。",
-    `五大句型提醒：${patternAnalysis(lesson)[1].replace("五大句型關係：", "")}`,
-    `本題可參考句型：${lesson.template}`,
-    `更穩的寫法：${lesson.sentence}`
-  ];
-
+function renderCopyStatus(message) {
   return `
-    <section class="ai-feedback" data-role="ai-feedback">
-      <h3>頁面內 AI 回饋</h3>
-      <p class="ai-score">完成度 ${score}%</p>
-      <h4>目前觀察</h4>
-      ${renderFeedbackList(feedback)}
-      <h4>修改方向</h4>
-      ${renderFeedbackList(suggestions)}
+    <section class="copy-status" data-role="copy-status">
+      <p>${escapeHtml(message)}</p>
+    </section>
+  `;
+}
+
+function localAiAnswer(lesson, userAnswer, question) {
+  const analysis = patternAnalysis(lesson);
+  const notes = relatedGrammarNotes(lesson);
+
+  if (/句型|主詞|動詞|五大|pattern|structure/i.test(question)) {
+    return [
+      analysis.join("\n"),
+      `你的英文：${userAnswer}`,
+      "先確認只有一個真正有時態的主要動詞，再看後面接的是受詞、補語，還是副詞性補充。"
+    ].join("\n\n");
+  }
+
+  if (/改|修|自然|rewrite|better|怎麼寫|答案/i.test(question)) {
+    return [
+      `較穩的寫法：${lesson.sentence}`,
+      "修改方向：先保留清楚主幹，再補上 PA 題目要看的理由、限制或商業意義。"
+    ].join("\n\n");
+  }
+
+  if (/文法|錯|對|grammar|check/i.test(question)) {
+    return [
+      `我會先用這個骨架看：${analysis[1].replace("五大句型關係：", "")}`,
+      notes.join("\n")
+    ].join("\n\n");
+  }
+
+  return [
+    `針對你寫的英文：${userAnswer}`,
+    `這題比較穩的方向是：${lesson.sentence}`,
+    analysis[1].replace("五大句型關係：", "")
+  ].join("\n\n");
+}
+
+async function askInPageAi(lesson, userAnswer, question) {
+  try {
+    const response = await fetch("/api/ask-ai", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        lesson: {
+          id: lesson.id,
+          chinese: lesson.chinese,
+          sentence: lesson.sentence,
+          template: lesson.template,
+          analysis: lesson.analysis
+        },
+        userAnswer,
+        question
+      })
+    });
+    if (!response.ok) throw new Error("AI endpoint unavailable");
+    const data = await response.json();
+    if (data && data.answer) return data.answer;
+    throw new Error("AI response missing answer");
+  } catch {
+    return localAiAnswer(lesson, userAnswer, question);
+  }
+}
+
+function renderAskPanel(copyMessage, answer = "") {
+  return `
+    <section class="copy-status ask-panel" data-role="copy-status">
+      <p>${escapeHtml(copyMessage)}</p>
+      <form class="ai-question-form" data-role="ai-question-form">
+        <textarea data-role="ai-question" rows="2" placeholder="直接輸入你想問的問題"></textarea>
+        <button type="submit">送出問題</button>
+      </form>
+      ${answer ? `
+        <div class="ai-answer" data-role="ai-answer">
+          <strong>AI 回答</strong>
+          <p>${escapeHtml(answer).replaceAll("\n", "<br>")}</p>
+        </div>
+      ` : ""}
     </section>
   `;
 }
@@ -421,7 +352,7 @@ function renderEnglishCards() {
           <textarea id="english-${escapeHtml(lesson.id)}" data-role="english-answer" spellcheck="true" placeholder="先自己寫一次，不用完美。">${escapeHtml(savedAnswer)}</textarea>
           <div class="button-row">
             <button data-action="show-answer" type="button">顯示參考答案與句型解析</button>
-            <button class="secondary" data-action="ask-ai" type="button">頁面內 AI 回饋</button>
+            <button class="secondary" data-action="ask-ai" type="button">問 AI</button>
           </div>
           <div class="ai-panel hidden" data-role="ai-panel"></div>
           <section class="answer-reveal hidden" data-role="answer-reveal">
@@ -431,10 +362,6 @@ function renderEnglishCards() {
             <p class="sentence-template">${escapeHtml(lesson.template)}</p>
             <h3>句型解析</h3>
             ${renderSenseAnalysis(lesson)}
-            <h3>換你練</h3>
-            <p>${escapeHtml(lesson.prompt)}</p>
-            <h3>換你練參考解答</h3>
-            <p class="practice-answer">${escapeHtml(practiceAnswers[lesson.id] || "這題尚未建立參考解答。")}</p>
           </section>
         </article>
       `;
@@ -465,7 +392,7 @@ els.englishCards.addEventListener("input", (event) => {
   localStorage.setItem(englishAnswerKey(card.dataset.id), event.target.value);
 });
 
-els.englishCards.addEventListener("click", (event) => {
+els.englishCards.addEventListener("click", async (event) => {
   const button = event.target.closest("button[data-action]");
   if (!button) return;
   const card = button.closest(".english-card");
@@ -476,16 +403,22 @@ els.englishCards.addEventListener("click", (event) => {
   }
 
   if (button.dataset.action === "ask-ai") {
-    const lesson = englishLessons.find((item) => item.id === card.dataset.id);
-    const userAnswer = card.querySelector("[data-role='english-answer']").value.trim();
+    const answerInput = card.querySelector("[data-role='english-answer']");
+    const userAnswer = answerInput.value.trim();
     const panel = card.querySelector("[data-role='ai-panel']");
+    panel.classList.remove("hidden");
     if (!userAnswer) {
-      panel.innerHTML = `<section class="ai-feedback"><h3>頁面內 AI 回饋</h3><p>先寫一版英文，我才能幫你檢查主幹、關鍵詞和句型。</p></section>`;
-      panel.classList.remove("hidden");
+      panel.innerHTML = renderCopyStatus("先寫一版英文，再按「問 AI」複製。");
       return;
     }
-    panel.innerHTML = renderAiFeedback(lesson, userAnswer);
-    panel.classList.remove("hidden");
+    const copied = await copyUserAnswer(userAnswer);
+    if (copied) {
+      panel.innerHTML = renderAskPanel("已複製你寫的英文，可以直接在下面問問題。");
+      return;
+    }
+    answerInput.focus();
+    answerInput.select();
+    panel.innerHTML = renderAskPanel("瀏覽器沒有開放自動複製。我已幫你選取英文，也可以直接在下面問問題。");
     return;
   }
 
@@ -499,6 +432,24 @@ els.englishCards.addEventListener("click", (event) => {
     saveFavoriteEnglishIds(favoriteIds);
     renderEnglishCards();
   }
+});
+
+els.englishCards.addEventListener("submit", async (event) => {
+  if (!event.target.matches("[data-role='ai-question-form']")) return;
+  event.preventDefault();
+
+  const form = event.target;
+  const card = form.closest(".english-card");
+  const lesson = englishLessons.find((item) => item.id === card.dataset.id);
+  const userAnswer = card.querySelector("[data-role='english-answer']").value.trim();
+  const questionInput = form.querySelector("[data-role='ai-question']");
+  const question = questionInput.value.trim();
+  if (!question) return;
+
+  const panel = card.querySelector("[data-role='ai-panel']");
+  panel.innerHTML = renderAskPanel("已收到問題，AI 正在回覆...");
+  const answer = await askInPageAi(lesson, userAnswer, question);
+  panel.innerHTML = renderAskPanel("已複製你寫的英文，可以繼續在下面問問題。", answer);
 });
 
 renderEnglishCards();

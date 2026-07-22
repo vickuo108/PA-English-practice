@@ -1304,7 +1304,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Alpha 是介於 0 到 1 之間的混合係數，用來決定 ridge 和 lasso 正則化懲罰的相對權重。",
     "sentence": "Alpha is the mixing coefficient ranging from 0 to 1 and determining the relative weight of the ridge and lasso regularization penalties.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the mixing coefficient ranging from ___ to ___ and determining ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1317,7 +1317,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Variance Inflation Factor（VIF）是完整模型中某個預測變數係數變異數，相對於該變數單獨建模時係數變異數的比率。",
     "sentence": "Variance Inflation Factor (VIF) is the ratio of the variance of a predictor's coefficient in the full model to its variance when fitted in a standalone model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the ratio of ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1330,7 +1330,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Partial dependence plot 讓我們了解特徵與預測結果之間的關係。",
     "sentence": "Partial dependence plots allow us to understand the relationship between features and predicted outcome.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ allow ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1343,7 +1343,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "計算 partial dependence 時，我們會把該變數替換成指定值，對所有觀測值產生預測，然後取平均。",
     "sentence": "To calculate partial dependence, we replace the variable with chosen values, predict outcomes for all observations, and take the average.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "To calculate ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1356,7 +1356,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Studentized residual 是原始殘差除以其估計標準誤的比率，並且會考慮每個資料點的 leverage。",
     "sentence": "A studentized residual is the ratio of the raw residual to its estimated standard error, which accounts for each data point's leverage.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "A studentized residual is the ratio of the raw residual to its ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1369,7 +1369,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "AIC 透過結合 deviance 和模型複雜度懲罰來衡量模型表現。",
     "sentence": "AIC measures model performance by combining deviance with a penalty for model complexity.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ measures ___ by ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1382,7 +1382,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "AIC 定義為 deviance 加上 2 倍參數數量或自由度的懲罰。",
     "sentence": "AIC is defined as the deviance plus a penalty of 2 times the number of parameters/degrees of freedom.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is defined as ___ plus ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1395,7 +1395,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Confusion matrix 是模型預測結果的方便摘要，並提供多種表現指標。",
     "sentence": "The confusion matrix is a convenient summary of the model predictions, providing several performance measures.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is a convenient summary ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1408,7 +1408,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Accuracy 是資料中被正確分類的觀測值比例。",
     "sentence": "Accuracy is the percentage of observations in the data that are correctly classified.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the percentage of ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1421,7 +1421,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Precision 是正類預測中真正正確的比例。",
     "sentence": "The precision is the percentage of positive predictions that are correct.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the percentage of ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1434,7 +1434,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Sensitivity 是正類觀測值中被正確預測的比例。",
     "sentence": "The sensitivity is the percentage of positive observations with correct predictions.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the percentage of ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1447,7 +1447,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Specificity 是負類觀測值中被正確預測的比例。",
     "sentence": "Specificity is the percentage of negative observations with correct predictions.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the percentage of ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1460,7 +1460,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "AUC 是 ROC curve 下方的面積，而 ROC curve 會在所有 0 到 1 的 cutoff 下繪製 sensitivity 對 1 - specificity 的關係。",
     "sentence": "The AUC is the area under the ROC curve, which plots the sensitivity against 1 - specificity across all cutoffs from 0 to 1.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the area under ___, which ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1473,7 +1473,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Outlier 是指 target variable 有異常值的觀測值。",
     "sentence": "Outliers refer to observations with unusual values of the target variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Outliers ___ to ___ with ___ the ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1486,7 +1486,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Unstructured data 包含無法放進表格中的資訊。",
     "sentence": "Unstructured data includes information that does not fit into tables.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ includes ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1499,7 +1499,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "以數值預測變數建立的 decision tree 分割，取決於該變數的排序。",
     "sentence": "The splits of a decision tree based on a numeric predictor depend on their ranks.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ decision ___ a ___ on ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1512,7 +1512,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "當某個預測變數和 target variable 的關係取決於另一個預測變數的值時，兩個預測變數之間就有 interaction。",
     "sentence": "Two predictors have an interaction when the relationship between a predictor and the target variable depends on the value of another predictor.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ depends on ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1525,7 +1525,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "如果變數維持數值型態，tree split 會根據它們的排序來決定。",
     "sentence": "If the variables remain numeric, tree splits are determined based on their ranks.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "If the variables remain numeric, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1538,7 +1538,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Correlation 描述兩個變數之間的線性關係，但 interaction 描述的是三方關係。",
     "sentence": "A correlation describes the linear relationship between two variables, but an interaction describes a three-way relationship: How the relationship between a predictor and the target variable depends on the value of another predictor.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ depends on ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1551,7 +1551,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Lambda 是 shrinkage parameter，可用來表示 elastic net 的複雜度。",
     "sentence": "Lambda is the shrinkage parameter that can be used to index the complexity of an elastic net.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ can be used to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1564,7 +1564,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Variable importance 會依照變數對模型的貢獻，顯示變數的重要性排序。",
     "sentence": "Variable importance shows the ordering of variables according to their contribution to the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ shows ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1577,7 +1577,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Lasso 的 regularization term 是模型係數絕對值的總和。",
     "sentence": "The lasso regulation term is the sum of absolute values of model coefficients.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the sum of absolute values of ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1590,7 +1590,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Random Forest 中的 random 來自於每棵樹都是用 bootstrap sample 建立。",
     "sentence": "Each tree is built on a bootstrapped sample (randomly selected with replacement).",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is ___ with ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1603,7 +1603,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Descriptive analytics 著重於從過去資料取得洞察，並回答「發生了什麼？」這個問題。",
     "sentence": "Descriptive analytics focuses on insights from the past and answers the question, \"What happened?\"",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ focuses on ___ from ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1616,7 +1616,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Prescriptive analytics 會建議決策選項。",
     "sentence": "Prescriptive analytics suggests decision options.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ suggests ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1629,7 +1629,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Predictive analytics 著重於未來，並處理「接下來可能發生什麼？」這個問題。",
     "sentence": "Predictive analytics focuses on the future and addresses the question, \"What might happen next?\"",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ focuses on ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1642,7 +1642,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "每次執行 cost-complexity pruning 演算法時，cross validation 中使用的資料分割都會被隨機指定。",
     "sentence": "Each time the cost-complexity pruning algorithm is run, the splits of data used in the cross validation are randomly assigned.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Each time ___ is run, ___ are randomly assigned.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1655,7 +1655,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Ntree 是 random forest 要配適的樹的數量。",
     "sentence": "Ntree refers to the number of trees to fit for the random forest.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ refers to ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1668,7 +1668,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "mtry hyperparameter 是每次分割時隨機選出並納入考慮的預測變數數量。",
     "sentence": "The mtry hyperparameter is the number of predictors chosen at random to be considered at each split.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ hyperparameter is the number of ___ chosen at random to be considered at each split.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1681,7 +1681,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Nodesize 是每個 terminal node 允許的最小觀測值數量。",
     "sentence": "Nodesize is the minimum number of observations allowed in each terminal node.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the minimum ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1694,7 +1694,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Maxnodes 定義每棵樹允許的最大 terminal node 數量。",
     "sentence": "Maxnodes defines the maximum number of terminal nodes allowed in each tree.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ defines ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1707,7 +1707,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這張圖稱為 biplot，因為它同時顯示兩種資訊。",
     "sentence": "The plot is called a biplot because it displays two types of information: observation scores of the first two PCs (plotted on the left and bottom axes) and variable loadings of the first two PCs (plotted on the top and right axes).",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is called ___ because ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1720,7 +1720,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "當只建立少數幾棵樹時，較大的 shrinkage 會比較適合。",
     "sentence": "When just a few trees are built, a big shrinkage would be preferable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "When just a few trees are built, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1733,7 +1733,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Weight 會改變每個觀測值對模型的重要性。",
     "sentence": "Weight: Change how important each observation is to the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ changes how important each observation is to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1746,7 +1746,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "在 GLM 中把變數作為 weight 使用，會調整每個觀測值在模型中的影響力。",
     "sentence": "Using a variable as a weight in a GLM adjusts the impact of each observation in the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ adjusts ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1759,7 +1759,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Hierarchical clustering 演算法一開始有 n 個 cluster，然後反覆合併最相似的觀測值，最後形成 dendrogram。",
     "sentence": "The hierarchical clustering algorithm starts with n clusters and iteratively fuses the most similar observations, resulting in a dendrogram.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ starts with ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1772,7 +1772,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "資料中的變異性大於模型估計的變異數。",
     "sentence": "The variability in the data is larger than the model’s estimated variance.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is larger ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1785,7 +1785,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Residual deviance 與 degrees of freedom 的比率明顯大於 1。",
     "sentence": "The ratio of the residual deviance (104,664) to the degrees of freedom (14,310) is significantly greater than 1.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ratio of ___ to ___ is significantly greater than ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1798,7 +1798,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Eta 介於 0 和 1 之間，用來控制 boosting 學習的快慢。",
     "sentence": "Between 0 and 1, controls how slow or fast boosting learns.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Between ___ and ___ controls ___ or fast ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1811,7 +1811,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Oversampling 應該在訓練資料被切成 k 個 folds 之後執行。",
     "sentence": "Oversampling should be performed after the training data is split into the k folds.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ should be performed after ___ is split into ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1824,7 +1824,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "在 decision tree 中，不建議對 categorical variables 使用 one-hot encoding，因為這會造成資料稀疏，並大幅降低模型的計算效率與可解釋性。",
     "sentence": "In decision trees, one-hot encoding for categorical variables is discouraged, as it leads to data sparsity and significantly reduces the model's computational efficiency and interpretability.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "In decision trees, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1837,7 +1837,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "GLM 是一種模型，會假設 target 的分配並指定 link function，兩者都由分析者選擇。",
     "sentence": "GLMs are models that assume a distribution for the target and a link function, both chosen by the analyst.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ are ___ that ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1850,7 +1850,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "GLM 使用特徵或條件，透過公式來估計結果。",
     "sentence": "GLMs use features or conditions to estimate outcomes through a formula.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ use ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1863,7 +1863,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "F-statistic 是 explained variance 與 unexplained residual variance 的比率，用來檢定 regression model 的整體顯著性。",
     "sentence": "The F-statistic is the ratio of the explained variance to the unexplained (residual) variance, used to test the global significance of a regression model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The F-statistic is the ratio of the explained variance to the ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1876,7 +1876,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "t-statistic 用來檢定單一預測變數係數的顯著性。",
     "sentence": "The t-statistic is used to test the significance of an individual predictor's coefficient.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is used to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1889,7 +1889,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Predictors 包含模型實際應用時無法取得的 target information。",
     "sentence": "Predictors include target information that is unavailable when the model is applied in practice.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ include ___ when ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1902,7 +1902,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "ROC curve 用來評估 classifiers 的表現。",
     "sentence": "An receiver operating characteristic(ROC) curve is used to evaluate the performance of classifiers.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is used to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1915,7 +1915,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "它們都會執行 feature selection，使沒有貢獻的 predictors 被移除。",
     "sentence": "They perform feature selection, resulting in predictors that do not contribute to being dropped.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "They ___ resulting ___ do not ___ to being ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1928,7 +1928,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "ROC 和 AUC 都用來評估 classifiers 的表現。",
     "sentence": "Both ROC and AUC are used to evaluate the performance of classifiers.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Both ___ and ___ are ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1941,7 +1941,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Normal linear regression model 使用 OLS 估計係數，但 GLM 使用 MLE。",
     "sentence": "The normal linear regression model estimates the coefficients using OLS(ordinary least squares) but the GLM does it using MLE(maximum likelihood estimation).",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ model ___ using ___ but ___ it using ___ estimation).",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1954,7 +1954,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Minsplit 是一個 node 要被分割所需的最小觀測值數量。",
     "sentence": "The minimum number of observations required in a node for splitting.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ observations ___ node ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1967,7 +1967,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Minbucket 是任何 terminal node 所需的最小觀測值數量，通常稱為 minimum bucket size。",
     "sentence": "The minimum number of observations required in any terminal node, usually called “minimum bucket size”.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The minimum number of observations required in any terminal node, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1980,7 +1980,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "cp 非常小，表示只需要少量 information gain 就能進行 split，因此會產生更多 splits。",
     "sentence": "The cp is very small, meaning a small amount of information gain is required for a split to be made, leading to more splits.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The cp is very small, meaning a small amount of information gain is required for a split to be made, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -1993,7 +1993,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這個參數指的是最終樹中任何 node 的最大深度，其中 root node 算作深度 0。",
     "sentence": "This parameter refers to the maximum depth of any node of the final tree, with the root node counted as depth 0.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "This parameter refers to the ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2006,7 +2006,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Stepwise selection 和 lasso / ridge regression 都能避免對資料過度擬合，特別是在觀測值數量相對於預測變數數量很少時。",
     "sentence": "Both stepwise selection and lasso/ridge regression avoid overfitting to the data, especially when the number of observations is small compared to the number of predictors.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Both stepwise selection and lasso/ridge regression avoid overfitting to the ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2019,7 +2019,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Dissimilarity 衡量兩個個別觀測值之間的距離，而 linkage 衡量兩個觀測值群集之間的距離。",
     "sentence": "Dissimilarity measures the distance between two individual observations, while linkage measures the distance between two clusters of observations.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ measures ___ while ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2032,7 +2032,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Binarization 可能進一步簡化模型，因為如果某些 factor level 對模型沒有顯著貢獻，就可以被移除。",
     "sentence": "Binarization may help simplify the model even more, as individual factor levels could be removed if they do not contribute significantly to the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ may help simplify the model even more, as individual factor levels could be removed if they do not contribute significantly to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2045,7 +2045,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Pruning 是一種降低 decision tree 複雜度並幫助避免 overfitting 的技術。",
     "sentence": "Pruning is a technique used to reduce the complexity of a decision tree and helps prevent overfitting.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ reduce ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2058,7 +2058,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "PCA 會產生稱為 principal components 的數值特徵，而這些特徵是原始變數的線性組合。",
     "sentence": "PCA results in numeric features called principal components, which are linear combinations of the original variables.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "PCA results in numeric features called principal components, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2071,7 +2071,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "一個潛在優點是，同一個 factor 中只有有用的 dummy variables 可以保留在模型中，因此能簡化模型。",
     "sentence": "A potential strength is that only the useful dummy variables from the same factor can be retained in the model, thus simplifying the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "A potential strength is that only the useful dummy variables from the same factor can be retained in the model, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2084,7 +2084,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Variance 表示預測結果會如何隨使用的訓練資料而變動。",
     "sentence": "The variance indicate how much the predictions vary depending on the training data used.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ indicate ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2097,7 +2097,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Bias 表示期望預測值與 unseen data 上實際結果的接近程度。",
     "sentence": "The bias indicates how close expected predictions and actual results are on unseen data.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ indicates ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2110,7 +2110,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Inflexible models 具有低 variance 但高 bias，而 flexible models 具有高 variance 但低 bias。",
     "sentence": "Inflexible models have low variance but high bias, while flexible models have high variance but low bias.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Inflexible ___ variance but ___ while ___ high ___ but ___ bias.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2123,7 +2123,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "我們可以不選擇最小 cross-validation error 的模型，而是選擇 error 在該最小值一個標準誤以內的最簡單模型。",
     "sentence": "Instead of the minimum cross-validation error, we may select the simplest model (lowest flexibility) whose error is within one standard error of that minimum.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is ___ that ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2136,7 +2136,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Classification decision tree 使用 entropy、Gini index 和 classification error rate 來衡量 impurity。",
     "sentence": "Classification decision tree measure impurity using entropy, Gini index, and classification error rate.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ measure ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2149,7 +2149,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Cluster algorithm 一開始有 n 個 clusters，然後根據哪些觀測值最相似來反覆合併它們。",
     "sentence": "The cluster algorithm starts with n clusters and iteratively fuses them based on which observations are most similar.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ starts with ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2162,7 +2162,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Forward selection 從沒有變數開始，然後持續加入變數，直到選定指標不再改善。",
     "sentence": "Forward selection starts with no variables and then adds them until there is no improvement by the selected metric.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ starts with ___ by ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2175,7 +2175,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Bar charts 顯示 factor variable 每個 level 中的觀測值數量或比例。",
     "sentence": "Bar charts show the number (or proportion) of observations in each level of a factor variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ show ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2188,7 +2188,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Stacked bar chart 用來顯示變數各個 level 中的觀測值數量。",
     "sentence": "A stacked bar chart to show the number of observations in each level of the variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ show ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2201,7 +2201,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Filled bar chart 用來顯示該變數與 target variable 之間的關係。",
     "sentence": "A filled bar chart to show the relationship between that variable and target variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ show ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2214,7 +2214,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Frequency tables 提供 categorical variable 最簡單的摘要。",
     "sentence": "Frequency tables provide the simplest summary of a categorical variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ provide ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2227,7 +2227,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "PCA 可以讓我們用較少特徵建立較簡單的模型。",
     "sentence": "PCA could allow us to build a simpler model with fewer features.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ could allow us to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2240,7 +2240,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Principal component analysis 是一種 unsupervised learning 技術，會建立新的不相關變數，並使 variance 最大化。",
     "sentence": "Principal component analysis is an unsupervised learning technique that creates new uncorrelated variables that maximize variance.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is an unsupervised learning technique ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2253,7 +2253,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Loadings 代表每個 principal component 中標準化原始變數線性組合的係數。",
     "sentence": "Loadings represent the coefficients in the linear combination of the standardized original variables for each PC.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ represent ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2266,7 +2266,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Proportion of variance 代表每個 principal component 解釋資料總變異的百分比。",
     "sentence": "The proportion of variance represents the percentage of the total variance in the data explained by each principal component.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ represents ___ by ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2279,7 +2279,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Information gain 表示 decision tree 進行 split 時 impurity 減少的程度。",
     "sentence": "Information gain means how much impurity is reduced when a decision tree makes a split.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is ___ when ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2292,7 +2292,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Lasso 在 loss function 中使用 penalty，來懲罰模型中的大型係數。",
     "sentence": "Lasso uses a penalty in the loss function that penalizes large coefficients in the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ uses ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2305,7 +2305,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Structured data 可以放進表格中。",
     "sentence": "Structured data can fit into tables.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Structured ___ can ___ into ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2318,7 +2318,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Cross-validation 透過讓每個資料點在多個 folds 中同時用於 training 和 testing 來降低 variance。",
     "sentence": "Cross-validation (CV) reduces variance by using every data point for both training and testing across multiple folds.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ reduces ___ by ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2331,7 +2331,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Binarization 的過程會把單一 categorical factor variable 轉換成多個 Boolean 或 binary variables。",
     "sentence": "The process of binarization turns a single categorical (factor) variable into multiple Boolean/binary variables.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ turns ___ (factor) ___ Boolean/binary ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2344,7 +2344,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Proxy variables 用來代替真實資訊，通常是因為想要的資訊很難或不可能被衡量。",
     "sentence": "Proxy variables are used instead of real information, usually because the desired information is hard or impossible to measure.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ are used instead of ___, usually because ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2357,7 +2357,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "對 Random Forests 而言，trees 會使用不同 bootstrap samples 獨立建立，確保一棵樹的建立不會影響另一棵樹。",
     "sentence": "For Random Forests, trees are built independently using separate bootstrap samples, ensuring that one tree's construction does not influence another.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ are ___ that ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2370,7 +2370,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "在 elastic net 中，alpha 和 lambda 是 hyperparameters，因為它們必須事先提供，而且不會由模型配適演算法最佳化。",
     "sentence": "In an elastic net, alpha and lambda are hyperparameters because they are parameters that we have to supply in advance and are not optimized by the model fitting algorithm.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "In an elastic net, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2383,7 +2383,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "將變數視為 numeric，代表假設它對 target 有固定的邊際影響和單調關係，並能提供較有效率且 variance 較低的模型。",
     "sentence": "Treating a variable as numeric assumes a constant marginal impact and a monotonic relationship with the target, offering a more efficient model with lower variance.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Treating ___ as numeric ___ marginal ___ and ___ monotonic ___ with ___ target, ___ efficient ___ with ___ variance.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2396,7 +2396,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Perfect collinearity 發生在某個 predictor 是同一模型中其他 predictors 的線性組合時。",
     "sentence": "Perfect collinearity happens when a predictor is a linear combination of the other predictors in the same model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ happens ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2409,7 +2409,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Link function 會把 target mean 和 predictors 連結起來。",
     "sentence": "The link function relates the target mean to the predictors.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ the ___ to the ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2422,7 +2422,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Cluster analysis 可用來建立一個 factor variable，用來識別資料中不同觀測值被分派到的 cluster group。",
     "sentence": "Cluster analysis can be used to create a factor variable identifying the cluster groups that different observations in the data are assigned to.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ can be used to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2435,7 +2435,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Stratified sampling 會從資料中每個 strata 或 group 獨立抽取一組隨機紀錄。",
     "sentence": "Stratified sampling works by independently drawing a set of random records from each strata or group in your data.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ works ___ from ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2448,7 +2448,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Stratified sampling 的好處是能根據 stratification variables 產生具代表性的 training set 和 test set。",
     "sentence": "The benefits of stratified sampling is to produce representative training and test sets with respect to the stratification variables, which is often the target variables.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The benefits of stratified sampling is to produce ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2461,7 +2461,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "資料中的所有觀測值彼此獨立。",
     "sentence": "All observations in the data are independent.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "All observations in ___ are ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2474,7 +2474,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這張圖顯示 cross-validation 檢查了 6 個不同的 mtry 值。",
     "sentence": "The plot reveals that six different values of mtry were examined by cross-validation.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ six ___ mtry were ___ by cross-validation.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2487,7 +2487,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "使用部分 principal components 會導致部分資訊損失。",
     "sentence": "Using a subset of the principal components results in some information loss.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Using ___ the ___ in ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2500,7 +2500,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Complexity parameter（CP）決定進行 split 所需的 information gain 門檻。",
     "sentence": "The complexity parameter (CP) determines the threshold of information gain required for a split to be made.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ determines ___ information ___ a ___ to be made.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2513,7 +2513,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Bagging 是同時在資料的不同隨機子集上訓練多個模型的過程。",
     "sentence": "Bagging (bootstrap aggregating) is the process of training multiple models at the same time on different random subsets of the data.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the process ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2526,7 +2526,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Bootstrapping 是指從原始資料集中反覆有放回抽取相同大小的隨機樣本，以估計統計量的變異性或抽樣分配。",
     "sentence": "Bootstrapping involves repeatedly drawing random sampling of the same size from the original dataset with replacement to estimate the variability or sampling distribution of a statistic.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ involves ___ from ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2539,7 +2539,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "兩種方法都可以用來建立 regression 或 classification models，並根據 impurity 或 information gain measures 決定 splits。",
     "sentence": "Both methods can be used to build regression or classification models, determining splits based on impurity or information gain measures.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Both methods can be used to build ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2552,7 +2552,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Partial dependence plot 會將目標變數固定在特定值，並對其他變數下的預測取平均；這樣做會忽略變數之間的關係並假設獨立。",
     "sentence": "A partial dependence plot holds the variable of interest at fixed values, averages predictions over the other variables, and by doing so ignores their relationships and assumes independence.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "A ___ holds ___ interest ___ averages ___ other ___ and by doing ___ relationships and ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2565,7 +2565,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "BIC 等於 -2 倍 log-likelihood 加上參數數量乘以樣本數自然對數的懲罰。",
     "sentence": "BIC = -2l + (p+1) ln(N)",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "BIC ___ (p+1) ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2578,7 +2578,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "模型產生機率預測後，我們會決定一個 cutoff，以取得正類和負類的預測。",
     "sentence": "After a model produces predictions of probabilities, we decide a cutoff to obtain predictions of positive and negative.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "After ___ predictions ___ decide ___ to obtain ___ and ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2591,7 +2591,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Lambda 的 optimal value 可以透過 cross-validation 找到。",
     "sentence": "The optimal value for lambda can be found using cross-validation.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ lambda can be ___ using ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2604,7 +2604,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Undersampling 會刪除 majority class 中的觀測值。",
     "sentence": "Undersampling deletes observations in the majority class.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ deletes ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2617,7 +2617,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Oversampling 會複製 minority class 中的觀測值。",
     "sentence": "Oversampling duplicates observations in the minority class.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ duplicates ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2630,7 +2630,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "雖然 AIC 是快速且常用的模型比較工具，但它只是基於訓練資料的間接估計。",
     "sentence": "Although AIC is a fast and common tool for comparing models, it is only an indirect estimate based on the training data.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Although AIC is a fast and common tool for comparing models, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2643,7 +2643,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "計算每個 cluster 的 centroid。",
     "sentence": "Calculate the centroid of each cluster.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Calculate ___ each ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2656,7 +2656,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "縮放或標準化變數可確保它們都在相同尺度上，並在 clustering 中得到相同權重。",
     "sentence": "Scaled or standardizing variables ensures that they are all on the same scale and will get an equal weight in the clustering.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ ensures ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2669,7 +2669,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "殘差服從常態分配。",
     "sentence": "The residuals have a normal distribution.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ normal ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2682,7 +2682,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "K-means clustering 從隨機初始分派開始，並反覆更新直到 clusters 穩定。",
     "sentence": "K-means clustering works by starting with random initial assignments and iteratively updating them until the clusters stabilize.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ works ___ with ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2695,7 +2695,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Boxplots 提供資料分布的視覺表示，包括最小值、第一四分位數、中位數、第三四分位數、最大值，也能辨識潛在 outliers。",
     "sentence": "Boxplots provide a visual representation of the distribution of the data, including the minimum, first quartile (25th percentile), median (50th percentile), third quartile (75th percentile), maximum, and also identify potential outliers.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ provide ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2708,7 +2708,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Split boxplot 是 categorical variable 和 numeric variable 之間 bivariate visualization 的一個例子。",
     "sentence": "A split boxplot is one example of a bivariate visualization between a categorical and numeric variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is one example ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2721,7 +2721,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "在 k-means clustering 中，cluster 數量會先被選定，然後再決定 clusters；但在 hierarchical clustering 中，cluster 數量是在建立 clusters 後才選定。",
     "sentence": "In k-means clustering, the number of clusters is chosen first and then the clusters are determined, but in hierarchical clustering, the number of clusters is chosen after creating the clusters.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "In k-means clustering, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2734,7 +2734,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Accuracy 是正確預測數量與總預測數量的比率。",
     "sentence": "Accuracy is the ratio of the number of correct predictions to the total number of predictions.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the ratio of ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2747,7 +2747,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "每筆紀錄都有相同機率被無放回抽樣。",
     "sentence": "Each record has an equal probability of being sampled without replacement.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Each ___ equal ___ sampled ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2760,7 +2760,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "在 classification tree 中，impurity measures 的一種用途是決定 decision tree 下一個 split 是否應該被執行。",
     "sentence": "One way that impurity measures are used in a classification tree is to decide which split in the decision tree (if any) should be made next.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ measures ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2773,7 +2773,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Best subset 會找到最佳的 predictors 集合，也就是 global minimum；而 stepwise selection 會找到 local minimum，可能有比 global minimum 更高的 error。",
     "sentence": "Best subset will find the optimal set of predictors, i.e., the global minimum, whereas stepwise selection will find a local minimum which may have a higher error than the global minimum.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Best ___ will ___ the ___ predictors, ___ minimum, ___ will ___ minimum ___ may ___ a ___ than the ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2786,7 +2786,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "事先 binarizing factor variables 對 fitted GLM 的結果沒有影響。",
     "sentence": "Binarizing factor variables in advance has no effect on the results of a fitted GLM.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Binarizing ___ advance ___ on ___ a ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2799,7 +2799,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Linear models 會為 categorical variable 中除了 base level 以外的每個 level 配適一個係數。",
     "sentence": "Linear models fit a coefficient for each level of a categorical variable except the base level.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Linear ___ coefficient ___ of ___ except ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2812,7 +2812,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Curse of dimensionality 指的是所謂的 small n, large p 情境，也就是觀測值 n 的數量相對於特徵 p 的數量很少。",
     "sentence": "The curse of dimensionality refers to the so-called \"small n, large p\" setting, where the number of observations n is small compared to the number of features p.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The curse of dimensionality refers to the ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2825,7 +2825,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Elastic net regression 包含一個捕捉 regression coefficients 大小的 penalty term。",
     "sentence": "Elastic net regression includes a penalty term captures the size of the regression coefficients.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ includes ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2838,7 +2838,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Height 是 hierarchical clustering algorithm 每一步合併兩個最接近 clusters 時的 inter-cluster dissimilarity。",
     "sentence": "The height is the inter-cluster dissimilarity between the two closest clusters when they are fused in each step of the hierarchical clustering algorithm.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is ___ when ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2851,7 +2851,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "80% / 20% train/test split 和 5-fold cross-validation 都使用 80% 的資料訓練候選模型，並使用 20% 的資料測試模型。",
     "sentence": "80%/20% train/test split and 5-fold cross-validation use 80% of the data to train the potential models and 20% of the data to test the models.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ use ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2864,7 +2864,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Histograms 和 box plots 用於 continuous numeric variables。",
     "sentence": "Histograms and box plots are used for continuous numeric variables.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ and ___ are used for ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2877,7 +2877,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Tweedie 是同時具有 discrete 和 continuous components 的混合分配。",
     "sentence": "Tweedie is a mixed distribution with both discrete and continuous components.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is a mixed distribution ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2890,7 +2890,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "較大的 lambda 會增加計算 penalty term 時給予每個係數大小的權重。",
     "sentence": "A larger lambda increases the weight given to the size of each coefficient when calculating the penalty term.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "A ___ the ___ to the ___ coefficient when ___ penalty ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2903,7 +2903,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Drop1 要求建模者手動移除 predictor。",
     "sentence": "Drop1 requires the modeler to manually remove the predictor.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ requires ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2916,7 +2916,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Intercept-only GLM 不使用任何 predictors 的資訊，並可被視為最基準的 predictive model。",
     "sentence": "The intercept-only GLM does not use the information of any predictors and can be regarded as the most benchmark predictive model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ use ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2929,7 +2929,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Drop1 會顯示個別移除每個 predictor variable 對 AIC 的影響。",
     "sentence": "Drop1 shows the AIC impact from individually removing each predictor variable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ shows ___ from ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2942,7 +2942,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Gaussian domain 包含所有實數。",
     "sentence": "The Gaussian domain includes all real values.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ includes ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2955,7 +2955,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Regression tree 使用 target 和 predicted values 之間的 residual sum of squares error。",
     "sentence": "Use residual sum of squares error (RSS, known as sum of squared estimate of errors (SSE)) between target and predicted values.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Use ___ squares ___ as ___ estimate ___ between ___ and ___ values.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2968,7 +2968,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Backward selection 從所有變數開始，並依序移除變數，直到選定準則不再改善。",
     "sentence": "Starts with all the variables and sequentially removes them until no improvement by selected criterion.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ removes ___ by ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2981,7 +2981,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "使用 frequency tables、counts、percentages 和 bar charts 來視覺化這些資訊。",
     "sentence": "Use frequency tables, counts, percentages, and bar charts to visualize this information.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Use ___ percentages, and ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -2994,7 +2994,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "預測值與觀測值之間的差異稱為 residual。",
     "sentence": "The difference between predicted and observed is called the residual.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The difference between ___ and ___ is called ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3007,7 +3007,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Decision trees 的限制是，它們在每個當前步驟都根據最大 information gain 做 greedy splits，而不是產生整體最佳配適模型。",
     "sentence": "Decision trees have a limitation in that they make greedy splits based on the largest information gain at each current step, rather than to produce the best fitting overall model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Decision trees have a limitation in that they make greedy splits based on the largest information gain at each current step, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3020,7 +3020,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "當一個變數在 GLM 中被作為 weight 使用時，它會調整每個觀測值在模型中的影響力。",
     "sentence": "When a variable is used as a weight in a GLM, it adjusts the influence of each observation in the model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "When a variable is used as a weight in a GLM, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3033,7 +3033,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Interaction 可讓模型為每個 DayType 估計不同的 transformed month coefficients。",
     "sentence": "An interaction would allow the model to estimate different transformed month coefficients for each DayType.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ allow ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3046,7 +3046,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這個模型顯示 perfect multicollinearity。",
     "sentence": "This model shows the perfect multicollinearity.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ shows ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3059,7 +3059,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Feature importance 和 partial dependence plots 都是用來解釋 random forests 等 black box models 的方法。",
     "sentence": "Feature importance and partial dependence plots are both methods used to interpret \"black box\" models like random forests.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ and ___ are both methods used to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3072,7 +3072,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "PC1 的標準差 1.6983 遠大於 PC2 和 PC3，表示它捕捉了 SAT features 中大部分變異。",
     "sentence": "A standard deviation of 1.6983 for PC1 is much greater than that for PC2 and PC3, implying that it captures most of the variation in the SAT features.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ captures ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3085,7 +3085,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "如果資料集有大量變數 p，而不是大量觀測值 n，PCA 會很有用。",
     "sentence": "PCA is useful if the dataset has a large number of variables(p), not a large number of observations(n).",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "PCA is useful if the dataset has a large number of variables(p), ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3098,7 +3098,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "RMSE 是 95,754.90，而 MAE 是 87,000。",
     "sentence": "RMSE is 95,754.90 and MAE is 87,000.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is ___ and ___ is ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3111,7 +3111,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "我建議使用 MAE，因為它對 outliers 較 robust。",
     "sentence": "I recommend MAE because it is more robust to outliers.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "I recommend ___ because it is more robust to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3124,7 +3124,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這個轉換會移除變數的右偏，使其分布更對稱。",
     "sentence": "The transformation removes right-skew from the variable, making its distribution more symmetric.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ removes ___ from ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3137,7 +3137,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Leverage plot 可用來辨識具有 high leverage 的 outliers，代表它們對模型係數估計有很大影響。",
     "sentence": "The leverage plot can be used to identify outliers with high leverage, meaning they have a large impact on the model coefficient estimates.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The leverage plot can be used to identify ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3150,7 +3150,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "我會先建立一個名為 Region_to_region 的額外變數，包含航班往返的兩個地區。",
     "sentence": "I would start by constructing an additional variable called \"Region_to_region\" that contains the two regions that a flight goes between.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "I would ___ by constructing ___ called ___ the ___ a ___ between.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3163,7 +3163,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Complete linkage 使用最大的 pairwise dissimilarity。",
     "sentence": "Complete linkage uses the largest pairwise dissimilarity.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ uses ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3176,7 +3176,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "增加 training set size 會提高模型 robustness 和 signal learning，但會減少 test set size，使 unseen data 上的 predictive performance 評估較不可靠。",
     "sentence": "Increasing the training set size improves model robustness and signal learning, but reduces the test set size, making the evaluation of predictive performance on unseen data less reliable.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ reduces ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3189,7 +3189,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "當所有 numeric variables 等於 0 且所有 categorical variables 位於 baseline levels 時，通過的 odds 估計為 1.6487。",
     "sentence": "The odds of passing is estimated to be 1.6487 when all numeric variables equal 0 and all categorical variables are at their baseline levels.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is ___ when ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3202,7 +3202,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這是 boosting iterations 的最大數量。",
     "sentence": "This is the maximum number of boosting iterations.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the maximum ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3215,7 +3215,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "由於沒有 predictors，intercept-only GLM 會給所有觀測值相同的 predicted pass probability。",
     "sentence": "Because of the absence of predictors, the intercept-only GLM will assign all observations (whether training or test observations) the same predicted pass probability, which is the pass rate on the training set, regardless of students' characteristics.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Because of the absence of predictors, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3228,7 +3228,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Granularity 指的是變數被衡量得多精確，換句話說，就是它包含的細節程度。",
     "sentence": "Granularity refers to how precisely a variable is measured, or in other words, the level of detail it contains.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "Granularity refers to how precisely a variable is measured, or in other words, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3241,7 +3241,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Pearson statistic 是觀測值與預測值差異平方除以預測值後，對所有觀測值加總的比率。",
     "sentence": "The Pearson statistic is the ratio of the squared difference between observed and predicted values to the predicted value, summed across all observations.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The Pearson statistic is the ratio of the squared difference between observed and predicted values to the ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3254,7 +3254,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "為了選擇 optimal model，我們會計算每個候選模型在 test set 上的 Pearson statistic。",
     "sentence": "To select the optimal model, we evaluate each candidate by calculating its Pearson statistic on the test set.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "To select ___, ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3267,7 +3267,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Poisson 的 canonical link 是 log link。",
     "sentence": "The canonical link for Poisson (which is the target distribution of the intercept-only GLM, as the model formula shows) is the log link, so the prediction produced by the model is = û = e -2.66081 = 0.069892, which applies to all observations.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The canonical link for ___ is ___, so the prediction produced by the model is ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3280,7 +3280,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Backward selection 是 stepAIC() function 的預設方法。",
     "sentence": "Backward selection is the default of the stepAIC() function.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ is the default ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3293,7 +3293,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "兩者都涉及最小化由兩個項目組成的 penalized objective function。",
     "sentence": "The second term serves as a penalty term to hedge against overfitting.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ as ___ to ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3306,7 +3306,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "Regularized regression 透過在 GLM 的 training deviance 中加入基於 coefficient size 的 penalty term 來避免 overfitting。",
     "sentence": "Regularized regression (Ridge, Lasso, and Elastic Net) prevents overfitting by adding a penalty term based on coefficient size to the GLM's training deviance.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "___ prevents ___ by ___.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",
@@ -3319,7 +3319,7 @@ window.englishLessons = [
     "theme": "Exam PA Concept",
     "chinese": "這個 hyperparameter 控制 boosted model 中 terminal nodes 的最大深度。",
     "sentence": "The hyperparameter controls the maximum depth of terminal nodes for the boosted model.",
-    "template": "Translate this PA sentence into natural English.",
+    "template": "The ___ maximum ___ nodes ___ model.",
     "analysis": [
       "先抓本句主詞與真正有時態的動詞。",
       "再把定義、用途或限制補完整。",

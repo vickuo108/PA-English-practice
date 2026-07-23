@@ -80,7 +80,7 @@ window.englishLessons = [
   {
     "id": "however-risk",
     "theme": "Business Risk",
-    "chinese": "然而，降低 cutoff 也會降低 specificity，這表示可能會有更多不必要的加派人力。",
+    "chinese": "然而，降低門檻值也會降低特異度，這表示可能會有更多不必要的加派人力。",
     "sentence": "However, lowering the cutoff also reduces specificity, which means there may be more unnecessary staffing increases.",
     "template": "However, ___ also reduces ___, which means ___.",
     "analysis": [
@@ -119,7 +119,7 @@ window.englishLessons = [
   {
     "id": "residual-plot",
     "theme": "Diagnostics",
-    "chinese": "殘差圖顯示殘差變異隨著 fitted value 增加而變大。",
+    "chinese": "殘差圖顯示殘差變異會隨著配適值增加而變大。",
     "sentence": "The residual plot shows that the variance of the residuals increases as the fitted value increases.",
     "template": "The ___ plot shows that ___ increases as ___ increases.",
     "analysis": [
@@ -184,7 +184,7 @@ window.englishLessons = [
   {
     "id": "threshold",
     "theme": "Classification",
-    "chinese": "降低門檻會增加 positive predictions，因此通常會提高 sensitivity 但降低 specificity。",
+    "chinese": "降低門檻會增加正類預測，因此通常會提高敏感度但降低特異度。",
     "sentence": "Lowering the threshold increases positive predictions, so it typically increases sensitivity but decreases specificity.",
     "template": "Lowering ___ increases ___, so it typically increases ___ but decreases ___.",
     "analysis": [
@@ -236,7 +236,7 @@ window.englishLessons = [
   {
     "id": "standardize",
     "theme": "Lasso",
-    "chinese": "變數需要標準化，因為 lasso penalty 會受到變數尺度影響。",
+    "chinese": "變數需要標準化，因為 Lasso 懲罰會受到變數尺度影響。",
     "sentence": "The variables should be standardized because the lasso penalty is affected by the scale of the predictors.",
     "template": "The variables should be ___ because ___ is affected by ___.",
     "analysis": [
@@ -301,7 +301,7 @@ window.englishLessons = [
   {
     "id": "class-imbalance",
     "theme": "Classification",
-    "chinese": "由於目標類別不平衡，accuracy 可能會高估模型的實用性。",
+    "chinese": "由於目標類別不平衡，準確率可能會高估模型的實用性。",
     "sentence": "Because the target classes are imbalanced, accuracy may overstate the usefulness of the model.",
     "template": "Because ___ are imbalanced, ___ may overstate ___.",
     "analysis": [
@@ -535,7 +535,7 @@ window.englishLessons = [
   {
     "id": "random-forest-variance",
     "theme": "Random Forest",
-    "chinese": "Random forest 透過平均多棵樹的預測來降低變異。",
+    "chinese": "隨機森林透過平均多棵樹的預測來降低變異。",
     "sentence": "A random forest reduces variance by averaging the predictions from many individual trees.",
     "template": "A ___ reduces variance by ___.",
     "analysis": [
@@ -613,7 +613,7 @@ window.englishLessons = [
   {
     "id": "cutoff-business",
     "theme": "Classification",
-    "chinese": "最佳 cutoff 應反映 false positive 和 false negative 的相對成本。",
+    "chinese": "最佳門檻值應反映偽陽性和偽陰性的相對成本。",
     "sentence": "The optimal cutoff should reflect the relative costs of false positives and false negatives.",
     "template": "The optimal ___ should reflect the relative costs of ___ and ___.",
     "analysis": [
@@ -626,7 +626,7 @@ window.englishLessons = [
   {
     "id": "confusion-matrix",
     "theme": "Classification",
-    "chinese": "Confusion matrix 顯示模型如何在實際類別與預測類別之間分配觀測值。",
+    "chinese": "混淆矩陣顯示模型如何在實際類別與預測類別之間分配觀測值。",
     "sentence": "The confusion matrix shows how observations are distributed across actual and predicted classes.",
     "template": "The ___ shows how observations are distributed across ___ and ___.",
     "analysis": [
@@ -639,7 +639,7 @@ window.englishLessons = [
   {
     "id": "sensitivity-meaning",
     "theme": "Classification",
-    "chinese": "Sensitivity 衡量模型辨識真正 positive cases 的能力。",
+    "chinese": "敏感度衡量模型辨識真正正類案例的能力。",
     "sentence": "Sensitivity measures the model's ability to identify truly positive cases.",
     "template": "___ measures the model's ability to ___.",
     "analysis": [
@@ -652,7 +652,7 @@ window.englishLessons = [
   {
     "id": "glm-offset",
     "theme": "GLM",
-    "chinese": "應加入 offset，因為不同保單可能有不同的暴險期間。",
+    "chinese": "應加入偏移項，因為不同保單可能有不同的暴險期間。",
     "sentence": "An offset should be included because policyholders may have different exposure periods.",
     "template": "An offset should be included because ___ may have different ___.",
     "analysis": [
@@ -678,7 +678,7 @@ window.englishLessons = [
   {
     "id": "poisson-mean",
     "theme": "Poisson Regression",
-    "chinese": "在 Poisson model 中，預期理賠件數會被建模為預測變數的函數。",
+    "chinese": "在 Poisson 模型中，預期理賠件數會被建模為預測變數的函數。",
     "sentence": "In a Poisson model, the expected claim count is modeled as a function of the predictors.",
     "template": "In ___, ___ is modeled as a function of ___.",
     "analysis": [
@@ -691,7 +691,7 @@ window.englishLessons = [
   {
     "id": "deviance",
     "theme": "Model Fit",
-    "chinese": "較低的 deviance 表示配適較好，但仍應與驗證表現一起評估。",
+    "chinese": "較低的離差表示配適較好，但仍應與驗證表現一起評估。",
     "sentence": "A lower deviance suggests a better fit, but it should be evaluated together with validation performance.",
     "template": "A lower ___ suggests ___, but it should be evaluated together with ___.",
     "analysis": [
@@ -717,7 +717,7 @@ window.englishLessons = [
   {
     "id": "influential-observations",
     "theme": "Diagnostics",
-    "chinese": "具影響力的觀測值應被檢查，因為它們可能對 fitted model 有很大影響。",
+    "chinese": "具影響力的觀測值應被檢查，因為它們可能對已配適模型有很大影響。",
     "sentence": "Influential observations should be reviewed because they may have a large effect on the fitted model.",
     "template": "___ should be reviewed because they may have a large effect on ___.",
     "analysis": [
@@ -756,7 +756,7 @@ window.englishLessons = [
   {
     "id": "log-transform",
     "theme": "Data Preparation",
-    "chinese": "Log 轉換可以降低偏態，並讓關係更容易建模。",
+    "chinese": "對數轉換可以降低偏態，並讓關係更容易建模。",
     "sentence": "A log transformation can reduce skewness and make the relationship easier to model.",
     "template": "A ___ transformation can reduce ___ and make ___ easier to ___.",
     "analysis": [
@@ -769,7 +769,7 @@ window.englishLessons = [
   {
     "id": "train-validation-test",
     "theme": "Validation",
-    "chinese": "Validation set 應用於調整模型，而 test set 應保留做最終評估。",
+    "chinese": "驗證集應用於調整模型，而測試集應保留做最終評估。",
     "sentence": "The validation set should be used to tune the model, while the test set should be saved for final evaluation.",
     "template": "The ___ should be used to ___, while the ___ should be saved for ___.",
     "analysis": [
@@ -782,7 +782,7 @@ window.englishLessons = [
   {
     "id": "stratified-split",
     "theme": "Validation",
-    "chinese": "分層切分有助於保留每個資料分割中的 response rate。",
+    "chinese": "分層切分有助於保留每個資料分割中的反應率。",
     "sentence": "A stratified split helps preserve the response rate in each data partition.",
     "template": "A ___ split helps preserve ___ in each ___.",
     "analysis": [
@@ -795,7 +795,7 @@ window.englishLessons = [
   {
     "id": "missing-indicator",
     "theme": "Missing Values",
-    "chinese": "如果缺失值含有預測資訊，加入 missingness indicator 可能有幫助。",
+    "chinese": "如果缺失狀態含有預測資訊，加入缺失指標可能有幫助。",
     "sentence": "Adding a missingness indicator may be useful if missing values contain predictive information.",
     "template": "Adding ___ may be useful if ___ contain ___.",
     "analysis": [
@@ -808,7 +808,7 @@ window.englishLessons = [
   {
     "id": "one-hot",
     "theme": "Encoding",
-    "chinese": "One-hot encoding 會用個別 indicator variable 表示每個類別。",
+    "chinese": "獨熱編碼會用個別指標變數表示每個類別。",
     "sentence": "One-hot encoding represents each category with a separate indicator variable.",
     "template": "___ represents each ___ with a separate ___.",
     "analysis": [
@@ -834,7 +834,7 @@ window.englishLessons = [
   {
     "id": "target-leakage-date",
     "theme": "Data Leakage",
-    "chinese": "預測日期之後建立的變數應被排除，以避免 target leakage。",
+    "chinese": "預測日期之後建立的變數應被排除，以避免目標洩漏。",
     "sentence": "Variables created after the prediction date should be excluded to avoid target leakage.",
     "template": "Variables created after ___ should be excluded to avoid ___.",
     "analysis": [
@@ -847,7 +847,7 @@ window.englishLessons = [
   {
     "id": "class-weight",
     "theme": "Classification",
-    "chinese": "Class weights 可以幫助模型更重視少數類別。",
+    "chinese": "類別權重可以幫助模型更重視少數類別。",
     "sentence": "Class weights can help the model pay more attention to the minority class.",
     "template": "___ can help the model pay more attention to ___.",
     "analysis": [
@@ -860,7 +860,7 @@ window.englishLessons = [
   {
     "id": "precision",
     "theme": "Classification",
-    "chinese": "Precision 衡量預測為 positive 的案件中實際為 positive 的比例。",
+    "chinese": "精確率衡量預測為正類的案件中實際為正類的比例。",
     "sentence": "Precision measures the proportion of predicted positive cases that are actually positive.",
     "template": "___ measures the proportion of ___ that are actually ___.",
     "analysis": [
@@ -873,7 +873,7 @@ window.englishLessons = [
   {
     "id": "lift-gains",
     "theme": "Model Evaluation",
-    "chinese": "Lift chart 可以顯示模型是否把高風險案件排在前面。",
+    "chinese": "提升圖可以顯示模型是否把高風險案件排在前面。",
     "sentence": "A lift chart can show whether the model ranks high-risk cases near the top.",
     "template": "A ___ chart can show whether ___ ranks ___ near the top.",
     "analysis": [
@@ -886,7 +886,7 @@ window.englishLessons = [
   {
     "id": "roc-curve",
     "theme": "Model Evaluation",
-    "chinese": "ROC curve 總結不同 threshold 下 sensitivity 和 specificity 的取捨。",
+    "chinese": "ROC 曲線總結不同門檻值下敏感度和特異度的取捨。",
     "sentence": "The ROC curve summarizes the trade-off between sensitivity and specificity across thresholds.",
     "template": "The ___ summarizes the trade-off between ___ and ___ across ___.",
     "analysis": [
@@ -899,7 +899,7 @@ window.englishLessons = [
   {
     "id": "threshold-recommendation",
     "theme": "Classification",
-    "chinese": "建議的 threshold 應反映每種錯誤的 business cost。",
+    "chinese": "建議的門檻值應反映每種錯誤的商業成本。",
     "sentence": "The recommended threshold should reflect the business cost of each type of error.",
     "template": "The recommended ___ should reflect ___ of each type of ___.",
     "analysis": [
@@ -912,7 +912,7 @@ window.englishLessons = [
   {
     "id": "profit-matrix",
     "theme": "Business Value",
-    "chinese": "Profit matrix 可以把模型預測轉換成預期商業價值。",
+    "chinese": "利潤矩陣可以把模型預測轉換成預期商業價值。",
     "sentence": "A profit matrix can translate model predictions into expected business value.",
     "template": "A ___ can translate ___ into ___.",
     "analysis": [
@@ -925,7 +925,7 @@ window.englishLessons = [
   {
     "id": "partial-dependence",
     "theme": "Interpretability",
-    "chinese": "Partial dependence plot 顯示在平均其他變數後，某個預測變數的平均預測效果。",
+    "chinese": "部分依賴圖顯示在平均其他變數後，某個預測變數的平均預測效果。",
     "sentence": "A partial dependence plot shows the average predicted effect of a predictor after averaging over other variables.",
     "template": "A ___ plot shows the average predicted effect of ___ after ___.",
     "analysis": [
@@ -938,7 +938,7 @@ window.englishLessons = [
   {
     "id": "ice-plot",
     "theme": "Interpretability",
-    "chinese": "ICE plot 可以揭露預測變數效果是否在不同觀測值之間不同。",
+    "chinese": "ICE 圖可以揭露預測變數效果是否在不同觀測值之間不同。",
     "sentence": "An ICE plot can reveal whether the effect of a predictor differs across individual observations.",
     "template": "An ___ plot can reveal whether ___ differs across ___.",
     "analysis": [
@@ -951,7 +951,7 @@ window.englishLessons = [
   {
     "id": "variable-importance-limit",
     "theme": "Interpretability",
-    "chinese": "Variable importance 會排序預測變數，但不顯示效果方向。",
+    "chinese": "變數重要性會排序預測變數，但不顯示效果方向。",
     "sentence": "Variable importance ranks predictors, but it does not show the direction of the effect.",
     "template": "___ ranks ___, but it does not show ___.",
     "analysis": [
@@ -964,7 +964,7 @@ window.englishLessons = [
   {
     "id": "permutation-importance",
     "theme": "Interpretability",
-    "chinese": "Permutation importance 衡量隨機打亂某個預測變數後，模型表現下降多少。",
+    "chinese": "置換重要性衡量隨機打亂某個預測變數後，模型表現下降多少。",
     "sentence": "Permutation importance measures how much model performance decreases when a predictor is randomly shuffled.",
     "template": "___ measures how much ___ decreases when ___ is randomly shuffled.",
     "analysis": [
@@ -990,7 +990,7 @@ window.englishLessons = [
   {
     "id": "ensemble-benefit",
     "theme": "Ensemble",
-    "chinese": "Ensemble 可以透過結合多個較弱模型來提升預測表現。",
+    "chinese": "集成模型可以透過結合多個較弱模型來提升預測表現。",
     "sentence": "An ensemble can improve predictive performance by combining multiple weaker models.",
     "template": "An ___ can improve ___ by ___.",
     "analysis": [
@@ -1003,7 +1003,7 @@ window.englishLessons = [
   {
     "id": "gbm-learning-rate",
     "theme": "Boosting",
-    "chinese": "較小的 learning rate 通常需要更多 trees，但可能改善泛化能力。",
+    "chinese": "較小的學習率通常需要更多樹，但可能改善泛化能力。",
     "sentence": "A smaller learning rate usually requires more trees but may improve generalization.",
     "template": "A smaller ___ usually requires ___ but may improve ___.",
     "analysis": [
@@ -1016,7 +1016,7 @@ window.englishLessons = [
   {
     "id": "max-depth",
     "theme": "Tree Tuning",
-    "chinese": "限制 tree depth 可以透過限制模型複雜度來降低 overfitting。",
+    "chinese": "限制樹深度可以透過限制模型複雜度來降低過度擬合。",
     "sentence": "Limiting tree depth can reduce overfitting by restricting model complexity.",
     "template": "Limiting ___ can reduce ___ by restricting ___.",
     "analysis": [
@@ -1029,7 +1029,7 @@ window.englishLessons = [
   {
     "id": "min-node-size",
     "theme": "Tree Tuning",
-    "chinese": "提高 minimum node size 可以讓樹對雜訊較不敏感。",
+    "chinese": "提高最小節點大小可以讓樹對雜訊較不敏感。",
     "sentence": "Increasing the minimum node size can make the tree less sensitive to noise.",
     "template": "Increasing ___ can make ___ less sensitive to ___.",
     "analysis": [
@@ -1042,7 +1042,7 @@ window.englishLessons = [
   {
     "id": "cp-pruning",
     "theme": "Tree Tuning",
-    "chinese": "Pruning 會移除幾乎沒有增加預測價值的 split，這可能改善泛化能力。",
+    "chinese": "剪枝會移除幾乎沒有增加預測價值的切分，這可能改善泛化能力。",
     "sentence": "Pruning removes splits that add little predictive value, which can improve generalization.",
     "template": "___ removes ___ that add little ___, which can improve ___.",
     "analysis": [
@@ -1068,7 +1068,7 @@ window.englishLessons = [
   {
     "id": "interaction-detection",
     "theme": "Interaction",
-    "chinese": "如果一個預測變數的效果會隨另一個預測變數的層級改變，應考慮 interaction。",
+    "chinese": "如果一個預測變數的效果會隨另一個預測變數的層級改變，應考慮交互作用。",
     "sentence": "An interaction should be considered if the effect of one predictor changes across levels of another predictor.",
     "template": "An ___ should be considered if ___ changes across levels of ___.",
     "analysis": [
@@ -1094,7 +1094,7 @@ window.englishLessons = [
   {
     "id": "confidence-interval",
     "theme": "Uncertainty",
-    "chinese": "較寬的 confidence interval 表示估計效果有較高不確定性。",
+    "chinese": "較寬的信賴區間表示估計效果有較高不確定性。",
     "sentence": "A wider confidence interval indicates greater uncertainty around the estimated effect.",
     "template": "A wider ___ indicates greater uncertainty around ___.",
     "analysis": [
@@ -1107,7 +1107,7 @@ window.englishLessons = [
   {
     "id": "prediction-interval",
     "theme": "Uncertainty",
-    "chinese": "Prediction interval 比 confidence interval 寬，因為它包含個別結果的變異。",
+    "chinese": "預測區間比信賴區間寬，因為它包含個別結果的變異。",
     "sentence": "A prediction interval is wider than a confidence interval because it includes individual outcome variability.",
     "template": "A ___ is wider than ___ because it includes ___.",
     "analysis": [
@@ -1120,7 +1120,7 @@ window.englishLessons = [
   {
     "id": "holdout-performance",
     "theme": "Validation",
-    "chinese": "Holdout performance 提供模型在新資料上表現的較客觀估計。",
+    "chinese": "保留資料表現提供模型在新資料上表現的較客觀估計。",
     "sentence": "Holdout performance provides a more objective estimate of how the model may perform on new data.",
     "template": "___ provides a more objective estimate of how ___ may perform on ___.",
     "analysis": [
@@ -1133,7 +1133,7 @@ window.englishLessons = [
   {
     "id": "unseen-levels",
     "theme": "Deployment",
-    "chinese": "部署模型前，必須處理 scoring data 中新的 factor levels。",
+    "chinese": "部署模型前，必須處理評分資料中新的因子水準。",
     "sentence": "New factor levels in the scoring data must be handled before the model is deployed.",
     "template": "New ___ in ___ must be handled before ___ is deployed.",
     "analysis": [
@@ -1146,7 +1146,7 @@ window.englishLessons = [
   {
     "id": "imbalanced-resampling",
     "theme": "Classification",
-    "chinese": "Resampling 可以協助處理 class imbalance，但只應用在 training data 內。",
+    "chinese": "重抽樣可以協助處理類別不平衡，但只應用在訓練資料內。",
     "sentence": "Resampling can help address class imbalance, but it should be applied only within the training data.",
     "template": "___ can help address ___, but it should be applied only within ___.",
     "analysis": [
@@ -1159,7 +1159,7 @@ window.englishLessons = [
   {
     "id": "sampling-bias",
     "theme": "Data Risk",
-    "chinese": "如果 training data 無法代表模型使用族群，可能會產生 sampling bias。",
+    "chinese": "如果訓練資料無法代表模型使用族群，可能會產生抽樣偏誤。",
     "sentence": "Sampling bias may occur if the training data do not represent the population where the model will be used.",
     "template": "___ may occur if ___ do not represent ___.",
     "analysis": [
@@ -1185,7 +1185,7 @@ window.englishLessons = [
   {
     "id": "reproducibility",
     "theme": "Workflow",
-    "chinese": "設定 random seed 有助於讓建模結果可重現。",
+    "chinese": "設定隨機種子有助於讓建模結果可重現。",
     "sentence": "Setting a random seed helps make the modeling results reproducible.",
     "template": "Setting ___ helps make ___ reproducible.",
     "analysis": [
@@ -1250,7 +1250,7 @@ window.englishLessons = [
   {
     "id": "ethical-bias",
     "theme": "Model Governance",
-    "chinese": "模型在用於支援決策前，應檢查潛在 bias。",
+    "chinese": "模型在用於支援決策前，應檢查潛在偏誤。",
     "sentence": "The model should be checked for potential bias before it is used to support decisions.",
     "template": "The model should be checked for ___ before it is used to ___.",
     "analysis": [
@@ -1302,7 +1302,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-alpha",
     "theme": "Exam PA Concept",
-    "chinese": "Alpha 是介於 0 到 1 之間的混合係數，用來決定 ridge 和 lasso 正則化懲罰的相對權重。",
+    "chinese": "Alpha 是介於 0 到 1 之間的混合係數，用來決定 Ridge 和 Lasso 正則化懲罰的相對權重。",
     "sentence": "Alpha is the mixing coefficient ranging from 0 to 1 and determining the relative weight of the ridge and lasso regularization penalties.",
     "template": "___ is the mixing coefficient ranging from ___ to ___ and determining ___.",
     "analysis": [
@@ -1315,7 +1315,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-variance-inflation-factor",
     "theme": "Exam PA Concept",
-    "chinese": "Variance Inflation Factor（VIF）是完整模型中某個預測變數係數變異數，相對於該變數單獨建模時係數變異數的比率。",
+    "chinese": "變異膨脹因子（VIF）是完整模型中某個預測變數係數變異數，相對於該變數單獨建模時係數變異數的比率。",
     "sentence": "Variance Inflation Factor (VIF) is the ratio of the variance of a predictor's coefficient in the full model to its variance when fitted in a standalone model.",
     "template": "___ is the ratio of ___ to ___.",
     "analysis": [
@@ -1328,7 +1328,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-partial-dependence-plot",
     "theme": "Exam PA Concept",
-    "chinese": "Partial dependence plot 讓我們了解特徵與預測結果之間的關係。",
+    "chinese": "部分依賴圖讓我們了解特徵與預測結果之間的關係。",
     "sentence": "Partial dependence plots allow us to understand the relationship between features and predicted outcome.",
     "template": "___ allow ___ to ___.",
     "analysis": [
@@ -1341,7 +1341,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-partial-dependence-plot-calculation",
     "theme": "Exam PA Concept",
-    "chinese": "計算 partial dependence 時，我們會把該變數替換成指定值，對所有觀測值產生預測，然後取平均。",
+    "chinese": "計算部分依賴時，我們會把該變數替換成指定值，對所有觀測值產生預測，然後取平均。",
     "sentence": "To calculate partial dependence, we replace the variable with chosen values, predict outcomes for all observations, and take the average.",
     "template": "To calculate ___, ___.",
     "analysis": [
@@ -1354,7 +1354,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-studentized-residual",
     "theme": "Exam PA Concept",
-    "chinese": "Studentized residual 是原始殘差除以其估計標準誤的比率，並且會考慮每個資料點的 leverage。",
+    "chinese": "學生化殘差是原始殘差除以其估計標準誤的比率，並且會考慮每個資料點的槓桿值。",
     "sentence": "A studentized residual is the ratio of the raw residual to its estimated standard error, which accounts for each data point's leverage.",
     "template": "A studentized residual is the ratio of the raw residual to its ___, ___.",
     "analysis": [
@@ -1367,7 +1367,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-aic",
     "theme": "Exam PA Concept",
-    "chinese": "AIC 透過結合 deviance 和模型複雜度懲罰來衡量模型表現。",
+    "chinese": "AIC 透過結合離差和模型複雜度懲罰來衡量模型表現。",
     "sentence": "AIC measures model performance by combining deviance with a penalty for model complexity.",
     "template": "___ measures ___ by ___.",
     "analysis": [
@@ -1380,7 +1380,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-aic-is-defined-as-the-deviance-plus-a-penalty-of",
     "theme": "Exam PA Concept",
-    "chinese": "AIC 定義為 deviance 加上 2 倍參數數量或自由度的懲罰。",
+    "chinese": "AIC 定義為離差加上 2 倍參數數量或自由度的懲罰。",
     "sentence": "AIC is defined as the deviance plus a penalty of 2 times the number of parameters/degrees of freedom.",
     "template": "___ is defined as ___ plus ___.",
     "analysis": [
@@ -1393,7 +1393,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-confusion-matrix",
     "theme": "Exam PA Concept",
-    "chinese": "Confusion matrix 是模型預測結果的方便摘要，並提供多種表現指標。",
+    "chinese": "混淆矩陣是模型預測結果的方便摘要，並提供多種表現指標。",
     "sentence": "The confusion matrix is a convenient summary of the model predictions, providing several performance measures.",
     "template": "___ is a convenient summary ___.",
     "analysis": [
@@ -1406,7 +1406,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-accuracy",
     "theme": "Exam PA Concept",
-    "chinese": "Accuracy 是資料中被正確分類的觀測值比例。",
+    "chinese": "準確率是資料中被正確分類的觀測值比例。",
     "sentence": "Accuracy is the percentage of observations in the data that are correctly classified.",
     "template": "___ is the percentage of ___.",
     "analysis": [
@@ -1419,7 +1419,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-precision",
     "theme": "Exam PA Concept",
-    "chinese": "Precision 是正類預測中真正正確的比例。",
+    "chinese": "精確率是正類預測中真正正確的比例。",
     "sentence": "The precision is the percentage of positive predictions that are correct.",
     "template": "___ is the percentage of ___.",
     "analysis": [
@@ -1432,7 +1432,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-sensitivity-true-positive-rate-tpr",
     "theme": "Exam PA Concept",
-    "chinese": "Sensitivity 是正類觀測值中被正確預測的比例。",
+    "chinese": "敏感度是正類觀測值中被正確預測的比例。",
     "sentence": "The sensitivity is the percentage of positive observations with correct predictions.",
     "template": "___ is the percentage of ___.",
     "analysis": [
@@ -1445,7 +1445,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-specificity-false-positive-rate-fpr",
     "theme": "Exam PA Concept",
-    "chinese": "Specificity 是負類觀測值中被正確預測的比例。",
+    "chinese": "特異度是負類觀測值中被正確預測的比例。",
     "sentence": "Specificity is the percentage of negative observations with correct predictions.",
     "template": "___ is the percentage of ___.",
     "analysis": [
@@ -1458,7 +1458,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-area-under-the-curve-auc",
     "theme": "Exam PA Concept",
-    "chinese": "AUC 是 ROC curve 下方的面積，而 ROC curve 會在所有 0 到 1 的 cutoff 下繪製 sensitivity 對 1 - specificity 的關係。",
+    "chinese": "AUC 是 ROC 曲線下方的面積，而 ROC 曲線會在所有 0 到 1 的門檻值下繪製敏感度對 1 - 特異度的關係。",
     "sentence": "The AUC is the area under the ROC curve, which plots the sensitivity against 1 - specificity across all cutoffs from 0 to 1.",
     "template": "___ is the area under ___, which ___.",
     "analysis": [
@@ -1471,7 +1471,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-outliers-refer-to-observations-with-unusual-valu",
     "theme": "Exam PA Concept",
-    "chinese": "Outlier 是指 target variable 有異常值的觀測值。",
+    "chinese": "離群值是指目標變數有異常值的觀測值。",
     "sentence": "Outliers refer to observations with unusual values of the target variable.",
     "template": "Outliers ___ to ___ with ___ the ___.",
     "analysis": [
@@ -1484,7 +1484,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-unstructured-data",
     "theme": "Exam PA Concept",
-    "chinese": "Unstructured data 包含無法放進表格中的資訊。",
+    "chinese": "非結構化資料包含無法放進表格中的資訊。",
     "sentence": "Unstructured data includes information that does not fit into tables.",
     "template": "___ includes ___.",
     "analysis": [
@@ -1497,7 +1497,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-why-standardizing-numeric-predictors-has",
     "theme": "Exam PA Concept",
-    "chinese": "以數值預測變數建立的 decision tree 分割，取決於該變數的排序。",
+    "chinese": "以數值預測變數建立的決策樹分割，取決於該變數的排序。",
     "sentence": "The splits of a decision tree based on a numeric predictor depend on their ranks.",
     "template": "The ___ decision ___ a ___ on ___.",
     "analysis": [
@@ -1510,7 +1510,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-interactions",
     "theme": "Exam PA Concept",
-    "chinese": "當某個預測變數和 target variable 的關係取決於另一個預測變數的值時，兩個預測變數之間就有 interaction。",
+    "chinese": "當某個預測變數和目標變數的關係取決於另一個預測變數的值時，兩個預測變數之間就有交互作用。",
     "sentence": "Two predictors have an interaction when the relationship between a predictor and the target variable depends on the value of another predictor.",
     "template": "___ depends on ___.",
     "analysis": [
@@ -1523,7 +1523,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-modeling-impacts-of-the-factor-conv",
     "theme": "Exam PA Concept",
-    "chinese": "如果變數維持數值型態，tree split 會根據它們的排序來決定。",
+    "chinese": "如果變數維持數值型態，樹切分會根據它們的排序來決定。",
     "sentence": "If the variables remain numeric, tree splits are determined based on their ranks.",
     "template": "If the variables remain numeric, ___.",
     "analysis": [
@@ -1536,7 +1536,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-two-differences-between-the-interaction-",
     "theme": "Exam PA Concept",
-    "chinese": "Correlation 描述兩個變數之間的線性關係，但 interaction 描述的是三方關係。",
+    "chinese": "相關性描述兩個變數之間的線性關係，但交互作用描述的是三方關係。",
     "sentence": "A correlation describes the linear relationship between two variables, but an interaction describes a three-way relationship: How the relationship between a predictor and the target variable depends on the value of another predictor.",
     "template": "___ depends on ___.",
     "analysis": [
@@ -1549,7 +1549,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-lambda",
     "theme": "Exam PA Concept",
-    "chinese": "Lambda 是 shrinkage parameter，可用來表示 elastic net 的複雜度。",
+    "chinese": "Lambda 是收縮參數，可用來表示彈性網的複雜度。",
     "sentence": "Lambda is the shrinkage parameter that can be used to index the complexity of an elastic net.",
     "template": "___ can be used to ___.",
     "analysis": [
@@ -1562,7 +1562,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-variable-importance-of-regression-trees",
     "theme": "Exam PA Concept",
-    "chinese": "Variable importance 會依照變數對模型的貢獻，顯示變數的重要性排序。",
+    "chinese": "變數重要性會依照變數對模型的貢獻，顯示變數的重要性排序。",
     "sentence": "Variable importance shows the ordering of variables according to their contribution to the model.",
     "template": "___ shows ___ to ___.",
     "analysis": [
@@ -1575,7 +1575,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-standardized-in-lasso-model",
     "theme": "Exam PA Concept",
-    "chinese": "Lasso 的 regularization term 是模型係數絕對值的總和。",
+    "chinese": "Lasso 的正則化項是模型係數絕對值的總和。",
     "sentence": "The lasso regulation term is the sum of absolute values of model coefficients.",
     "template": "___ is the sum of absolute values of ___.",
     "analysis": [
@@ -1588,7 +1588,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-random-forest-why-random-why-forest",
     "theme": "Exam PA Concept",
-    "chinese": "Random Forest 中的 random 來自於每棵樹都是用 bootstrap sample 建立。",
+    "chinese": "隨機森林中的「隨機」來自於每棵樹都是用拔靴樣本建立。",
     "sentence": "Each tree is built on a bootstrapped sample (randomly selected with replacement).",
     "template": "___ is ___ with ___.",
     "analysis": [
@@ -1601,7 +1601,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-descriptive-analytics",
     "theme": "Exam PA Concept",
-    "chinese": "Descriptive analytics 著重於從過去資料取得洞察，並回答「發生了什麼？」這個問題。",
+    "chinese": "描述型分析著重於從過去資料取得洞察，並回答「發生了什麼？」這個問題。",
     "sentence": "Descriptive analytics focuses on insights from the past and answers the question, \"What happened?\"",
     "template": "___ focuses on ___ from ___.",
     "analysis": [
@@ -1614,7 +1614,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-prescriptive-analytics",
     "theme": "Exam PA Concept",
-    "chinese": "Prescriptive analytics 會建議決策選項。",
+    "chinese": "處方型分析會建議決策選項。",
     "sentence": "Prescriptive analytics suggests decision options.",
     "template": "___ suggests ___.",
     "analysis": [
@@ -1627,7 +1627,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-predictive-analytics",
     "theme": "Exam PA Concept",
-    "chinese": "Predictive analytics 著重於未來，並處理「接下來可能發生什麼？」這個問題。",
+    "chinese": "預測型分析著重於未來，並處理「接下來可能發生什麼？」這個問題。",
     "sentence": "Predictive analytics focuses on the future and addresses the question, \"What might happen next?\"",
     "template": "___ focuses on ___.",
     "analysis": [
@@ -1640,7 +1640,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-state-why-changing-the-random-seed-would-affect-",
     "theme": "Exam PA Concept",
-    "chinese": "每次執行 cost-complexity pruning 演算法時，cross validation 中使用的資料分割都會被隨機指定。",
+    "chinese": "每次執行成本複雜度剪枝演算法時，交叉驗證中使用的資料分割都會被隨機指定。",
     "sentence": "Each time the cost-complexity pruning algorithm is run, the splits of data used in the cross validation are randomly assigned.",
     "template": "Each time ___ is run, ___ are randomly assigned.",
     "analysis": [
@@ -1653,7 +1653,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-ntree-in-random-forests-hyperparameters",
     "theme": "Exam PA Concept",
-    "chinese": "Ntree 是 random forest 要配適的樹的數量。",
+    "chinese": "Ntree 是隨機森林要配適的樹的數量。",
     "sentence": "Ntree refers to the number of trees to fit for the random forest.",
     "template": "___ refers to ___ to ___.",
     "analysis": [
@@ -1666,7 +1666,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-mtry-in-random-forests-hyperparameters",
     "theme": "Exam PA Concept",
-    "chinese": "mtry hyperparameter 是每次分割時隨機選出並納入考慮的預測變數數量。",
+    "chinese": "mtry 超參數是每次分割時隨機選出並納入考慮的預測變數數量。",
     "sentence": "The mtry hyperparameter is the number of predictors chosen at random to be considered at each split.",
     "template": "The ___ hyperparameter is the number of ___ chosen at random to be considered at each split.",
     "analysis": [
@@ -1679,7 +1679,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-nodesize-in-random-forests-hyperparameters",
     "theme": "Exam PA Concept",
-    "chinese": "Nodesize 是每個 terminal node 允許的最小觀測值數量。",
+    "chinese": "Nodesize 是每個終端節點允許的最小觀測值數量。",
     "sentence": "Nodesize is the minimum number of observations allowed in each terminal node.",
     "template": "___ is the minimum ___.",
     "analysis": [
@@ -1692,7 +1692,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-maxnodes-in-random-forests-hyperparameters",
     "theme": "Exam PA Concept",
-    "chinese": "Maxnodes 定義每棵樹允許的最大 terminal node 數量。",
+    "chinese": "Maxnodes 定義每棵樹允許的最大終端節點數量。",
     "sentence": "Maxnodes defines the maximum number of terminal nodes allowed in each tree.",
     "template": "___ defines ___.",
     "analysis": [
@@ -1705,7 +1705,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-biplot",
     "theme": "Exam PA Concept",
-    "chinese": "這張圖稱為 biplot，因為它同時顯示兩種資訊。",
+    "chinese": "這張圖稱為雙標圖，因為它同時顯示兩種資訊。",
     "sentence": "The plot is called a biplot because it displays two types of information: observation scores of the first two PCs (plotted on the left and bottom axes) and variable loadings of the first two PCs (plotted on the top and right axes).",
     "template": "___ is called ___ because ___.",
     "analysis": [
@@ -1718,7 +1718,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-a-scenario-where-a-big-shrinkage-value-",
     "theme": "Exam PA Concept",
-    "chinese": "當只建立少數幾棵樹時，較大的 shrinkage 會比較適合。",
+    "chinese": "當只建立少數幾棵樹時，較大的收縮會比較適合。",
     "sentence": "When just a few trees are built, a big shrinkage would be preferable.",
     "template": "When just a few trees are built, ___.",
     "analysis": [
@@ -1731,7 +1731,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-differences-between-using-weights-a",
     "theme": "Exam PA Concept",
-    "chinese": "Weight 會改變每個觀測值對模型的重要性。",
+    "chinese": "權重會改變每個觀測值對模型的重要性。",
     "sentence": "Weight: Change how important each observation is to the model.",
     "template": "___ changes how important each observation is to ___.",
     "analysis": [
@@ -1744,7 +1744,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-differences-between-using-weights-a-37059a",
     "theme": "Exam PA Concept",
-    "chinese": "在 GLM 中把變數作為 weight 使用，會調整每個觀測值在模型中的影響力。",
+    "chinese": "在 GLM 中把變數作為權重使用，會調整每個觀測值在模型中的影響力。",
     "sentence": "Using a variable as a weight in a GLM adjusts the impact of each observation in the model.",
     "template": "___ adjusts ___.",
     "analysis": [
@@ -1757,7 +1757,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-hierarchical-clustering",
     "theme": "Exam PA Concept",
-    "chinese": "Hierarchical clustering 演算法一開始有 n 個 cluster，然後反覆合併最相似的觀測值，最後形成 dendrogram。",
+    "chinese": "階層式分群演算法一開始有 n 個群集，然後反覆合併最相似的觀測值，最後形成樹狀圖。",
     "sentence": "The hierarchical clustering algorithm starts with n clusters and iteratively fuses the most similar observations, resulting in a dendrogram.",
     "template": "___ starts with ___.",
     "analysis": [
@@ -1783,7 +1783,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-there-are-two-ways-to-detect-the-presence-of-ove",
     "theme": "Exam PA Concept",
-    "chinese": "Residual deviance 與 degrees of freedom 的比率明顯大於 1。",
+    "chinese": "殘差離差與自由度的比率明顯大於 1。",
     "sentence": "The ratio of the residual deviance (104,664) to the degrees of freedom (14,310) is significantly greater than 1.",
     "template": "The ratio of ___ to ___ is significantly greater than ___.",
     "analysis": [
@@ -1796,7 +1796,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-shrinkage-parameter-eta-in-boosting",
     "theme": "Exam PA Concept",
-    "chinese": "Eta 介於 0 和 1 之間，用來控制 boosting 學習的快慢。",
+    "chinese": "Eta 介於 0 和 1 之間，用來控制 Boosting 學習的快慢。",
     "sentence": "Between 0 and 1, controls how slow or fast boosting learns.",
     "template": "Between ___ and ___ controls ___ or fast ___.",
     "analysis": [
@@ -1809,7 +1809,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-whether-oversampling-should-be-performed",
     "theme": "Exam PA Concept",
-    "chinese": "Oversampling 應該在訓練資料被切成 k 個 folds 之後執行。",
+    "chinese": "過抽樣應該在訓練資料被切成 k 折之後執行。",
     "sentence": "Oversampling should be performed after the training data is split into the k folds.",
     "template": "___ should be performed after ___ is split into ___.",
     "analysis": [
@@ -1822,7 +1822,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-why-one-hot-encoding-binarization-is-avoided-in-",
     "theme": "Exam PA Concept",
-    "chinese": "在 decision tree 中，不建議對 categorical variables 使用 one-hot encoding，因為這會造成資料稀疏，並大幅降低模型的計算效率與可解釋性。",
+    "chinese": "在決策樹中，不建議對類別變數使用獨熱編碼，因為這會造成資料稀疏，並大幅降低模型的計算效率與可解釋性。",
     "sentence": "In decision trees, one-hot encoding for categorical variables is discouraged, as it leads to data sparsity and significantly reduces the model's computational efficiency and interpretability.",
     "template": "In decision trees, ___.",
     "analysis": [
@@ -1835,7 +1835,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-generalized-linear-model-glm",
     "theme": "Exam PA Concept",
-    "chinese": "GLM 是一種模型，會假設 target 的分配並指定 link function，兩者都由分析者選擇。",
+    "chinese": "GLM 是一種模型，會假設目標的分配並指定連結函數，兩者都由分析者選擇。",
     "sentence": "GLMs are models that assume a distribution for the target and a link function, both chosen by the analyst.",
     "template": "___ are ___ that ___.",
     "analysis": [
@@ -1861,7 +1861,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-f-statistic",
     "theme": "Exam PA Concept",
-    "chinese": "F-statistic 是 explained variance 與 unexplained residual variance 的比率，用來檢定 regression model 的整體顯著性。",
+    "chinese": "F 統計量是可解釋變異與未解釋殘差變異的比率，用來檢定迴歸模型的整體顯著性。",
     "sentence": "The F-statistic is the ratio of the explained variance to the unexplained (residual) variance, used to test the global significance of a regression model.",
     "template": "The F-statistic is the ratio of the explained variance to the ___, ___.",
     "analysis": [
@@ -1874,7 +1874,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-t-statistic",
     "theme": "Exam PA Concept",
-    "chinese": "t-statistic 用來檢定單一預測變數係數的顯著性。",
+    "chinese": "t 統計量用來檢定單一預測變數係數的顯著性。",
     "sentence": "The t-statistic is used to test the significance of an individual predictor's coefficient.",
     "template": "___ is used to ___.",
     "analysis": [
@@ -1887,7 +1887,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-target-leakage",
     "theme": "Exam PA Concept",
-    "chinese": "Predictors 包含模型實際應用時無法取得的 target information。",
+    "chinese": "預測變數包含模型實際應用時無法取得的目標資訊。",
     "sentence": "Predictors include target information that is unavailable when the model is applied in practice.",
     "template": "___ include ___ when ___.",
     "analysis": [
@@ -1900,7 +1900,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-roc-curve",
     "theme": "Exam PA Concept",
-    "chinese": "ROC curve 用來評估 classifiers 的表現。",
+    "chinese": "ROC 曲線用來評估分類器的表現。",
     "sentence": "An receiver operating characteristic(ROC) curve is used to evaluate the performance of classifiers.",
     "template": "___ is used to ___.",
     "analysis": [
@@ -1913,7 +1913,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-stepwise-selection-vs-regularization",
     "theme": "Exam PA Concept",
-    "chinese": "它們都會執行 feature selection，使沒有貢獻的 predictors 被移除。",
+    "chinese": "它們都會執行特徵選擇，使沒有貢獻的預測變數被移除。",
     "sentence": "They perform feature selection, resulting in predictors that do not contribute to being dropped.",
     "template": "They ___ resulting ___ do not ___ to being ___.",
     "analysis": [
@@ -1926,7 +1926,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-compare-and-contrast-roc-and-auc-in-the-context-",
     "theme": "Exam PA Concept",
-    "chinese": "ROC 和 AUC 都用來評估 classifiers 的表現。",
+    "chinese": "ROC 和 AUC 都用來評估分類器的表現。",
     "sentence": "Both ROC and AUC are used to evaluate the performance of classifiers.",
     "template": "Both ___ and ___ are ___.",
     "analysis": [
@@ -1939,7 +1939,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-three-differences-between-fitting-a-norm",
     "theme": "Exam PA Concept",
-    "chinese": "Normal linear regression model 使用 OLS 估計係數，但 GLM 使用 MLE。",
+    "chinese": "常態線性迴歸模型使用 OLS 估計係數，但 GLM 使用 MLE。",
     "sentence": "The normal linear regression model estimates the coefficients using OLS(ordinary least squares) but the GLM does it using MLE(maximum likelihood estimation).",
     "template": "The ___ model ___ using ___ but ___ it using ___ estimation).",
     "analysis": [
@@ -1952,7 +1952,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-minsplit-in-decision-tree",
     "theme": "Exam PA Concept",
-    "chinese": "Minsplit 是一個 node 要被分割所需的最小觀測值數量。",
+    "chinese": "Minsplit 是一個節點要被分割所需的最小觀測值數量。",
     "sentence": "The minimum number of observations required in a node for splitting.",
     "template": "The ___ observations ___ node ___.",
     "analysis": [
@@ -1965,7 +1965,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-minbucket-in-decision-tree",
     "theme": "Exam PA Concept",
-    "chinese": "Minbucket 是任何 terminal node 所需的最小觀測值數量，通常稱為 minimum bucket size。",
+    "chinese": "Minbucket 是任何終端節點所需的最小觀測值數量，通常稱為最小桶大小。",
     "sentence": "The minimum number of observations required in any terminal node, usually called “minimum bucket size”.",
     "template": "The minimum number of observations required in any terminal node, ___.",
     "analysis": [
@@ -1978,7 +1978,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-cp-in-decision-tree",
     "theme": "Exam PA Concept",
-    "chinese": "cp 非常小，表示只需要少量 information gain 就能進行 split，因此會產生更多 splits。",
+    "chinese": "cp 非常小，表示只需要少量資訊增益就能進行切分，因此會產生更多切分。",
     "sentence": "The cp is very small, meaning a small amount of information gain is required for a split to be made, leading to more splits.",
     "template": "The cp is very small, meaning a small amount of information gain is required for a split to be made, ___.",
     "analysis": [
@@ -1991,7 +1991,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-maxdepth-in-decision-tree",
     "theme": "Exam PA Concept",
-    "chinese": "這個參數指的是最終樹中任何 node 的最大深度，其中 root node 算作深度 0。",
+    "chinese": "這個參數指的是最終樹中任何節點的最大深度，其中根節點算作深度 0。",
     "sentence": "This parameter refers to the maximum depth of any node of the final tree, with the root node counted as depth 0.",
     "template": "This parameter refers to the ___, ___.",
     "analysis": [
@@ -2004,7 +2004,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-compare-and-contrast-stepwise-selection-with-shr",
     "theme": "Exam PA Concept",
-    "chinese": "Stepwise selection 和 lasso / ridge regression 都能避免對資料過度擬合，特別是在觀測值數量相對於預測變數數量很少時。",
+    "chinese": "逐步選擇法和 Lasso / Ridge 迴歸都能避免對資料過度擬合，特別是在觀測值數量相對於預測變數數量很少時。",
     "sentence": "Both stepwise selection and lasso/ridge regression avoid overfitting to the data, especially when the number of observations is small compared to the number of predictors.",
     "template": "Both stepwise selection and lasso/ridge regression avoid overfitting to the ___, ___.",
     "analysis": [
@@ -2017,7 +2017,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-state-the-difference-between-dissimilarity-and-l",
     "theme": "Exam PA Concept",
-    "chinese": "Dissimilarity 衡量兩個個別觀測值之間的距離，而 linkage 衡量兩個觀測值群集之間的距離。",
+    "chinese": "相異度衡量兩個個別觀測值之間的距離，而連結法衡量兩個觀測值群集之間的距離。",
     "sentence": "Dissimilarity measures the distance between two individual observations, while linkage measures the distance between two clusters of observations.",
     "template": "___ measures ___ while ___.",
     "analysis": [
@@ -2030,7 +2030,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-how-binarization-impact-the-feature-selection",
     "theme": "Exam PA Concept",
-    "chinese": "Binarization 可能進一步簡化模型，因為如果某些 factor level 對模型沒有顯著貢獻，就可以被移除。",
+    "chinese": "二元化可能進一步簡化模型，因為如果某些因子水準對模型沒有顯著貢獻，就可以被移除。",
     "sentence": "Binarization may help simplify the model even more, as individual factor levels could be removed if they do not contribute significantly to the model.",
     "template": "___ may help simplify the model even more, as individual factor levels could be removed if they do not contribute significantly to ___.",
     "analysis": [
@@ -2043,7 +2043,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-cost-complexity-pruning",
     "theme": "Exam PA Concept",
-    "chinese": "Pruning 是一種降低 decision tree 複雜度並幫助避免 overfitting 的技術。",
+    "chinese": "剪枝是一種降低決策樹複雜度並幫助避免過度擬合的技術。",
     "sentence": "Pruning is a technique used to reduce the complexity of a decision tree and helps prevent overfitting.",
     "template": "___ reduce ___.",
     "analysis": [
@@ -2056,7 +2056,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-the-difference-in-the-resulting-feature-",
     "theme": "Exam PA Concept",
-    "chinese": "PCA 會產生稱為 principal components 的數值特徵，而這些特徵是原始變數的線性組合。",
+    "chinese": "PCA 會產生稱為主成分的數值特徵，而這些特徵是原始變數的線性組合。",
     "sentence": "PCA results in numeric features called principal components, which are linear combinations of the original variables.",
     "template": "PCA results in numeric features called principal components, ___.",
     "analysis": [
@@ -2069,7 +2069,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-one-potential-strength-and-one-potential-weaknes",
     "theme": "Exam PA Concept",
-    "chinese": "一個潛在優點是，同一個 factor 中只有有用的 dummy variables 可以保留在模型中，因此能簡化模型。",
+    "chinese": "一個潛在優點是，同一個因子中只有有用的虛擬變數可以保留在模型中，因此能簡化模型。",
     "sentence": "A potential strength is that only the useful dummy variables from the same factor can be retained in the model, thus simplifying the model.",
     "template": "A potential strength is that only the useful dummy variables from the same factor can be retained in the model, ___.",
     "analysis": [
@@ -2082,7 +2082,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-variance",
     "theme": "Exam PA Concept",
-    "chinese": "Variance 表示預測結果會如何隨使用的訓練資料而變動。",
+    "chinese": "變異表示預測結果會如何隨使用的訓練資料而變動。",
     "sentence": "The variance indicate how much the predictions vary depending on the training data used.",
     "template": "___ indicate ___.",
     "analysis": [
@@ -2095,7 +2095,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-bias",
     "theme": "Exam PA Concept",
-    "chinese": "Bias 表示期望預測值與 unseen data 上實際結果的接近程度。",
+    "chinese": "偏誤表示期望預測值與未見資料上實際結果的接近程度。",
     "sentence": "The bias indicates how close expected predictions and actual results are on unseen data.",
     "template": "___ indicates ___.",
     "analysis": [
@@ -2108,7 +2108,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-bias-variance-trade-off",
     "theme": "Exam PA Concept",
-    "chinese": "Inflexible models 具有低 variance 但高 bias，而 flexible models 具有高 variance 但低 bias。",
+    "chinese": "不彈性的模型具有低變異但高偏誤，而彈性的模型具有高變異但低偏誤。",
     "sentence": "Inflexible models have low variance but high bias, while flexible models have high variance but low bias.",
     "template": "Inflexible ___ variance but ___ while ___ high ___ but ___ bias.",
     "analysis": [
@@ -2121,7 +2121,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-one-standard-error-rule",
     "theme": "Exam PA Concept",
-    "chinese": "我們可以不選擇最小 cross-validation error 的模型，而是選擇 error 在該最小值一個標準誤以內的最簡單模型。",
+    "chinese": "我們可以不選擇最小交叉驗證誤差的模型，而是選擇誤差在該最小值一個標準誤以內的最簡單模型。",
     "sentence": "Instead of the minimum cross-validation error, we may select the simplest model (lowest flexibility) whose error is within one standard error of that minimum.",
     "template": "___ is ___ that ___.",
     "analysis": [
@@ -2134,7 +2134,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-splitting-criteria-for-classification-decision-t",
     "theme": "Exam PA Concept",
-    "chinese": "Classification decision tree 使用 entropy、Gini index 和 classification error rate 來衡量 impurity。",
+    "chinese": "分類決策樹使用熵、Gini 指數和分類錯誤率來衡量不純度。",
     "sentence": "Classification decision tree measure impurity using entropy, Gini index, and classification error rate.",
     "template": "___ measure ___.",
     "analysis": [
@@ -2147,7 +2147,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-cluster-algorithm",
     "theme": "Exam PA Concept",
-    "chinese": "Cluster algorithm 一開始有 n 個 clusters，然後根據哪些觀測值最相似來反覆合併它們。",
+    "chinese": "群集演算法一開始有 n 個群集，然後根據哪些觀測值最相似來反覆合併它們。",
     "sentence": "The cluster algorithm starts with n clusters and iteratively fuses them based on which observations are most similar.",
     "template": "___ starts with ___.",
     "analysis": [
@@ -2160,7 +2160,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-forward-selection",
     "theme": "Exam PA Concept",
-    "chinese": "Forward selection 從沒有變數開始，然後持續加入變數，直到選定指標不再改善。",
+    "chinese": "向前選擇法從沒有變數開始，然後持續加入變數，直到選定指標不再改善。",
     "sentence": "Forward selection starts with no variables and then adds them until there is no improvement by the selected metric.",
     "template": "___ starts with ___ by ___.",
     "analysis": [
@@ -2173,7 +2173,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-bar-charts",
     "theme": "Exam PA Concept",
-    "chinese": "Bar charts 顯示 factor variable 每個 level 中的觀測值數量或比例。",
+    "chinese": "長條圖顯示因子變數每個水準中的觀測值數量或比例。",
     "sentence": "Bar charts show the number (or proportion) of observations in each level of a factor variable.",
     "template": "___ show ___.",
     "analysis": [
@@ -2186,7 +2186,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-a-stacked-bar-chart",
     "theme": "Exam PA Concept",
-    "chinese": "Stacked bar chart 用來顯示變數各個 level 中的觀測值數量。",
+    "chinese": "堆疊長條圖用來顯示變數各個水準中的觀測值數量。",
     "sentence": "A stacked bar chart to show the number of observations in each level of the variable.",
     "template": "___ show ___.",
     "analysis": [
@@ -2199,7 +2199,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-a-filled-bar-chart",
     "theme": "Exam PA Concept",
-    "chinese": "Filled bar chart 用來顯示該變數與 target variable 之間的關係。",
+    "chinese": "填滿式長條圖用來顯示該變數與目標變數之間的關係。",
     "sentence": "A filled bar chart to show the relationship between that variable and target variable.",
     "template": "___ show ___.",
     "analysis": [
@@ -2212,7 +2212,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-frequency-tables",
     "theme": "Exam PA Concept",
-    "chinese": "Frequency tables 提供 categorical variable 最簡單的摘要。",
+    "chinese": "次數表提供類別變數最簡單的摘要。",
     "sentence": "Frequency tables provide the simplest summary of a categorical variable.",
     "template": "___ provide ___.",
     "analysis": [
@@ -2238,7 +2238,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-principal-component-analysis-pca",
     "theme": "Exam PA Concept",
-    "chinese": "Principal component analysis 是一種 unsupervised learning 技術，會建立新的不相關變數，並使 variance 最大化。",
+    "chinese": "主成分分析是一種非監督式學習技術，會建立新的不相關變數，並使變異最大化。",
     "sentence": "Principal component analysis is an unsupervised learning technique that creates new uncorrelated variables that maximize variance.",
     "template": "___ is an unsupervised learning technique ___.",
     "analysis": [
@@ -2251,7 +2251,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-pca-loadings",
     "theme": "Exam PA Concept",
-    "chinese": "Loadings 代表每個 principal component 中標準化原始變數線性組合的係數。",
+    "chinese": "負荷量代表每個主成分中標準化原始變數線性組合的係數。",
     "sentence": "Loadings represent the coefficients in the linear combination of the standardized original variables for each PC.",
     "template": "___ represent ___.",
     "analysis": [
@@ -2264,7 +2264,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-proportion-of-variance-in-pca",
     "theme": "Exam PA Concept",
-    "chinese": "Proportion of variance 代表每個 principal component 解釋資料總變異的百分比。",
+    "chinese": "變異解釋比例代表每個主成分解釋資料總變異的百分比。",
     "sentence": "The proportion of variance represents the percentage of the total variance in the data explained by each principal component.",
     "template": "___ represents ___ by ___.",
     "analysis": [
@@ -2277,7 +2277,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-information-gain",
     "theme": "Exam PA Concept",
-    "chinese": "Information gain 表示 decision tree 進行 split 時 impurity 減少的程度。",
+    "chinese": "資訊增益表示決策樹進行切分時不純度減少的程度。",
     "sentence": "Information gain means how much impurity is reduced when a decision tree makes a split.",
     "template": "___ is ___ when ___.",
     "analysis": [
@@ -2290,7 +2290,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-lasso",
     "theme": "Exam PA Concept",
-    "chinese": "Lasso 在 loss function 中使用 penalty，來懲罰模型中的大型係數。",
+    "chinese": "Lasso 在損失函數中使用懲罰，來懲罰模型中的大型係數。",
     "sentence": "Lasso uses a penalty in the loss function that penalizes large coefficients in the model.",
     "template": "___ uses ___.",
     "analysis": [
@@ -2303,7 +2303,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-structured-data",
     "theme": "Exam PA Concept",
-    "chinese": "Structured data 可以放進表格中。",
+    "chinese": "結構化資料可以放進表格中。",
     "sentence": "Structured data can fit into tables.",
     "template": "Structured ___ can ___ into ___.",
     "analysis": [
@@ -2316,7 +2316,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-cross-validation",
     "theme": "Exam PA Concept",
-    "chinese": "Cross-validation 透過讓每個資料點在多個 folds 中同時用於 training 和 testing 來降低 variance。",
+    "chinese": "交叉驗證透過讓每個資料點在多個折中同時用於訓練和測試來降低變異。",
     "sentence": "Cross-validation (CV) reduces variance by using every data point for both training and testing across multiple folds.",
     "template": "___ reduces ___ by ___.",
     "analysis": [
@@ -2329,7 +2329,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-binarization",
     "theme": "Exam PA Concept",
-    "chinese": "Binarization 的過程會把單一 categorical factor variable 轉換成多個 Boolean 或 binary variables。",
+    "chinese": "二元化的過程會把單一類別因子變數轉換成多個布林或二元變數。",
     "sentence": "The process of binarization turns a single categorical (factor) variable into multiple Boolean/binary variables.",
     "template": "The ___ turns ___ (factor) ___ Boolean/binary ___.",
     "analysis": [
@@ -2342,7 +2342,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-proxy-variable",
     "theme": "Exam PA Concept",
-    "chinese": "Proxy variables 用來代替真實資訊，通常是因為想要的資訊很難或不可能被衡量。",
+    "chinese": "代理變數用來代替真實資訊，通常是因為想要的資訊很難或不可能被衡量。",
     "sentence": "Proxy variables are used instead of real information, usually because the desired information is hard or impossible to measure.",
     "template": "___ are used instead of ___, usually because ___.",
     "analysis": [
@@ -2355,7 +2355,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-random-forests-vs-boosting",
     "theme": "Exam PA Concept",
-    "chinese": "對 Random Forests 而言，trees 會使用不同 bootstrap samples 獨立建立，確保一棵樹的建立不會影響另一棵樹。",
+    "chinese": "對隨機森林而言，樹會使用不同拔靴樣本獨立建立，確保一棵樹的建立不會影響另一棵樹。",
     "sentence": "For Random Forests, trees are built independently using separate bootstrap samples, ensuring that one tree's construction does not influence another.",
     "template": "___ are ___ that ___.",
     "analysis": [
@@ -2368,7 +2368,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-why-lambda-and-alpha-are-hyperparameters",
     "theme": "Exam PA Concept",
-    "chinese": "在 elastic net 中，alpha 和 lambda 是 hyperparameters，因為它們必須事先提供，而且不會由模型配適演算法最佳化。",
+    "chinese": "在彈性網中，alpha 和 lambda 是超參數，因為它們必須事先提供，而且不會由模型配適演算法最佳化。",
     "sentence": "In an elastic net, alpha and lambda are hyperparameters because they are parameters that we have to supply in advance and are not optimized by the model fitting algorithm.",
     "template": "In an elastic net, ___.",
     "analysis": [
@@ -2381,7 +2381,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-modeling-impacts-of-the-factor-conv-743015",
     "theme": "Exam PA Concept",
-    "chinese": "將變數視為 numeric，代表假設它對 target 有固定的邊際影響和單調關係，並能提供較有效率且 variance 較低的模型。",
+    "chinese": "將變數視為數值變數，代表假設它對目標有固定的邊際影響和單調關係，並能提供較有效率且變異較低的模型。",
     "sentence": "Treating a variable as numeric assumes a constant marginal impact and a monotonic relationship with the target, offering a more efficient model with lower variance.",
     "template": "Treating ___ as numeric ___ marginal ___ and ___ monotonic ___ with ___ target, ___ efficient ___ with ___ variance.",
     "analysis": [
@@ -2394,7 +2394,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-perfect-collinearity",
     "theme": "Exam PA Concept",
-    "chinese": "Perfect collinearity 發生在某個 predictor 是同一模型中其他 predictors 的線性組合時。",
+    "chinese": "完全共線性發生在某個預測變數是同一模型中其他預測變數的線性組合時。",
     "sentence": "Perfect collinearity happens when a predictor is a linear combination of the other predictors in the same model.",
     "template": "___ happens ___.",
     "analysis": [
@@ -2407,7 +2407,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-link-function",
     "theme": "Exam PA Concept",
-    "chinese": "Link function 會把 target mean 和 predictors 連結起來。",
+    "chinese": "連結函數會把目標平均數和預測變數連結起來。",
     "sentence": "The link function relates the target mean to the predictors.",
     "template": "The ___ the ___ to the ___.",
     "analysis": [
@@ -2420,7 +2420,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-how-clustering-can-be-used-to-develop-features-f",
     "theme": "Exam PA Concept",
-    "chinese": "Cluster analysis 可用來建立一個 factor variable，用來識別資料中不同觀測值被分派到的 cluster group。",
+    "chinese": "群集分析可用來建立一個因子變數，用來識別資料中不同觀測值被分派到的群集組別。",
     "sentence": "Cluster analysis can be used to create a factor variable identifying the cluster groups that different observations in the data are assigned to.",
     "template": "___ can be used to ___.",
     "analysis": [
@@ -2433,7 +2433,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-stratified-sampling-steps-for-variable-region-fa",
     "theme": "Exam PA Concept",
-    "chinese": "Stratified sampling 會從資料中每個 strata 或 group 獨立抽取一組隨機紀錄。",
+    "chinese": "分層抽樣會從資料中每個分層或群組獨立抽取一組隨機紀錄。",
     "sentence": "Stratified sampling works by independently drawing a set of random records from each strata or group in your data.",
     "template": "___ works ___ from ___.",
     "analysis": [
@@ -2446,7 +2446,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-benefits-of-stratified-sampling",
     "theme": "Exam PA Concept",
-    "chinese": "Stratified sampling 的好處是能根據 stratification variables 產生具代表性的 training set 和 test set。",
+    "chinese": "分層抽樣的好處是能根據分層變數產生具代表性的訓練集和測試集。",
     "sentence": "The benefits of stratified sampling is to produce representative training and test sets with respect to the stratification variables, which is often the target variables.",
     "template": "The benefits of stratified sampling is to produce ___, ___.",
     "analysis": [
@@ -2472,7 +2472,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-in-considering-a-random-forest-model-you-produce",
     "theme": "Exam PA Concept",
-    "chinese": "這張圖顯示 cross-validation 檢查了 6 個不同的 mtry 值。",
+    "chinese": "這張圖顯示交叉驗證檢查了 6 個不同的 mtry 值。",
     "sentence": "The plot reveals that six different values of mtry were examined by cross-validation.",
     "template": "The ___ six ___ mtry were ___ by cross-validation.",
     "analysis": [
@@ -2485,7 +2485,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-disadvantages-of-pca",
     "theme": "Exam PA Concept",
-    "chinese": "使用部分 principal components 會導致部分資訊損失。",
+    "chinese": "使用部分主成分會導致部分資訊損失。",
     "sentence": "Using a subset of the principal components results in some information loss.",
     "template": "Using ___ the ___ in ___.",
     "analysis": [
@@ -2498,7 +2498,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-interpret-the-complexity-parameter-table-recomme",
     "theme": "Exam PA Concept",
-    "chinese": "Complexity parameter（CP）決定進行 split 所需的 information gain 門檻。",
+    "chinese": "複雜度參數（CP）決定進行切分所需的資訊增益門檻。",
     "sentence": "The complexity parameter (CP) determines the threshold of information gain required for a split to be made.",
     "template": "The ___ determines ___ information ___ a ___ to be made.",
     "analysis": [
@@ -2524,7 +2524,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-bootstrapping",
     "theme": "Exam PA Concept",
-    "chinese": "Bootstrapping 是指從原始資料集中反覆有放回抽取相同大小的隨機樣本，以估計統計量的變異性或抽樣分配。",
+    "chinese": "拔靴法是指從原始資料集中反覆有放回抽取相同大小的隨機樣本，以估計統計量的變異性或抽樣分配。",
     "sentence": "Bootstrapping involves repeatedly drawing random sampling of the same size from the original dataset with replacement to estimate the variability or sampling distribution of a statistic.",
     "template": "___ involves ___ from ___.",
     "analysis": [
@@ -2537,7 +2537,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-compare-and-contrast-single-decision-tree-and-tr",
     "theme": "Exam PA Concept",
-    "chinese": "兩種方法都可以用來建立 regression 或 classification models，並根據 impurity 或 information gain measures 決定 splits。",
+    "chinese": "兩種方法都可以用來建立迴歸或分類模型，並根據不純度或資訊增益指標決定切分。",
     "sentence": "Both methods can be used to build regression or classification models, determining splits based on impurity or information gain measures.",
     "template": "Both methods can be used to build ___, ___.",
     "analysis": [
@@ -2550,7 +2550,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-one-limitation-of-a-partial-dependence-",
     "theme": "Exam PA Concept",
-    "chinese": "Partial dependence plot 會將目標變數固定在特定值，並對其他變數下的預測取平均；這樣做會忽略變數之間的關係並假設獨立。",
+    "chinese": "部分依賴圖會將目標變數固定在特定值，並對其他變數下的預測取平均；這樣做會忽略變數之間的關係並假設獨立。",
     "sentence": "A partial dependence plot holds the variable of interest at fixed values, averages predictions over the other variables, and by doing so ignores their relationships and assumes independence.",
     "template": "A ___ holds ___ interest ___ averages ___ other ___ and by doing ___ relationships and ___.",
     "analysis": [
@@ -2563,7 +2563,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-bic-2l-p-1-ln-n",
     "theme": "Exam PA Concept",
-    "chinese": "BIC 等於 -2 倍 log-likelihood 加上參數數量乘以樣本數自然對數的懲罰。",
+    "chinese": "BIC 等於 -2 倍對數概似加上參數數量乘以樣本數自然對數的懲罰。",
     "sentence": "BIC = -2l + (p+1) ln(N)",
     "template": "BIC ___ (p+1) ___.",
     "analysis": [
@@ -2576,7 +2576,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-cutoff",
     "theme": "Exam PA Concept",
-    "chinese": "模型產生機率預測後，我們會決定一個 cutoff，以取得正類和負類的預測。",
+    "chinese": "模型產生機率預測後，我們會決定一個門檻值，以取得正類和負類的預測。",
     "sentence": "After a model produces predictions of probabilities, we decide a cutoff to obtain predictions of positive and negative.",
     "template": "After ___ predictions ___ decide ___ to obtain ___ and ___.",
     "analysis": [
@@ -2589,7 +2589,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-process-of-searching-for-the-optimal-value-o",
     "theme": "Exam PA Concept",
-    "chinese": "Lambda 的 optimal value 可以透過 cross-validation 找到。",
+    "chinese": "Lambda 的最佳值可以透過交叉驗證找到。",
     "sentence": "The optimal value for lambda can be found using cross-validation.",
     "template": "The ___ lambda can be ___ using ___.",
     "analysis": [
@@ -2602,7 +2602,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-undersampling",
     "theme": "Exam PA Concept",
-    "chinese": "Undersampling 會刪除 majority class 中的觀測值。",
+    "chinese": "欠抽樣會刪除多數類別中的觀測值。",
     "sentence": "Undersampling deletes observations in the majority class.",
     "template": "___ deletes ___.",
     "analysis": [
@@ -2615,7 +2615,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-oversampling",
     "theme": "Exam PA Concept",
-    "chinese": "Oversampling 會複製 minority class 中的觀測值。",
+    "chinese": "過抽樣會複製少數類別中的觀測值。",
     "sentence": "Oversampling duplicates observations in the minority class.",
     "template": "___ duplicates ___.",
     "analysis": [
@@ -2641,7 +2641,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-k-mean-steps-to-calculate-the-withi",
     "theme": "Exam PA Concept",
-    "chinese": "計算每個 cluster 的 centroid。",
+    "chinese": "計算每個群集的中心點。",
     "sentence": "Calculate the centroid of each cluster.",
     "template": "Calculate ___ each ___.",
     "analysis": [
@@ -2654,7 +2654,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-standardization-of-clustering",
     "theme": "Exam PA Concept",
-    "chinese": "縮放或標準化變數可確保它們都在相同尺度上，並在 clustering 中得到相同權重。",
+    "chinese": "縮放或標準化變數可確保它們都在相同尺度上，並在分群中得到相同權重。",
     "sentence": "Scaled or standardizing variables ensures that they are all on the same scale and will get an equal weight in the clustering.",
     "template": "___ ensures ___.",
     "analysis": [
@@ -2680,7 +2680,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-k-means-clustering",
     "theme": "Exam PA Concept",
-    "chinese": "K-means clustering 從隨機初始分派開始，並反覆更新直到 clusters 穩定。",
+    "chinese": "K-means 分群從隨機初始分派開始，並反覆更新直到群集穩定。",
     "sentence": "K-means clustering works by starting with random initial assignments and iteratively updating them until the clusters stabilize.",
     "template": "___ works ___ with ___.",
     "analysis": [
@@ -2693,7 +2693,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-box-plot",
     "theme": "Exam PA Concept",
-    "chinese": "Boxplots 提供資料分布的視覺表示，包括最小值、第一四分位數、中位數、第三四分位數、最大值，也能辨識潛在 outliers。",
+    "chinese": "盒鬚圖提供資料分布的視覺表示，包括最小值、第一四分位數、中位數、第三四分位數、最大值，也能辨識潛在離群值。",
     "sentence": "Boxplots provide a visual representation of the distribution of the data, including the minimum, first quartile (25th percentile), median (50th percentile), third quartile (75th percentile), maximum, and also identify potential outliers.",
     "template": "___ provide ___.",
     "analysis": [
@@ -2706,7 +2706,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-split-boxplot",
     "theme": "Exam PA Concept",
-    "chinese": "Split boxplot 是 categorical variable 和 numeric variable 之間 bivariate visualization 的一個例子。",
+    "chinese": "分組盒鬚圖是類別變數和數值變數之間雙變量視覺化的一個例子。",
     "sentence": "A split boxplot is one example of a bivariate visualization between a categorical and numeric variable.",
     "template": "___ is one example ___.",
     "analysis": [
@@ -2719,7 +2719,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-hierarchical-clustering-vs-k-means-clustering",
     "theme": "Exam PA Concept",
-    "chinese": "在 k-means clustering 中，cluster 數量會先被選定，然後再決定 clusters；但在 hierarchical clustering 中，cluster 數量是在建立 clusters 後才選定。",
+    "chinese": "在 K-means 分群中，群集數量會先被選定，然後再決定群集；但在階層式分群中，群集數量是在建立群集後才選定。",
     "sentence": "In k-means clustering, the number of clusters is chosen first and then the clusters are determined, but in hierarchical clustering, the number of clusters is chosen after creating the clusters.",
     "template": "In k-means clustering, ___.",
     "analysis": [
@@ -2732,7 +2732,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-difference-between-accuracy-and-auc",
     "theme": "Exam PA Concept",
-    "chinese": "Accuracy 是正確預測數量與總預測數量的比率。",
+    "chinese": "準確率是正確預測數量與總預測數量的比率。",
     "sentence": "Accuracy is the ratio of the number of correct predictions to the total number of predictions.",
     "template": "___ is the ratio of ___ to ___.",
     "analysis": [
@@ -2758,7 +2758,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-two-ways-impurity-measures-are-used-in-",
     "theme": "Exam PA Concept",
-    "chinese": "在 classification tree 中，impurity measures 的一種用途是決定 decision tree 下一個 split 是否應該被執行。",
+    "chinese": "在分類樹中，不純度指標的一種用途是決定決策樹下一個切分是否應該被執行。",
     "sentence": "One way that impurity measures are used in a classification tree is to decide which split in the decision tree (if any) should be made next.",
     "template": "___ measures ___ to ___.",
     "analysis": [
@@ -2771,7 +2771,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-best-subset-vs-stepwise-selection",
     "theme": "Exam PA Concept",
-    "chinese": "Best subset 會找到最佳的 predictors 集合，也就是 global minimum；而 stepwise selection 會找到 local minimum，可能有比 global minimum 更高的 error。",
+    "chinese": "最佳子集法會找到最佳的預測變數集合，也就是全域最小值；而逐步選擇法會找到局部最小值，可能有比全域最小值更高的誤差。",
     "sentence": "Best subset will find the optimal set of predictors, i.e., the global minimum, whereas stepwise selection will find a local minimum which may have a higher error than the global minimum.",
     "template": "Best ___ will ___ the ___ predictors, ___ minimum, ___ will ___ minimum ___ may ___ a ___ than the ___.",
     "analysis": [
@@ -2784,7 +2784,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-how-binarizing-factor-variables-in-advan",
     "theme": "Exam PA Concept",
-    "chinese": "事先 binarizing factor variables 對 fitted GLM 的結果沒有影響。",
+    "chinese": "事先二元化因子變數對已配適 GLM 的結果沒有影響。",
     "sentence": "Binarizing factor variables in advance has no effect on the results of a fitted GLM.",
     "template": "Binarizing ___ advance ___ on ___ a ___.",
     "analysis": [
@@ -2797,7 +2797,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-handling-of-categorical-variables-i",
     "theme": "Exam PA Concept",
-    "chinese": "Linear models 會為 categorical variable 中除了 base level 以外的每個 level 配適一個係數。",
+    "chinese": "線性模型會為類別變數中除了基準水準以外的每個水準配適一個係數。",
     "sentence": "Linear models fit a coefficient for each level of a categorical variable except the base level.",
     "template": "Linear ___ coefficient ___ of ___ except ___.",
     "analysis": [
@@ -2810,7 +2810,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-curse-of-dimensionality",
     "theme": "Exam PA Concept",
-    "chinese": "Curse of dimensionality 指的是所謂的 small n, large p 情境，也就是觀測值 n 的數量相對於特徵 p 的數量很少。",
+    "chinese": "維度詛咒指的是所謂的 small n, large p 情境，也就是觀測值 n 的數量相對於特徵 p 的數量很少。",
     "sentence": "The curse of dimensionality refers to the so-called \"small n, large p\" setting, where the number of observations n is small compared to the number of features p.",
     "template": "The curse of dimensionality refers to the ___, ___.",
     "analysis": [
@@ -2823,7 +2823,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-elastic-net-regression",
     "theme": "Exam PA Concept",
-    "chinese": "Elastic net regression 包含一個捕捉 regression coefficients 大小的 penalty term。",
+    "chinese": "彈性網迴歸包含一個捕捉迴歸係數大小的懲罰項。",
     "sentence": "Elastic net regression includes a penalty term captures the size of the regression coefficients.",
     "template": "___ includes ___.",
     "analysis": [
@@ -2836,7 +2836,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-height-in-the-dendrogram",
     "theme": "Exam PA Concept",
-    "chinese": "Height 是 hierarchical clustering algorithm 每一步合併兩個最接近 clusters 時的 inter-cluster dissimilarity。",
+    "chinese": "高度是階層式分群演算法每一步合併兩個最接近群集時的群集間相異度。",
     "sentence": "The height is the inter-cluster dissimilarity between the two closest clusters when they are fused in each step of the hierarchical clustering algorithm.",
     "template": "___ is ___ when ___.",
     "analysis": [
@@ -2849,7 +2849,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-80-20-train-test-split-vs-5-fold-cross-validatio",
     "theme": "Exam PA Concept",
-    "chinese": "80% / 20% train/test split 和 5-fold cross-validation 都使用 80% 的資料訓練候選模型，並使用 20% 的資料測試模型。",
+    "chinese": "80% / 20% 訓練 / 測試切分和 5 折交叉驗證都使用 80% 的資料訓練候選模型，並使用 20% 的資料測試模型。",
     "sentence": "80%/20% train/test split and 5-fold cross-validation use 80% of the data to train the potential models and 20% of the data to test the models.",
     "template": "___ use ___ to ___.",
     "analysis": [
@@ -2862,7 +2862,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-histograms-and-box-plots-are-used-for-continuous",
     "theme": "Exam PA Concept",
-    "chinese": "Histograms 和 box plots 用於 continuous numeric variables。",
+    "chinese": "直方圖和盒鬚圖用於連續數值變數。",
     "sentence": "Histograms and box plots are used for continuous numeric variables.",
     "template": "___ and ___ are used for ___.",
     "analysis": [
@@ -2875,7 +2875,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-tweedie",
     "theme": "Exam PA Concept",
-    "chinese": "Tweedie 是同時具有 discrete 和 continuous components 的混合分配。",
+    "chinese": "Tweedie 是同時具有離散和連續成分的混合分配。",
     "sentence": "Tweedie is a mixed distribution with both discrete and continuous components.",
     "template": "___ is a mixed distribution ___.",
     "analysis": [
@@ -2888,7 +2888,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-how-the-lambda-hyperparameter-impacts-v",
     "theme": "Exam PA Concept",
-    "chinese": "較大的 lambda 會增加計算 penalty term 時給予每個係數大小的權重。",
+    "chinese": "較大的 lambda 會增加計算懲罰項時給予每個係數大小的權重。",
     "sentence": "A larger lambda increases the weight given to the size of each coefficient when calculating the penalty term.",
     "template": "A ___ the ___ to the ___ coefficient when ___ penalty ___.",
     "analysis": [
@@ -2901,7 +2901,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-differences-between-the-lasso-and-drop1",
     "theme": "Exam PA Concept",
-    "chinese": "Drop1 要求建模者手動移除 predictor。",
+    "chinese": "Drop1 要求建模者手動移除預測變數。",
     "sentence": "Drop1 requires the modeler to manually remove the predictor.",
     "template": "___ requires ___ to ___.",
     "analysis": [
@@ -2914,7 +2914,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-intercept-only-glm",
     "theme": "Exam PA Concept",
-    "chinese": "Intercept-only GLM 不使用任何 predictors 的資訊，並可被視為最基準的 predictive model。",
+    "chinese": "只有截距的 GLM 不使用任何預測變數的資訊，並可被視為最基準的預測模型。",
     "sentence": "The intercept-only GLM does not use the information of any predictors and can be regarded as the most benchmark predictive model.",
     "template": "___ use ___.",
     "analysis": [
@@ -2927,7 +2927,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-drop1",
     "theme": "Exam PA Concept",
-    "chinese": "Drop1 會顯示個別移除每個 predictor variable 對 AIC 的影響。",
+    "chinese": "Drop1 會顯示個別移除每個預測變數對 AIC 的影響。",
     "sentence": "Drop1 shows the AIC impact from individually removing each predictor variable.",
     "template": "___ shows ___ from ___.",
     "analysis": [
@@ -2940,7 +2940,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-domain-gaussian-all-real-values-poisson-negative",
     "theme": "Exam PA Concept",
-    "chinese": "Gaussian domain 包含所有實數。",
+    "chinese": "Gaussian 定義域包含所有實數。",
     "sentence": "The Gaussian domain includes all real values.",
     "template": "___ includes ___.",
     "analysis": [
@@ -2953,7 +2953,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-regression-trees",
     "theme": "Exam PA Concept",
-    "chinese": "Regression tree 使用 target 和 predicted values 之間的 residual sum of squares error。",
+    "chinese": "迴歸樹使用目標和預測值之間的殘差平方和誤差。",
     "sentence": "Use residual sum of squares error (RSS, known as sum of squared estimate of errors (SSE)) between target and predicted values.",
     "template": "Use ___ squares ___ as ___ estimate ___ between ___ and ___ values.",
     "analysis": [
@@ -2966,7 +2966,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-backward-selection",
     "theme": "Exam PA Concept",
-    "chinese": "Backward selection 從所有變數開始，並依序移除變數，直到選定準則不再改善。",
+    "chinese": "向後選擇法從所有變數開始，並依序移除變數，直到選定準則不再改善。",
     "sentence": "Starts with all the variables and sequentially removes them until no improvement by selected criterion.",
     "template": "___ removes ___ by ___.",
     "analysis": [
@@ -2979,7 +2979,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-visualizing-categorical-variables",
     "theme": "Exam PA Concept",
-    "chinese": "使用 frequency tables、counts、percentages 和 bar charts 來視覺化這些資訊。",
+    "chinese": "使用次數表、計數、百分比和長條圖來視覺化這些資訊。",
     "sentence": "Use frequency tables, counts, percentages, and bar charts to visualize this information.",
     "template": "Use ___ percentages, and ___ to ___.",
     "analysis": [
@@ -2992,7 +2992,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-residuals",
     "theme": "Exam PA Concept",
-    "chinese": "預測值與觀測值之間的差異稱為 residual。",
+    "chinese": "預測值與觀測值之間的差異稱為殘差。",
     "sentence": "The difference between predicted and observed is called the residual.",
     "template": "The difference between ___ and ___ is called ___.",
     "analysis": [
@@ -3005,7 +3005,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-greedy",
     "theme": "Exam PA Concept",
-    "chinese": "Decision trees 的限制是，它們在每個當前步驟都根據最大 information gain 做 greedy splits，而不是產生整體最佳配適模型。",
+    "chinese": "決策樹的限制是，它們在每個當前步驟都根據最大資訊增益做貪婪式切分，而不是產生整體最佳配適模型。",
     "sentence": "Decision trees have a limitation in that they make greedy splits based on the largest information gain at each current step, rather than to produce the best fitting overall model.",
     "template": "Decision trees have a limitation in that they make greedy splits based on the largest information gain at each current step, ___.",
     "analysis": [
@@ -3018,7 +3018,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-the-differences-between-using-a-variable",
     "theme": "Exam PA Concept",
-    "chinese": "當一個變數在 GLM 中被作為 weight 使用時，它會調整每個觀測值在模型中的影響力。",
+    "chinese": "當一個變數在 GLM 中被作為權重使用時，它會調整每個觀測值在模型中的影響力。",
     "sentence": "When a variable is used as a weight in a GLM, it adjusts the influence of each observation in the model.",
     "template": "When a variable is used as a weight in a GLM, ___.",
     "analysis": [
@@ -3031,7 +3031,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-what-an-interaction-variable-might-captu",
     "theme": "Exam PA Concept",
-    "chinese": "Interaction 可讓模型為每個 DayType 估計不同的 transformed month coefficients。",
+    "chinese": "交互作用可讓模型為每個 DayType 估計不同的轉換後月份係數。",
     "sentence": "An interaction would allow the model to estimate different transformed month coefficients for each DayType.",
     "template": "___ allow ___ to ___.",
     "analysis": [
@@ -3044,7 +3044,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-interpret-the-na-values-in-the-sunday-ind-variab",
     "theme": "Exam PA Concept",
-    "chinese": "這個模型顯示 perfect multicollinearity。",
+    "chinese": "這個模型顯示完全多重共線性。",
     "sentence": "This model shows the perfect multicollinearity.",
     "template": "___ shows ___.",
     "analysis": [
@@ -3057,7 +3057,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-feature-importance-vs-partial-dependence-plots",
     "theme": "Exam PA Concept",
-    "chinese": "Feature importance 和 partial dependence plots 都是用來解釋 random forests 等 black box models 的方法。",
+    "chinese": "特徵重要性和部分依賴圖都是用來解釋隨機森林等黑箱模型的方法。",
     "sentence": "Feature importance and partial dependence plots are both methods used to interpret \"black box\" models like random forests.",
     "template": "___ and ___ are both methods used to ___.",
     "analysis": [
@@ -3070,7 +3070,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-interpret-standard-deviation-and-proportion-of-v",
     "theme": "Exam PA Concept",
-    "chinese": "PC1 的標準差 1.6983 遠大於 PC2 和 PC3，表示它捕捉了 SAT features 中大部分變異。",
+    "chinese": "PC1 的標準差 1.6983 遠大於 PC2 和 PC3，表示它捕捉了 SAT 特徵中大部分變異。",
     "sentence": "A standard deviation of 1.6983 for PC1 is much greater than that for PC2 and PC3, implying that it captures most of the variation in the SAT features.",
     "template": "___ captures ___.",
     "analysis": [
@@ -3109,7 +3109,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-between-root-mean-square-error-rmse-and-mean-abs",
     "theme": "Exam PA Concept",
-    "chinese": "我建議使用 MAE，因為它對 outliers 較 robust。",
+    "chinese": "我建議使用 MAE，因為它對離群值較穩健。",
     "sentence": "I recommend MAE because it is more robust to outliers.",
     "template": "I recommend ___ because it is more robust to ___.",
     "analysis": [
@@ -3135,7 +3135,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-the-leverage-plot",
     "theme": "Exam PA Concept",
-    "chinese": "Leverage plot 可用來辨識具有 high leverage 的 outliers，代表它們對模型係數估計有很大影響。",
+    "chinese": "槓桿值圖可用來辨識具有高槓桿值的離群值，代表它們對模型係數估計有很大影響。",
     "sentence": "The leverage plot can be used to identify outliers with high leverage, meaning they have a large impact on the model coefficient estimates.",
     "template": "The leverage plot can be used to identify ___, ___.",
     "analysis": [
@@ -3161,7 +3161,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-linkage-inter-cluster-dissimilarity-complete-lar",
     "theme": "Exam PA Concept",
-    "chinese": "Complete linkage 使用最大的 pairwise dissimilarity。",
+    "chinese": "完全連結法使用最大的成對相異度。",
     "sentence": "Complete linkage uses the largest pairwise dissimilarity.",
     "template": "___ uses ___.",
     "analysis": [
@@ -3174,7 +3174,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-trade-off-involved-when-selecting-t",
     "theme": "Exam PA Concept",
-    "chinese": "增加 training set size 會提高模型 robustness 和 signal learning，但會減少 test set size，使 unseen data 上的 predictive performance 評估較不可靠。",
+    "chinese": "增加訓練集大小會提高模型穩健性和訊號學習能力，但會減少測試集大小，使未見資料上的預測表現評估較不可靠。",
     "sentence": "Increasing the training set size improves model robustness and signal learning, but reduces the test set size, making the evaluation of predictive performance on unseen data less reliable.",
     "template": "___ reduces ___.",
     "analysis": [
@@ -3187,7 +3187,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-interpret-the-estimates-of-the-intercept-and-the",
     "theme": "Exam PA Concept",
-    "chinese": "當所有 numeric variables 等於 0 且所有 categorical variables 位於 baseline levels 時，通過的 odds 估計為 1.6487。",
+    "chinese": "當所有數值變數等於 0 且所有類別變數位於基準水準時，通過的勝算估計為 1.6487。",
     "sentence": "The odds of passing is estimated to be 1.6487 when all numeric variables equal 0 and all categorical variables are at their baseline levels.",
     "template": "___ is ___ when ___.",
     "analysis": [
@@ -3200,7 +3200,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-nrounds-in-a-boosting",
     "theme": "Exam PA Concept",
-    "chinese": "這是 boosting iterations 的最大數量。",
+    "chinese": "這是 Boosting 迭代的最大數量。",
     "sentence": "This is the maximum number of boosting iterations.",
     "template": "___ is the maximum ___.",
     "analysis": [
@@ -3213,7 +3213,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-the-characteristics-of-the-prediction-p",
     "theme": "Exam PA Concept",
-    "chinese": "由於沒有 predictors，intercept-only GLM 會給所有觀測值相同的 predicted pass probability。",
+    "chinese": "由於沒有預測變數，只有截距的 GLM 會給所有觀測值相同的預測通過機率。",
     "sentence": "Because of the absence of predictors, the intercept-only GLM will assign all observations (whether training or test observations) the same predicted pass probability, which is the pass rate on the training set, regardless of students' characteristics.",
     "template": "Because of the absence of predictors, ___.",
     "analysis": [
@@ -3226,7 +3226,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-granularity",
     "theme": "Exam PA Concept",
-    "chinese": "Granularity 指的是變數被衡量得多精確，換句話說，就是它包含的細節程度。",
+    "chinese": "粒度指的是變數被衡量得多精確，換句話說，就是它包含的細節程度。",
     "sentence": "Granularity refers to how precisely a variable is measured, or in other words, the level of detail it contains.",
     "template": "Granularity refers to how precisely a variable is measured, or in other words, ___.",
     "analysis": [
@@ -3239,7 +3239,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-the-rationale-behind-the-pearson-statist",
     "theme": "Exam PA Concept",
-    "chinese": "Pearson statistic 是觀測值與預測值差異平方除以預測值後，對所有觀測值加總的比率。",
+    "chinese": "Pearson 統計量是觀測值與預測值差異平方除以預測值後，對所有觀測值加總的比率。",
     "sentence": "The Pearson statistic is the ratio of the squared difference between observed and predicted values to the predicted value, summed across all observations.",
     "template": "The Pearson statistic is the ratio of the squared difference between observed and predicted values to the ___, ___.",
     "analysis": [
@@ -3252,7 +3252,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-explain-how-the-pearson-statistic-can-be-used-to",
     "theme": "Exam PA Concept",
-    "chinese": "為了選擇 optimal model，我們會計算每個候選模型在 test set 上的 Pearson statistic。",
+    "chinese": "為了選擇最佳模型，我們會計算每個候選模型在測試集上的 Pearson 統計量。",
     "sentence": "To select the optimal model, we evaluate each candidate by calculating its Pearson statistic on the test set.",
     "template": "To select ___, ___.",
     "analysis": [
@@ -3265,7 +3265,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-show-that-the-pearson-statistic-for-the-intercep",
     "theme": "Exam PA Concept",
-    "chinese": "Poisson 的 canonical link 是 log link。",
+    "chinese": "Poisson 的典型連結函數是對數連結函數。",
     "sentence": "The canonical link for Poisson (which is the target distribution of the intercept-only GLM, as the model formula shows) is the log link, so the prediction produced by the model is = û = e -2.66081 = 0.069892, which applies to all observations.",
     "template": "The canonical link for ___ is ___, so the prediction produced by the model is ___.",
     "analysis": [
@@ -3278,7 +3278,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-backward-selection-is-the-default-of-the-stepaic",
     "theme": "Exam PA Concept",
-    "chinese": "Backward selection 是 stepAIC() function 的預設方法。",
+    "chinese": "向後選擇法是 stepAIC() 函數的預設方法。",
     "sentence": "Backward selection is the default of the stepAIC() function.",
     "template": "___ is the default ___.",
     "analysis": [
@@ -3291,7 +3291,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-discuss-two-similarities-in-the-formulation-of-r",
     "theme": "Exam PA Concept",
-    "chinese": "兩者都涉及最小化由兩個項目組成的 penalized objective function。",
+    "chinese": "兩者都涉及最小化由兩個項目組成的帶懲罰的目標函數。",
     "sentence": "The second term serves as a penalty term to hedge against overfitting.",
     "template": "The ___ as ___ to ___.",
     "analysis": [
@@ -3304,7 +3304,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-describe-how-regularization-works-in-a-glm",
     "theme": "Exam PA Concept",
-    "chinese": "Regularized regression 透過在 GLM 的 training deviance 中加入基於 coefficient size 的 penalty term 來避免 overfitting。",
+    "chinese": "正則化迴歸透過在 GLM 的訓練離差中加入基於係數大小的懲罰項來避免過度擬合。",
     "sentence": "Regularized regression (Ridge, Lasso, and Elastic Net) prevents overfitting by adding a penalty term based on coefficient size to the GLM's training deviance.",
     "template": "___ prevents ___ by ___.",
     "analysis": [
@@ -3317,7 +3317,7 @@ window.englishLessons = [
   {
     "id": "exam-pa-interaction-depth-in-a-boosting",
     "theme": "Exam PA Concept",
-    "chinese": "這個 hyperparameter 控制 boosted model 中 terminal nodes 的最大深度。",
+    "chinese": "這個超參數控制 Boosting 模型中終端節點的最大深度。",
     "sentence": "The hyperparameter controls the maximum depth of terminal nodes for the boosted model.",
     "template": "The ___ maximum ___ nodes ___ model.",
     "analysis": [
